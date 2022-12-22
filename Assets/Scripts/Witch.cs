@@ -20,7 +20,7 @@ public class Witch : MonoBehaviour
 
     [SerializeField] private Spell shrinkSpell;
     [SerializeField] private Spell growSpell; // appear and disappear
-    
+    // Start is called before the first frame update
     void Start()
     {
         
