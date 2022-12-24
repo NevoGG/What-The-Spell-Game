@@ -17,9 +17,10 @@ public class BackGroundMovement : MonoBehaviour
     {
         if (acend)
         {
-            if (transform.position.y < topBounder)
+            if (transform.position.y > topBounder)
             {
-                transform.position = new Vector3(0, transform.position.y + movementSpeed * Time.deltaTime, 0);
+                
+                transform.position = new Vector3(0, transform.position.y - movementSpeed * Time.deltaTime, 0);
                 
             }
             else
@@ -30,9 +31,9 @@ public class BackGroundMovement : MonoBehaviour
         }
         else
         {
-            if (transform.position.y > bottomBounder)
+            if (transform.position.y < bottomBounder)
             {
-                transform.position = new Vector3(0, transform.position.y - movementSpeed * Time.deltaTime, 0);
+                transform.position = new Vector3(0, transform.position.y + movementSpeed * Time.deltaTime, 0);
                 
             }
             else
