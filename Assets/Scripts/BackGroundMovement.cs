@@ -28,6 +28,7 @@ public class BackGroundMovement : MonoBehaviour
                 acend = false;
             }
             
+            
         }
         else
         {

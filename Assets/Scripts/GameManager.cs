@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
     private void addPlayersToList()
     {
         playerList = new List<Player>(4);
+        
         switch (numberOfPlayers)
         {
             case 4:
