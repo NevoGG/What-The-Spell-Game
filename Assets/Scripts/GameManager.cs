@@ -42,9 +42,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // numberOfPlayers = WriteNumPlayers.numberOfPlayers;
+        numberOfPlayers = WriteNumPlayers.numberOfPlayers;
         gameEnded = false;
-        numberOfPlayers = 1;
         playersAlive = numberOfPlayers;
         addPlayersToList();
     }
