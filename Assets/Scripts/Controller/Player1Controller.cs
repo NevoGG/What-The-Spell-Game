@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PlayerController", menuName = "InputController/PlayerController")]
-public class PlayerController : InputController
+[CreateAssetMenu(fileName = "Player1Controller", menuName = "InputController/Player1Controller")]
+public class Player1Controller : InputController
 {
     public override float RetrieveMoveInput()
     {

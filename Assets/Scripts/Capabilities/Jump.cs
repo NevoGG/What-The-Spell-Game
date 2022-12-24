@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Jump : MonoBehaviour
     {
-        [SerializeField] private InputController input = null;
+        [SerializeField] private InputAction playerControls;
+        
         private float _jumpHeight = 3f;
         private int _maxAirJumps = 0;
         private float _downwardMovementMultiplier = 3f;
@@ -22,7 +24,6 @@ public class Jump : MonoBehaviour
         
         
         //Setters:
-        public void SetInputController(InputController ic) { input = ic;}
         public void SetJumpHeight(float h) { _jumpHeight = h;}
         public void SetMaxAirJumps(int h) { _maxAirJumps = h;}
         public void SetDownwardMovementMultiplier(float h) { _downwardMovementMultiplier = h;}
@@ -34,7 +35,6 @@ public class Jump : MonoBehaviour
         {
             _body = GetComponent<Rigidbody2D>();
             _ground = GetComponent<Ground>();
-            // _controller_controller = GetComponent<Controller>();
 
             _defaultGravityScale = 1f;
         }
@@ -42,7 +42,8 @@ public class Jump : MonoBehaviour
         // Update is called once per frame
         void Update()
         {
-            _desiredJump |= input.RetrieveJumpInput();
+            _desiredJump = playerControls.triggered;
+            // _desiredJump |= playerControls.ReadValue<bool>();
         }
 
         private void FixedUpdate()
@@ -95,4 +96,8 @@ public class Jump : MonoBehaviour
                 _velocity.y += _jumpSpeed;
             }
         }
+        
+        private void OnEnable() { playerControls.Enable(); }
+
+        private void OnDisable() { playerControls.Disable();}
     }

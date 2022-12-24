@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Move : MonoBehaviour
 {
-    [SerializeField] private InputController input = null;
+    [SerializeField] private InputAction playerControls;
+
     private float _maxSpeed = 4f;
     private float _maxAcceleration = 35f;
     private float _maxAirAcceleration = 20f;
@@ -18,7 +20,6 @@ public class Move : MonoBehaviour
     private bool _onGround;
 
     //Setters:
-    public void SetInputController(InputController ic) { input = ic;}
     public void SetMaxSpeed(float h) { _maxSpeed = h;}
     public void SetMaxAcceleration(float h) { _maxAcceleration = h;}
     public void SetMaxAirAcceleration(float h) { _maxAirAcceleration = h;}
@@ -33,8 +34,8 @@ public class Move : MonoBehaviour
 
     private void Update()
     {
-        _direction.x = input.RetrieveMoveInput();
-        _desiredVelocity = new Vector2(_direction.x, 0f) * Mathf.Max(_maxSpeed - _ground.Friction, 0f);
+        _direction.x = playerControls.ReadValue<float>();
+        _desiredVelocity = new Vector2(_direction.x, 0f) * Mathf.Max(_maxSpeed - _ground.Friction * Time.deltaTime, 0f);
     }
 
     private void FixedUpdate()
@@ -48,4 +49,8 @@ public class Move : MonoBehaviour
 
         _body.velocity = _velocity;
     }
+
+    private void OnEnable() { playerControls.Enable(); }
+
+    private void OnDisable() { playerControls.Disable();}
 }
