@@ -156,6 +156,11 @@ public class Player : MonoBehaviour
 	    _move.SetRigidBody(_body);
 	    //todo: fill 
     }
+
+    public int getScore() //todo: erase
+    {
+        return 0;
+    }
     
     
 } //Upgrade the animal of the player
