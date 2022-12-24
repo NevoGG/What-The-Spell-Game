@@ -283,7 +283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &296222649
 Rigidbody2D:
   serializedVersion: 4
@@ -835,7 +835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &706232296
 Rigidbody2D:
   serializedVersion: 4
@@ -1451,7 +1451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1659317587628796454, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 1659317587628796454, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
       propertyPath: m_LocalPosition.z
