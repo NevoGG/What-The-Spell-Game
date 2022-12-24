@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackGroundMovment : MonoBehaviour
+public class BackGroundMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed;
     [SerializeField] private float topBounder;
