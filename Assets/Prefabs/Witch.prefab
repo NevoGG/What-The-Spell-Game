@@ -45,11 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1b02b391ecf6345911e3e600339513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  witchMovementSpeed: 1
+  witchMovementSpeed: 10
   timeBetweenShots: 2
   witchGrowToShrinkRatio: 0
-  topBounder: 4.5
-  bottomBounder: -4.5
+  topBounder: 14
+  bottomBounder: -14
   spellingTime: 2
   distanceWitchFromDestPar: 0.1
   shrinkSpell: {fileID: 0}
