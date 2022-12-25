@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c483493eb3ec0f143b5d78ad823ac661
+guid: 088d70f5a125b3542894f6aaf2bf9d92
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -62,8 +62,8 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
-  cookieLightType: 1
+  applyGammaDecoding: 0
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1x_0
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 26
-        width: 73
-        height: 73
+        x: 0
+        y: 193.33334
+        width: 97.8
+        height: 96.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9429ad56b0a26114baf92582d169b353
-      internalID: -62922060
+      spriteID: aa298c0d51ad2404a8da33b183443c34
+      internalID: -1312695307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_1
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_1
       rect:
         serializedVersion: 2
-        x: 110
-        y: 26
-        width: 72
-        height: 74
+        x: 97
+        y: 193.33334
+        width: 97.8
+        height: 96.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b17c8a4ad238c744b3e575827b4ae71
-      internalID: -762118291
+      spriteID: 925659024ee0e284a9b586321d801b4b
+      internalID: -979959766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_2
       rect:
         serializedVersion: 2
-        x: 191
-        y: 26
-        width: 72
-        height: 74
+        x: 194
+        y: 193.33334
+        width: 97.8
+        height: 96.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0e572c879c5b4344bccda172eb4fd6e
-      internalID: -381740162
+      spriteID: 449bf55d88de81947bd586a938fa0d51
+      internalID: 1582375228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_3
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_3
       rect:
         serializedVersion: 2
-        x: 272
-        y: 26
-        width: 73
-        height: 75
+        x: 291
+        y: 193.33334
+        width: 97.8
+        height: 96.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e9adbc6a6794764480d32e0886d177e
-      internalID: 2098335174
+      spriteID: d1a803ffb508f88439523ba7d52428e5
+      internalID: 1437149256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_4
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_4
       rect:
         serializedVersion: 2
-        x: 354
-        y: 26
-        width: 72
-        height: 75
+        x: 388
+        y: 193.33334
+        width: 97.8
+        height: 96.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93acd0ab1863c9b48beba8323c8eb26c
-      internalID: -96541697
+      spriteID: d88aa37603727bb4aa993cece8adb4b9
+      internalID: 1179264813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_5
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_5
       rect:
         serializedVersion: 2
-        x: 435
-        y: 26
-        width: 72
-        height: 76
+        x: 0
+        y: 97.333336
+        width: 97.8
+        height: 96.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3350d1b03935b144948c14c148f9c57
-      internalID: -1550155337
+      spriteID: 88a74da72172d6f4e9cd167ec67eace7
+      internalID: -1578400432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_6
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_6
       rect:
         serializedVersion: 2
-        x: 516
-        y: 26
-        width: 73
-        height: 76
+        x: 97
+        y: 97.333336
+        width: 97.8
+        height: 96.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ea0e44f589e74b4aa2496375b5bbb48
-      internalID: -472748742
+      spriteID: ca4da6a1c50a3734c9d07e24c7f0451f
+      internalID: -1767350864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_7
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_7
       rect:
         serializedVersion: 2
-        x: 598
-        y: 26
-        width: 72
-        height: 75
+        x: 194
+        y: 97.333336
+        width: 97.8
+        height: 96.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ece8e40eca82a542b9fbabbcbe78b26
-      internalID: -910307294
+      spriteID: b73216e7796fb494a9b57e0f44618c84
+      internalID: -1636774354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_8
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_8
       rect:
         serializedVersion: 2
-        x: 679
-        y: 26
-        width: 73
-        height: 75
+        x: 291
+        y: 97.333336
+        width: 97.8
+        height: 96.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4490e54b51288b41b01bfef97a89f10
-      internalID: 37005341
+      spriteID: 711fbf73e94c50a49a859b43d1505823
+      internalID: 652563621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_9
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_9
       rect:
         serializedVersion: 2
-        x: 761
-        y: 26
-        width: 72
-        height: 74
+        x: 388
+        y: 97.333336
+        width: 97.8
+        height: 96.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,20 +308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 868d3f6ee88d4c04ab0924216418508f
-      internalID: -668998046
+      spriteID: 3d5770597ecf3e24c971964cfac70c7f
+      internalID: -537738445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1x_10
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_10
       rect:
         serializedVersion: 2
-        x: 842
-        y: 26
-        width: 72
-        height: 74
+        x: 0
+        y: 1.3333359
+        width: 97.8
+        height: 96.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,29 +329,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b850bd776efc9247bd5c33698f3e67d
-      internalID: -2015407918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1x_11
-      rect:
-        serializedVersion: 2
-        x: 923
-        y: 26
-        width: 73
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 637d48948276dbb4bb7d5a028ce41923
-      internalID: -2052463191
+      spriteID: a4528785f11a51649ba30b87f27a2a5f
+      internalID: 1399125295
       vertices: []
       indices: 
       edges: []
@@ -359,7 +338,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d8c5648b3b9e55f428dfeb7fa99e8fc3
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -367,18 +346,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      1x_4: -96541697
-      1x_2: -381740162
-      1x_0: -62922060
-      1x_3: 2098335174
-      1x_8: 37005341
-      1x_10: -2015407918
-      1x_1: -762118291
-      1x_5: -1550155337
-      1x_9: -668998046
-      1x_11: -2052463191
-      1x_7: -910307294
-      1x_6: -472748742
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_4: 1179264813
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_1: -979959766
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_7: -1636774354
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_5: -1578400432
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_3: 1437149256
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_0: -1312695307
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_9: -537738445
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_6: -1767350864
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_10: 1399125295
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_2: 1582375228
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_8: 652563621
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

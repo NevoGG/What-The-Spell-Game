@@ -21,10 +21,11 @@ public class Animal : MonoBehaviour
     
     	
     private Move _move;
-    private Jump _jump;
     private Ground _ground;
     private Rigidbody2D _body;
     private Player player;
+    private BoxCollider2D _boxCollider;
+
     
     //Setters:
     public void SetPlayer(Player p) { player = p;}
@@ -41,11 +42,12 @@ public class Animal : MonoBehaviour
     void Start()
     {
         //Scale to size:
-        Vector3 curSize = transform.localScale;
-        transform.localScale = new Vector3(curSize.x * _size, curSize.y * _size, curSize.z * _size);
+        _boxCollider = GetComponent<BoxCollider2D>();
+        transform.localScale = transform.localScale * _size;
+        _boxCollider.size = Vector2.one * 0.8f;
         
+
         _move = GetComponent<Move>();
-        _jump = GetComponent<Jump>();
         _ground = GetComponent<Ground>();
         _body = GetComponent<Rigidbody2D>();
         UpdateJumpParameters();
@@ -62,7 +64,6 @@ public class Animal : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         SpellEnum spell = SpellEnum.None;
-        Debug.Log(collision.gameObject.tag);
         switch (collision.gameObject.tag)
         {
             case GameManager.SHRINKSPELL:
@@ -81,10 +82,10 @@ public class Animal : MonoBehaviour
     {
         int _maxAirJumps = 0;
         if(_power == AnimalPower.DoubleJump) _maxAirJumps = 1;
-        _jump.SetJumpHeight(_jumpHeight);
-        _jump.SetMaxAirJumps(_maxAirJumps);
-        _jump.SetDownwardMovementMultiplier(_downwardMovementMultiplier);
-        _jump.SetUpwardMovementMultiplier(_upwardMovementMultiplier);
+        _move.SetJumpHeight(_jumpHeight);
+        _move.SetMaxAirJumps(_maxAirJumps);
+        _move.SetDownwardMovementMultiplier(_downwardMovementMultiplier);
+        _move.SetUpwardMovementMultiplier(_upwardMovementMultiplier);
     }
 
     private void UpdateMoveParameters()
