@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: 088d70f5a125b3542894f6aaf2bf9d92
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193.33334
+        width: 97.8
+        height: 96.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa298c0d51ad2404a8da33b183443c34
+      internalID: -1312695307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 193.33334
+        width: 97.8
+        height: 96.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925659024ee0e284a9b586321d801b4b
+      internalID: -979959766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 193.33334
+        width: 97.8
+        height: 96.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449bf55d88de81947bd586a938fa0d51
+      internalID: 1582375228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 193.33334
+        width: 97.8
+        height: 96.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a803ffb508f88439523ba7d52428e5
+      internalID: 1437149256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 193.33334
+        width: 97.8
+        height: 96.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88aa37603727bb4aa993cece8adb4b9
+      internalID: 1179264813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97.333336
+        width: 97.8
+        height: 96.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a74da72172d6f4e9cd167ec67eace7
+      internalID: -1578400432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 97.333336
+        width: 97.8
+        height: 96.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4da6a1c50a3734c9d07e24c7f0451f
+      internalID: -1767350864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 97.333336
+        width: 97.8
+        height: 96.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73216e7796fb494a9b57e0f44618c84
+      internalID: -1636774354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 97.333336
+        width: 97.8
+        height: 96.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711fbf73e94c50a49a859b43d1505823
+      internalID: 652563621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 97.333336
+        width: 97.8
+        height: 96.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5770597ecf3e24c971964cfac70c7f
+      internalID: -537738445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333359
+        width: 97.8
+        height: 96.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4528785f11a51649ba30b87f27a2a5f
+      internalID: 1399125295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_4: 1179264813
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_1: -979959766
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_7: -1636774354
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_5: -1578400432
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_3: 1437149256
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_0: -1312695307
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_9: -537738445
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_6: -1767350864
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_10: 1399125295
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_2: 1582375228
+      170-1700049_acid-damage-effect-sprite-damage-effect-sprite-sheet_8: 652563621
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
