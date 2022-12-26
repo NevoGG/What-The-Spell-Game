@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
 
     private void Tie()
     {
-        print("Its a tie");
+        // print("Its a tie");
     }
 
 

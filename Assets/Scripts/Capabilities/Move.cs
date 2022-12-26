@@ -67,6 +67,7 @@ public class Move : MonoBehaviour
     {
 
         _direction.x = move.ReadValue<float>();
+        Debug.Log(_direction.x);
         _desiredVelocity = new Vector2(_direction.x, 0f) * Mathf.Max(_maxSpeed - _ground.Friction * Time.deltaTime, 0f);
         
         //Animator control parameters:
@@ -161,6 +162,7 @@ public class Move : MonoBehaviour
     private void Jump(InputAction.CallbackContext context)
     {
         _desiredJump = true;
+        Debug.Log("jump");
     }
     
     private void JumpCanceled(InputAction.CallbackContext context)
