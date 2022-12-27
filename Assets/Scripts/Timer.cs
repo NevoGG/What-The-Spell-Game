@@ -7,10 +7,8 @@ public class Timer : MonoBehaviour
 
     public static bool timerDone;
 
-    private static int defTimerLenPerRound = 60;
-    
-    [SerializeField] private float timerLenPerRound = defTimerLenPerRound;
-    private float curTimer;
+    [SerializeField] private float timerLenPerRound = 60;
+    [SerializeField] private float curTimer;
     
     // Start is called before the first frame update
     void Start()

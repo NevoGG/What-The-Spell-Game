@@ -118,6 +118,11 @@ public class Player : MonoBehaviour
 	    _animalPower = curAnimObj.GetAnimalPow();
 	    _curAnimalXPNeeded = curAnimObj.GetXpNeeded();
     }
+
+    public int getScore() //todo: erase
+    {
+        return 0;
+    }
     
     
 } //Upgrade the animal of the player
