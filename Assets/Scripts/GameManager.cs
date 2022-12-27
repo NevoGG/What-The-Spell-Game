@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -52,6 +53,8 @@ public class GameManager : MonoBehaviour
      */
     private void addPlayersToList()
     {
+        playerList = new List<Player>(4);
+        
         switch (numberOfPlayers)
         {
             case 4:
@@ -111,11 +114,51 @@ public class GameManager : MonoBehaviour
     }
     private void endGame()
     {
+        if (playersAlive == 0)
+        {
+            Tie();
+        }
+        else
+        {
+            List<Player> winnerList = GetWinner();
+        }
         
     }
 
+    private void Tie()
+    {
+        // print("Its a tie");
+    }
 
-    private Player GetWinner() { return new Player();
-    } //return enum of player who won, if none, return Player.None
 
+    /**
+     * Gets a list of all the alive players with the max score.
+     */
+    private List<Player> GetWinner()
+    {
+        List<Player> winnerList = new List<Player>();
+        int max = 0;
+        foreach (var player in playerList)
+        {
+            if (player.gameObject.activeSelf)
+            {
+                if (player.getScore() > max)
+                {
+                    max = player.getScore();
+                }
+            }
+        }
+    
+        foreach (var player in playerList)
+        {
+            if (player.gameObject.activeSelf)
+            {
+                if (max == player.getScore())
+                {
+                    winnerList.Add(player);
+                }
+            }
+        }
+        return winnerList;
+    }
 }

@@ -12,7 +12,7 @@ public class Animal : MonoBehaviour
     //Jump Fields:
     [SerializeField, Range(0f, 5f)] private float _downwardMovementMultiplier = 3f;
     [SerializeField, Range(0f, 5f)] private float _upwardMovementMultiplier = 1.7f;
-    [SerializeField, Range(0f, 10f)] private float _jumpHeight = 10f;
+    [SerializeField, Range(0f, 50f)] private float _jumpHeight = 10f;
     
     //Other Fields:
     [SerializeField, Range(0f, 100f)] private float _size = 10f;
@@ -21,10 +21,11 @@ public class Animal : MonoBehaviour
     
     	
     private Move _move;
-    private Jump _jump;
     private Ground _ground;
     private Rigidbody2D _body;
     private Player player;
+    private BoxCollider2D _boxCollider;
+
     
     //Setters:
     public void SetPlayer(Player p) { player = p;}
@@ -41,11 +42,12 @@ public class Animal : MonoBehaviour
     void Start()
     {
         //Scale to size:
-        Vector3 curSize = transform.localScale;
-        transform.localScale = new Vector3(curSize.x * _size, curSize.y * _size, curSize.z * _size);
+        _boxCollider = GetComponent<BoxCollider2D>();
+        transform.localScale = transform.localScale * _size;
+        _boxCollider.size = Vector2.one * 0.8f;
         
+
         _move = GetComponent<Move>();
-        _jump = GetComponent<Jump>();
         _ground = GetComponent<Ground>();
         _body = GetComponent<Rigidbody2D>();
         UpdateJumpParameters();
@@ -62,7 +64,6 @@ public class Animal : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         SpellEnum spell = SpellEnum.None;
-        Debug.Log(collision.gameObject.tag);
         switch (collision.gameObject.tag)
         {
             case GameManager.SHRINKSPELL:
@@ -71,20 +72,36 @@ public class Animal : MonoBehaviour
             case  GameManager.GROWSPELL:
                 spell = SpellEnum.Grow;
                 break;
+            case GameManager.FALL_BOUNDER_TAG:
+                player.gameObject.SetActive(false);
+                break;
             //Scalable. todo: more spells?
             default: return;
         }
         player.SpellCasted(spell);
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case GameManager.FALL_BOUNDER_TAG:
+                player.gameObject.SetActive(false);
+                break;
+            default: return;
+        }
+        
+    }
     
+
     private void UpdateJumpParameters()
     {
         int _maxAirJumps = 0;
         if(_power == AnimalPower.DoubleJump) _maxAirJumps = 1;
-        _jump.SetJumpHeight(_jumpHeight);
-        _jump.SetMaxAirJumps(_maxAirJumps);
-        _jump.SetDownwardMovementMultiplier(_downwardMovementMultiplier);
-        _jump.SetUpwardMovementMultiplier(_upwardMovementMultiplier);
+        _move.SetJumpHeight(_jumpHeight);
+        _move.SetMaxAirJumps(_maxAirJumps);
+        _move.SetDownwardMovementMultiplier(_downwardMovementMultiplier);
+        _move.SetUpwardMovementMultiplier(_upwardMovementMultiplier);
     }
 
     private void UpdateMoveParameters()

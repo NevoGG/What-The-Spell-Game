@@ -13,6 +13,9 @@
     <setting file="file://$PROJECT_DIR$/../Capabilities/Jump.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Capabilities/Move.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Checks/Ground.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Controller/InputController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Controller/Player1Controller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Controller/Player2Controller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Player.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Spell.cs" root0="SKIP_HIGHLIGHTING" />
@@ -49,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671709611849</updated>
       <workItem from="1671709612604" duration="66000" />
-      <workItem from="1671709708200" duration="21133000" />
+      <workItem from="1671709708200" duration="24228000" />
     </task>
     <servers />
   </component>
