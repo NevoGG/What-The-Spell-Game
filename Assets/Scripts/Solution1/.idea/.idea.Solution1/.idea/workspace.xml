@@ -15,7 +15,7 @@
     <setting file="file://$PROJECT_DIR$/../Checks/Ground.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Player.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../TestScripts/SpellTest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Spell.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671709611849</updated>
       <workItem from="1671709612604" duration="66000" />
-      <workItem from="1671709708200" duration="12523000" />
+      <workItem from="1671709708200" duration="21133000" />
     </task>
     <servers />
   </component>

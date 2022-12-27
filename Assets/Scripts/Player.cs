@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Player : MonoBehaviour
 {
-	[SerializeField] private List<GameObject> animals;
+	[SerializeField] private List<GameObject> animals = new List<GameObject>();
 	//Controller Parameters:
 	[SerializeField] private InputController input = null;
 	
@@ -26,11 +26,7 @@ public class Player : MonoBehaviour
 	
 	//Online Parameters:
 	private int curXpFromLastLevel = 0;
-	
-	private Move _move;
-	private Jump _jump;
-	private Ground _ground;
-	private Rigidbody2D _body;
+
 
 	void awake()
 	{
@@ -40,10 +36,7 @@ public class Player : MonoBehaviour
 	void Start()
 	{
 		Debug.Log("Started");
-		_move = GetComponent<Move>();
-		_jump = GetComponent<Jump>();
-		_ground = GetComponent<Ground>();
-		_body = GetComponent<Rigidbody2D>();
+
 		foreach(GameObject obj in animals)
 		{
 			Animal anim = obj.GetComponent<Animal>();
@@ -54,15 +47,10 @@ public class Player : MonoBehaviour
 		UpdateAnimal();
 	}
 	// Update is called once per frame
-	void Update()
+
+	public void SpellCasted(SpellEnum spell)
 	{
-        
-	}
-
-
-    public void SpellCasted(SpellEnum spell)
-    {
-	    switch (spell)
+		switch (spell)
 	    {
 	     case SpellEnum.Shrink:
 		     curXpFromLastLevel -= 1;
@@ -74,6 +62,10 @@ public class Player : MonoBehaviour
 			break;
 	     default: return;
 	    }
+		Debug.Log("Animal: ");
+		Debug.Log(curAnimalIdx);
+		Debug.Log("XP level: ");
+		Debug.Log(curXpFromLastLevel);
 	    //Scalable.
     } //Alerted that a spell hit the player
 
@@ -90,6 +82,7 @@ public class Player : MonoBehaviour
 
     private void Promote()
     {
+	    curXpFromLastLevel = 0;
 	    if (curAnimalIdx == animals.Count - 1)
 	    {
 		    //todo: what happend if I'm at the highest one and want to grow?
@@ -105,8 +98,10 @@ public class Player : MonoBehaviour
     
     private void UpdateAnimal() //Update animal to current index, update fields.
     {
+	    transform.position = curAnimal.transform.position;
 	    curAnimal.SetActive(false);
 		curAnimal = animals[curAnimalIdx];
+		curAnimal.transform.position = transform.position;
 		curAnimal.SetActive(true);
 		UpdateAnimalTraits();
     }
@@ -114,47 +109,14 @@ public class Player : MonoBehaviour
     private void UpdateAnimalTraits()
     {
 	    GetAnimalPhysics();
-	    UpdateJumpParameters();
-	    UpdateMoveParameters(); 
     }
 
     private void GetAnimalPhysics()
     {
 	    Animal curAnimObj = curAnimal.GetComponent<Animal>();
-	    _body = curAnimal.GetComponent<Rigidbody2D>();
 	    //General Parameters:
 	    _animalPower = curAnimObj.GetAnimalPow();
 	    _curAnimalXPNeeded = curAnimObj.GetXpNeeded();
-	    
-	    //Move Parameters:
-	    _maxSpeed = curAnimObj.GetMaxSpeed();
-		_maxAcceleration = curAnimObj.GetMaxAcceleration();
-		_maxAirAcceleration = curAnimObj.GetMaxAirAcceleration();
-    
-		//Jump Parameters:
-		_jumpHeight = curAnimObj.GetJumpHeight ();
-		_downwardMovementMultiplier = curAnimObj.GetDownwardMovementMultiplier ();
-		_upwardMovementMultiplier =  curAnimObj.GetUpwardMovementMultiplier ();
-		_maxAirJumps = 0;
-		if(_animalPower == AnimalPower.DoubleJump) _maxAirJumps = 1;
-    }
-
-    private void UpdateJumpParameters()
-    {
-	    _jump.SetJumpHeight(_jumpHeight);
-	    _jump.SetMaxAirJumps(_maxAirJumps);
-	    _jump.SetDownwardMovementMultiplier(_downwardMovementMultiplier);
-	    _jump.SetUpwardMovementMultiplier(_upwardMovementMultiplier);
-	    _jump.SetRigidBody(_body);
-    }
-
-    private void UpdateMoveParameters()
-    {
-	    _move.SetMaxSpeed(_maxSpeed);
-	    _move.SetMaxAcceleration(_maxAcceleration);
-	    _move.SetMaxAirAcceleration(_maxAirAcceleration);
-	    _move.SetRigidBody(_body);
-	    //todo: fill 
     }
     
     
