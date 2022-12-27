@@ -27,6 +27,12 @@ public class Player : MonoBehaviour
 	//Online Parameters:
 	private int curXpFromLastLevel = 0;
 
+    // private Animator animator;
+	private bool IsChanging = false;
+	private bool hasAnimalUpdated = false;
+	private const float TotalChangeTimer = 1f;
+	private float updatedChangeTimer = 0f;
+
 
 	void awake()
 	{
@@ -35,6 +41,7 @@ public class Player : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+        // animator = GetComponent<Animator>();
 		Debug.Log("Started");
 
 		foreach(GameObject obj in animals)
@@ -47,7 +54,30 @@ public class Player : MonoBehaviour
 		UpdateAnimal();
 	}
 	// Update is called once per frame
+	
+    void Update()
+    {
+    }
 
+	void FixedUpdate()
+	{
+		if(IsChanging)
+		{	
+			updatedChangeTimer += Time.fixedDeltaTime;
+			if ((updatedChangeTimer >= TotalChangeTimer / 2) && !hasAnimalUpdated)
+			{
+				UpdateAnimal();
+				hasAnimalUpdated = true;
+			}
+			else if (updatedChangeTimer >= TotalChangeTimer)
+			{
+				IsChanging = false;
+				hasAnimalUpdated = false;
+				updatedChangeTimer = 0f;
+			}
+		}
+	}
+	
 	public void SpellCasted(SpellEnum spell)
 	{
 		switch (spell)
@@ -62,12 +92,8 @@ public class Player : MonoBehaviour
 			break;
 	     default: return;
 	    }
-		Debug.Log("Animal: ");
-		Debug.Log(curAnimalIdx);
-		Debug.Log("XP level: ");
-		Debug.Log(curXpFromLastLevel);
 	    //Scalable.
-    } //Alerted that a spell hit the player
+    } 
 
     private void Demote() //Downgrade the animal of the player
     {
@@ -92,12 +118,13 @@ public class Player : MonoBehaviour
 	    else
 	    {
 		    curAnimalIdx += 1;
-		    UpdateAnimal();
+		    IsChanging = true;
 	    }
     }
-    
+
+
     private void UpdateAnimal() //Update animal to current index, update fields.
-    {
+    {	
 	    transform.position = curAnimal.transform.position;
 	    curAnimal.SetActive(false);
 		curAnimal = animals[curAnimalIdx];
@@ -118,6 +145,15 @@ public class Player : MonoBehaviour
 	    _animalPower = curAnimObj.GetAnimalPow();
 	    _curAnimalXPNeeded = curAnimObj.GetXpNeeded();
     }
+    
+ //   public void getScore()
+   // {
+	//    int score;
+	//    foreach (var animal in animals)
+	//    {
+	//	    
+	//    }
+   // }
 
     public int getScore() //todo: erase
     {
