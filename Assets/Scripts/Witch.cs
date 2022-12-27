@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class Witch : MonoBehaviour
@@ -21,6 +22,13 @@ public class Witch : MonoBehaviour
     private float positionX;
     private float positionZ;
     
+    [SerializeField] private GameObject growSpell;
+    [SerializeField] private GameObject shrinkSpell;
+    [SerializeField] private int facingRotation;
+    [SerializeField] private int numberOfProjectiles;
+    [SerializeField] private float projectileSpread;
+
+    
     // Setters- todo: implement.
     // public void SetWitchMovementSpeed( int speed){}
     // public void SetWitchShotPerMinute(int shotPerMinute){}
@@ -28,8 +36,7 @@ public class Witch : MonoBehaviour
     // public void SetScreenMoveDir(Vector3 vec){}
     // public void SetPlaygroundWidth(int width){}
 
-    [SerializeField] private Spell shrinkSpell;
-    [SerializeField] private Spell growSpell; // appear and disappear
+    // appear and disappear
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +77,26 @@ public class Witch : MonoBehaviour
     private void CastSpell()
     {
         //todo: animation and spell
+        // for (int i = 0; i < 3; i++)
+        // {
+        //     int choice = Random.Range(0, 2);
+        //     if (choice == 0)
+        //     {
+        //         Instantiate(shrinkSpell);
+        //         shrinkSpell.transform.rotation 
+        //     }
+        // }
+        int choice = Random.Range(0, 2);
+        GameObject spell;
+        spell = choice == 0 ? growSpell : shrinkSpell;
+        float startRotation = facingRotation + projectileSpread / 2f;
+        float angleIcrease = projectileSpread / ((float)numberOfProjectiles - 1f);
+        for (int i = 0; i < numberOfProjectiles; i++)
+        {
+            float tempRot = startRotation + angleIcrease * i;
+            GameObject newSpell = Instantiate(spell, transform.position, Quaternion.Euler(0f, 0f, tempRot));
+            // newSpell= 
+        }
     }
     
     IEnumerator DelayAfterAnimation()
