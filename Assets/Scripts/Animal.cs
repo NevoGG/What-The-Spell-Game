@@ -12,10 +12,10 @@ public class Animal : MonoBehaviour
     //Jump Fields:
     [SerializeField, Range(0f, 20f)] private float _downwardMovementMultiplier = 3f;
     [SerializeField, Range(0f, 20f)] private float _upwardMovementMultiplier = 1.7f;
-    [SerializeField, Range(0f, 150f)] private float _jumpHeight = 10f;
+    [SerializeField, Range(0f, 500f)] private float _jumpHeight = 100f;
     
     //Other Fields:
-    [SerializeField, Range(0f, 100f)] private float _size = 10f;
+    [SerializeField, Range(0f, 15f)] private float _size = 10f;
     [SerializeField] private AnimalPower _power;
     [SerializeField, Range(0f, 10)] private int _xpNeeded;
     

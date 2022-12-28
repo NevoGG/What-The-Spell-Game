@@ -138,6 +138,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6768886472016835539}
     m_Modifications:
+    - target: {fileID: 6413784192428849752, guid: 3dd42f38d8c4b65478479405cdbcabe8, type: 3}
+      propertyPath: _jumpHeight
+      value: 27.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6413784192428849756, guid: 3dd42f38d8c4b65478479405cdbcabe8, type: 3}
       propertyPath: m_Name
       value: Rabbit
@@ -426,6 +430,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6768886472016835539}
     m_Modifications:
+    - target: {fileID: 6413784192428849701, guid: 3dd42f38d8c4b65478479405cdbcabe8, type: 3}
+      propertyPath: m_LinearDrag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413784192428849752, guid: 3dd42f38d8c4b65478479405cdbcabe8, type: 3}
+      propertyPath: _maxSpeed
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413784192428849752, guid: 3dd42f38d8c4b65478479405cdbcabe8, type: 3}
+      propertyPath: _maxAirAcceleration
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413784192428849752, guid: 3dd42f38d8c4b65478479405cdbcabe8, type: 3}
+      propertyPath: _upwardMovementMultiplier
+      value: 11.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413784192428849752, guid: 3dd42f38d8c4b65478479405cdbcabe8, type: 3}
+      propertyPath: _downwardMovementMultiplier
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 6413784192428849756, guid: 3dd42f38d8c4b65478479405cdbcabe8, type: 3}
       propertyPath: m_Name
       value: Fox
