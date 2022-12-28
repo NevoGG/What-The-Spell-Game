@@ -12,7 +12,7 @@ public class Animal : MonoBehaviour
     //Jump Fields:
     [SerializeField, Range(0f, 5f)] private float _downwardMovementMultiplier = 3f;
     [SerializeField, Range(0f, 5f)] private float _upwardMovementMultiplier = 1.7f;
-    [SerializeField, Range(0f, 10f)] private float _jumpHeight = 10f;
+    [SerializeField, Range(0f, 50f)] private float _jumpHeight = 10f;
     
     //Other Fields:
     [SerializeField, Range(0f, 100f)] private float _size = 10f;
@@ -72,12 +72,28 @@ public class Animal : MonoBehaviour
             case  GameManager.GROWSPELL:
                 spell = SpellEnum.Grow;
                 break;
+            case GameManager.FALL_BOUNDER_TAG:
+                player.gameObject.SetActive(false);
+                break;
             //Scalable. todo: more spells?
             default: return;
         }
         player.SpellCasted(spell);
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case GameManager.FALL_BOUNDER_TAG:
+                player.gameObject.SetActive(false);
+                break;
+            default: return;
+        }
+        
+    }
     
+
     private void UpdateJumpParameters()
     {
         int _maxAirJumps = 0;

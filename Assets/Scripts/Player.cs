@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
 	//Online Parameters:
 	private int curXpFromLastLevel = 0;
 
-    private Animator animator;
+    // private Animator animator;
 	private bool IsChanging = false;
 	private bool hasAnimalUpdated = false;
 	private const float TotalChangeTimer = 1f;
@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-        animator = GetComponent<Animator>();
+        // animator = GetComponent<Animator>();
 		Debug.Log("Started");
 
 		foreach(GameObject obj in animals)
@@ -57,7 +57,6 @@ public class Player : MonoBehaviour
 	
     void Update()
     {
-        animator.SetBool("IsChanging", IsChanging);
     }
 
 	void FixedUpdate()
@@ -147,13 +146,18 @@ public class Player : MonoBehaviour
 	    _curAnimalXPNeeded = curAnimObj.GetXpNeeded();
     }
     
-    public void getScore()
+ //   public void getScore()
+   // {
+	//    int score;
+	//    foreach (var animal in animals)
+	//    {
+	//	    
+	//    }
+   // }
+
+    public int getScore() //todo: erase
     {
-	    int score;
-	    foreach (var animal in animals)
-	    {
-		    
-	    }
+        return 0;
     }
     
     

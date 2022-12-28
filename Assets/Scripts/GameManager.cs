@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public enum Platform {}
@@ -18,19 +20,12 @@ public class GameManager : MonoBehaviour
     public const string PLAYER_TAG = "Player";
     public const string TERRAIN_TAG = "Terrain";
     public const string POWER_TAG = "Power"; //todo: maybe for each power
+    public const string FALL_BOUNDER_TAG = "fallBounder";
     
     //Defaults:
-    private static int defWitchMovementSpeed = 5;
-    private static int defWitchShotPerMinute =10; 
-    private static float defWitchGrowToShrinkRatio = 0.5f; 
     private static int defNumOfPlayers = 4;
-    private static int defTimerLenPerRound = 60;
-         
+
     //Offline Game Parameters:
-    [SerializeField] private int witchMovementSpeed = defWitchMovementSpeed;
-    [SerializeField] private int witchShotPerMinute = defWitchShotPerMinute;
-    [SerializeField] private float witchGrowToShrinkRatio = defWitchGrowToShrinkRatio;
-    [SerializeField] private float timerLenPerRound = defTimerLenPerRound;
     [SerializeField] private Witch Witch1;
     [SerializeField] private Witch Witch2;
     [SerializeField] private Player Player1;
@@ -38,38 +33,132 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Player Player3;
     [SerializeField] private Player Player4;
     
-    //Online Game Parameters:
-    private float curTimer;
+    private int numberOfPlayers;
+    private int playersAlive;
+    private bool gameEnded;
+    private List<Player> playerList;
     
-    
-    //signatures to clarify GameManager responsibility
-    private void StartTimer() {}
-    private void IsTimerOver() {}
-    private Player GetWinner() { return new Player();
-    } //return enum of player who won, if none, return Player.None
-    
-    public void UpdateDeadPlayer(Player player)
-    {
-        
-    }
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        //set witchInitialParameters
+        numberOfPlayers = WriteNumPlayers.numberOfPlayers;
+        gameEnded = false;
+        playersAlive = numberOfPlayers;
+        addPlayersToList();
+    }
+
+    /**
+     * Checks amount of players as init and adds to a list the wanted amount, also activates there gameobjects
+     */
+    private void addPlayersToList()
+    {
+        playerList = new List<Player>(4);
         
+        switch (numberOfPlayers)
+        {
+            case 4:
+                playerList.Add(Player4);
+                playerList.Add(Player3);
+                playerList.Add(Player2);
+                playerList.Add(Player1);
+                break;
+            case 3:
+                playerList.Add(Player3);
+                playerList.Add(Player2);
+                playerList.Add(Player1);
+                break;
+            case 2:
+                playerList.Add(Player2);
+                playerList.Add(Player1);
+                break;
+            case 1:
+                playerList.Add(Player1);
+                break;
+        }
+
+        foreach (Player player in playerList)
+        {
+            player.gameObject.SetActive(true);
+        }
     }
     
-    private void SetWitchInitParams(Witch witch)
-    {
-        witch.SetWitchMovementSpeed(witchMovementSpeed);
-        witch.SetWitchShotPerMinute(witchShotPerMinute);
-        witch.SetWitchGrowToShrinkRatio(witchGrowToShrinkRatio);
-    }
+    
     
     // Update is called once per frame
     void Update()
     {
+        if (!gameEnded)
+        {
+            
+        }
+        UpdatePlayersAlive();
+        gameEnded = Timer.timerDone || playersAlive == 0 || playersAlive == 1;
+        if (gameEnded)
+        {
+            endGame();
+        }
+    }
+
+    private void UpdatePlayersAlive()
+    {
+        int count = 0;
+        foreach (var player in playerList)
+        {
+            if (player.gameObject.activeSelf)
+            {
+                count++;
+            }
+        }
+        playersAlive = count;
+    }
+    private void endGame()
+    {
+        if (playersAlive == 0)
+        {
+            Tie();
+        }
+        else
+        {
+            List<Player> winnerList = GetWinner();
+        }
         
+    }
+
+    private void Tie()
+    {
+        // print("Its a tie");
+    }
+
+
+    /**
+     * Gets a list of all the alive players with the max score.
+     */
+    private List<Player> GetWinner()
+    {
+        List<Player> winnerList = new List<Player>();
+        int max = 0;
+        foreach (var player in playerList)
+        {
+            if (player.gameObject.activeSelf)
+            {
+                if (player.getScore() > max)
+                {
+                    max = player.getScore();
+                }
+            }
+        }
+    
+        foreach (var player in playerList)
+        {
+            if (player.gameObject.activeSelf)
+            {
+                if (max == player.getScore())
+                {
+                    winnerList.Add(player);
+                }
+            }
+        }
+        return winnerList;
     }
 }
