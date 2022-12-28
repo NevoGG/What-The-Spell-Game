@@ -5,14 +5,14 @@ using UnityEngine;
 public class Animal : MonoBehaviour
 {
     //Movement Fields:
-    [SerializeField, Range(0f, 100f)] private float _maxSpeed = 15f;
-    [SerializeField, Range(0f, 100f)] private float _maxAcceleration = 35f;
-    [SerializeField, Range(0f, 100f)] private float _maxAirAcceleration = 20f;
+    [SerializeField, Range(0f, 1000f)] private float _maxSpeed = 15f;
+    [SerializeField, Range(0f, 300f)] private float _maxAcceleration = 35f;
+    [SerializeField, Range(0f, 1000f)] private float _maxAirAcceleration = 20f;
     
     //Jump Fields:
-    [SerializeField, Range(0f, 5f)] private float _downwardMovementMultiplier = 3f;
-    [SerializeField, Range(0f, 5f)] private float _upwardMovementMultiplier = 1.7f;
-    [SerializeField, Range(0f, 50f)] private float _jumpHeight = 10f;
+    [SerializeField, Range(0f, 20f)] private float _downwardMovementMultiplier = 3f;
+    [SerializeField, Range(0f, 20f)] private float _upwardMovementMultiplier = 1.7f;
+    [SerializeField, Range(0f, 150f)] private float _jumpHeight = 10f;
     
     //Other Fields:
     [SerializeField, Range(0f, 100f)] private float _size = 10f;
