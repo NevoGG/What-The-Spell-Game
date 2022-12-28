@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class WriteNumPlayers : MonoBehaviour
 {
-    public static int numberOfPlayers = 0;
+    public static int numberOfPlayers = 1;
     
     // Start is called before the first frame update
     void Start()

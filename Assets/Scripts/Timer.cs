@@ -9,12 +9,19 @@ public class Timer : MonoBehaviour
 
     [SerializeField] private float timerLenPerRound = 60;
     [SerializeField] private float curTimer;
+    [SerializeField] private Animator animator;
+    [SerializeField] private AnimationClip clip;
+    [SerializeField] private float clipDuration = 7.83333f;
+    
     
     // Start is called before the first frame update
     void Start()
     {
         curTimer = timerLenPerRound;
         timerDone = false;
+
+        animator.speed = clipDuration / timerLenPerRound;
+
     }
 
     // Update is called once per frame
