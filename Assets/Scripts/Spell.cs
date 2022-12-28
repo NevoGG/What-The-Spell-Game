@@ -22,7 +22,8 @@ public class Spell : MonoBehaviour
 
         if (fireTimeCounter <= 0)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
+            Debug.Log("kill teh spell!");
         } 
     }
 }

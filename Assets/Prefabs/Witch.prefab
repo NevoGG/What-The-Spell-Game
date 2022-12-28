@@ -52,8 +52,11 @@ MonoBehaviour:
   bottomBounder: -14
   spellingTime: 2
   distanceWitchFromDestPar: 0.1
-  shrinkSpell: {fileID: 0}
-  growSpell: {fileID: 0}
+  growSpell: {fileID: 5521266975769529211, guid: 5cfcdb3ec9894c747b7355f6d7ef32a5, type: 3}
+  shrinkSpell: {fileID: 4522132101675834954, guid: e3ae8e8385f0d8c489c16689473f9015, type: 3}
+  facingRotation: 0
+  numberOfProjectiles: 0
+  projectileSpread: 0
 --- !u!1 &4669861210426494919
 GameObject:
   m_ObjectHideFlags: 0

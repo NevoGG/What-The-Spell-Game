@@ -89,7 +89,7 @@ public class Witch : MonoBehaviour
         int choice = Random.Range(0, 2);
         GameObject spell;
         spell = choice == 0 ? growSpell : shrinkSpell;
-        float startRotation = facingRotation + projectileSpread / 2f;
+        float startRotation = facingRotation*(+projectileSpread / 2f);
         float angleIcrease = projectileSpread / ((float)numberOfProjectiles - 1f);
         for (int i = 0; i < numberOfProjectiles; i++)
         {
