@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d2c4ea96a2f51d649a3d98ad4f6d6a9d
+guid: 5bf757cae626d084bb4f21800b355ae4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_1_Red_0
+      name: DragonIdle_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 36
-        width: 209
-        height: 206
+        x: 0
+        y: 1427
+        width: 752
+        height: 967
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bdf57638ea882c49bd3dd3458af0b62
-      internalID: 967775701
+      spriteID: 950094df4f48e3f4fa5a7469bd9521d0
+      internalID: -2040854479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_1_Red_1
+      name: DragonIdle_1
       rect:
         serializedVersion: 2
-        x: 281
-        y: 42
-        width: 192
-        height: 203
+        x: 750
+        y: 1424
+        width: 780
+        height: 950
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,50 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69e1f93c1a6dc614595a7aafdbcfc478
-      internalID: -2061280685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_1_Red_2
-      rect:
-        serializedVersion: 2
-        x: 501
-        y: 43
-        width: 216
-        height: 204
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00a77c15b3e17854b8a3e43785550a17
-      internalID: 2024969788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_1_Red_3
-      rect:
-        serializedVersion: 2
-        x: 737
-        y: 32
-        width: 191
-        height: 222
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df064553cecb3c44399d1b377dfda6e8
-      internalID: -430953875
+      spriteID: 3b381574dab667e40b68edd745db1e73
+      internalID: 792788238
       vertices: []
       indices: 
       edges: []
@@ -199,10 +157,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player_1_Red_1: -2061280685
-      Player_1_Red_0: 967775701
-      Player_1_Red_2: 2024969788
-      Player_1_Red_3: -430953875
+      DragonIdle_0: -2040854479
+      DragonIdle_2: -824965855
+      DragonIdle_1: 792788238
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
