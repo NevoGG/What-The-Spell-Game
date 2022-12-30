@@ -1,38 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+public enum ScoreEnum {XP, GrowSpells, ShrinkSpells, BiggestAnimal, TimeAsBiggest }
+
 public class Player : MonoBehaviour
 {
-	[SerializeField] private List<GameObject> animals = new List<GameObject>();
-	//Controller Parameters:
-	[SerializeField] private InputController input = null;
-	
-    //Movement Parameters:
-    private float _maxSpeed = 4f;
-    private float _maxAcceleration = 35f;
-    private float _maxAirAcceleration = 20f;
-    
-    //Jump Parameters:
-    private float _jumpHeight = 3f;
-    private int _maxAirJumps = 0;
-    private float _downwardMovementMultiplier = 3f;
-    private float _upwardMovementMultiplier = 1.7f;
+	[SerializeField] private List<GameObject> animals;
 
-    //Other Parameters
-    private int _curAnimalXPNeeded;
-    private GameObject curAnimal;
+	//Other Parameters
+	private int _curAnimalXPNeeded;
+	private GameObject curAnimal;
 	private int curAnimalIdx = 0;
+
 	private AnimalPower _animalPower;
-	
+	private GameManager _gameManager;
+
 	//Online Parameters:
 	private int curXpFromLastLevel = 0;
 
-    // private Animator animator;
-	private bool IsChanging = false;
-	private bool hasAnimalUpdated = false;
-	private const float TotalChangeTimer = 1f;
-	private float updatedChangeTimer = 0f;
-
+	//Score:
+	public int xp = 0;
+	public int growSpells = 0;
+	public int shrinkSpells = 0;
+	public int biggestAnimal = 0;
 
 	void awake()
 	{
@@ -41,9 +32,6 @@ public class Player : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-        // animator = GetComponent<Animator>();
-		Debug.Log("Started");
-
 		foreach(GameObject obj in animals)
 		{
 			Animal anim = obj.GetComponent<Animal>();
@@ -61,22 +49,10 @@ public class Player : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		if(IsChanging)
-		{	
-			updatedChangeTimer += Time.fixedDeltaTime;
-			if ((updatedChangeTimer >= TotalChangeTimer / 2) && !hasAnimalUpdated)
-			{
-				UpdateAnimal();
-				hasAnimalUpdated = true;
-			}
-			else if (updatedChangeTimer >= TotalChangeTimer)
-			{
-				IsChanging = false;
-				hasAnimalUpdated = false;
-				updatedChangeTimer = 0f;
-			}
-		}
+	
 	}
+
+	public void SetGameManager(GameManager gm) { _gameManager = gm;} //todo: use this from gameManager
 	
 	public void SpellCasted(SpellEnum spell)
 	{
@@ -84,9 +60,13 @@ public class Player : MonoBehaviour
 	    {
 	     case SpellEnum.Shrink:
 		     curXpFromLastLevel -= 1;
+		     if (xp > 0) xp -= 1;
+		     shrinkSpells += 1;
 		     if (curXpFromLastLevel < 0) Demote();
 		     break;
 	     case SpellEnum.Grow:
+		     xp += 1;
+		     growSpells += 1;
 			curXpFromLastLevel += 1;
 			if (curXpFromLastLevel == _curAnimalXPNeeded) Promote();
 			break;
@@ -111,14 +91,12 @@ public class Player : MonoBehaviour
 	    curXpFromLastLevel = 0;
 	    if (curAnimalIdx == animals.Count - 1)
 	    {
-		    //todo: what happend if I'm at the highest one and want to grow?
 		    curXpFromLastLevel = _curAnimalXPNeeded - 1;
-		    return;
-	    }
-	    else
+	    }else
 	    {
 		    curAnimalIdx += 1;
-		    IsChanging = true;
+		    if (curAnimalIdx > biggestAnimal) biggestAnimal = curAnimalIdx;
+		    UpdateAnimal();
 	    }
     }
 
@@ -130,13 +108,9 @@ public class Player : MonoBehaviour
 		curAnimal = animals[curAnimalIdx];
 		curAnimal.transform.position = transform.position;
 		curAnimal.SetActive(true);
-		UpdateAnimalTraits();
+		GetAnimalPhysics();
     }
-
-    private void UpdateAnimalTraits()
-    {
-	    GetAnimalPhysics();
-    }
+    
 
     private void GetAnimalPhysics()
     {
@@ -155,12 +129,17 @@ public class Player : MonoBehaviour
 	//    }
    // }
 
-    public int getScore() //todo: erase
+    public void  HasLost()
     {
-        return 0;
+	    // _gameManager.PlayerLost(this); todo:function doesnt exist yet.
     }
-    
-    
+
+    public int getScore()
+    {
+	    return 0;
+    } // todo: delete later.
+
+
 } //Upgrade the animal of the player
 
 
