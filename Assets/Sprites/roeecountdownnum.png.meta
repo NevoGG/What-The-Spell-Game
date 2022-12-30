@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 498e941371dbd3641aa41a3f62a74993
+guid: daaee650b8f1e174b96ba637073d7b64
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,148 +105,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roeeCountdown_0
+      name: roeecountdownnum_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 284
-        width: 131
+        x: 55
+        y: 47
+        width: 132
         height: 192
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7edf1994eec175c43a909a4fcc4ce759
-      internalID: -2027000954
+      spriteID: 3752eb1d6dc56f24ab2d6976aec73366
+      internalID: 637672481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roeeCountdown_1
+      name: roeecountdownnum_1
       rect:
         serializedVersion: 2
-        x: 297
-        y: 284
-        width: 166
+        x: 293
+        y: 47
+        width: 167
         height: 191
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f95969ae808a2744dbcb4d188bd4bf95
-      internalID: 1970228418
+      spriteID: e7e30ab12bd361a42a0772e6b7030e9b
+      internalID: 1680071253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roeeCountdown_2
+      name: roeecountdownnum_2
       rect:
         serializedVersion: 2
-        x: 549
-        y: 282
+        x: 546
+        y: 45
         width: 170
         height: 193
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6218b958ecdd5354a9bd5adad7f8295a
-      internalID: -435560817
+      spriteID: 1180c72183fea8449a858bc0d39d2ad4
+      internalID: 810925141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roeeCountdown_3
+      name: roeecountdownnum_3
       rect:
         serializedVersion: 2
-        x: 804
-        y: 282
-        width: 157
-        height: 196
-      alignment: 9
+        x: 800
+        y: 45
+        width: 158
+        height: 197
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 706bfa2fad6b0b94297be2401e2ca6e5
-      internalID: -951942414
+      spriteID: 5bfcfd55e81c1a043932eb52c8da8804
+      internalID: -215159764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roeeCountdown_4
+      name: roeecountdownnum_4
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 275
-        width: 152
-        height: 207
-      alignment: 9
+        x: 1050
+        y: 38
+        width: 154
+        height: 205
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49cebed2ef8db1e44afc19ec2917ecac
-      internalID: 1965031436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roeeCountdown_5
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 21
-        width: 380
-        height: 210
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2034161463cd4f0469a716de29dad356
-      internalID: -1645104592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roeeCountdown_6
-      rect:
-        serializedVersion: 2
-        x: 366
-        y: 36
-        width: 120
-        height: 187
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ab0f64607b357143bea3b14738c3bfc
-      internalID: -70861131
+      spriteID: 594404bd506ee17469ceb69bbf2e5cbf
+      internalID: -1379515247
       vertices: []
       indices: 
       edges: []
@@ -262,13 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      roeeCountdown_6: -70861131
-      roeeCountdown_0: -2027000954
-      roeeCountdown_4: 1965031436
-      roeeCountdown_2: -435560817
-      roeeCountdown_1: 1970228418
-      roeeCountdown_5: -1645104592
-      roeeCountdown_3: -951942414
+      roeecountdownnum_1: 1680071253
+      roeecountdownnum_2: 810925141
+      roeecountdownnum_4: -1379515247
+      roeecountdownnum_3: -215159764
+      roeecountdownnum_0: 637672481
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

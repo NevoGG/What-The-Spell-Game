@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public const string TERRAIN_TAG = "Terrain";
     public const string POWER_TAG = "Power"; //todo: maybe for each power
     public const string FALL_BOUNDER_TAG = "fallBounder";
+    public bool countDownFinish;
     
     //Defaults:
     private static int defNumOfPlayers = 4;
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
     private bool gameEnded;
     private List<Player> playerList;
     
+    
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +48,12 @@ public class GameManager : MonoBehaviour
         gameEnded = false;
         playersAlive = numberOfPlayers;
         addPlayersToList();
+        countDownFinish = false; //todo: add to other scripts
+    }
+
+    public void SetCountDownFinish()
+    {
+        countDownFinish = true;
     }
 
     /**
