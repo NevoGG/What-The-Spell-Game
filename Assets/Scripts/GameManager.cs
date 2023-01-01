@@ -177,7 +177,7 @@ public class GameManager : MonoBehaviour
     public void PlayerLost(Player player)
     {
         fallenPlayers.Insert(0, player);
-        playersAlive -= 1;
+        playersAlive --;
     }
         
         
