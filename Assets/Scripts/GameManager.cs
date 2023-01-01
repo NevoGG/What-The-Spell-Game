@@ -199,6 +199,9 @@ public class GameManager : MonoBehaviour
         fallenPlayers.Insert(0, player);
         playersAlive--;
     }
-        
-        
+
+    public void TurnToBlob()
+    {
+        return;//todo: later.
+    }
 }

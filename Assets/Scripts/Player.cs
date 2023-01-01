@@ -131,7 +131,7 @@ public class Player : MonoBehaviour
 
     public void  HasLost()
     {
-	    // _gameManager.PlayerLost(this); todo:function doesnt exist yet.
+	    _gameManager.PlayerLost(this);
     }
 
     public int getScore()
