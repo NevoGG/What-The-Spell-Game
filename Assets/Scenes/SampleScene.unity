@@ -214,6 +214,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8bba82c31d16b74e8b00cc11ccb1fb1, type: 3}
+--- !u!114 &219054480 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6768886472016835551, guid: d8bba82c31d16b74e8b00cc11ccb1fb1, type: 3}
+  m_PrefabInstance: {fileID: 219054479}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ba44017d790d849913a1c4832dae0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &267313640 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6768886472016835551, guid: 2c0bdfa9784c13b429a6f18ac141fd40, type: 3}
@@ -689,6 +700,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebc0a9db22612a244aca82bc08269eb9, type: 3}
+--- !u!114 &601608620 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6768886472016835551, guid: ebc0a9db22612a244aca82bc08269eb9, type: 3}
+  m_PrefabInstance: {fileID: 601608619}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ba44017d790d849913a1c4832dae0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &612236749
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,9 +743,9 @@ MonoBehaviour:
   Witch1: {fileID: 1201171163}
   Witch2: {fileID: 1304767620}
   Player1: {fileID: 267313640}
-  Player2: {fileID: 0}
-  Player3: {fileID: 0}
-  Player4: {fileID: 0}
+  Player2: {fileID: 219054480}
+  Player3: {fileID: 1546216376}
+  Player4: {fileID: 601608620}
 --- !u!4 &612236751
 Transform:
   m_ObjectHideFlags: 0
@@ -1011,6 +1033,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91cc6c59895e15d4c8b295714f240efe, type: 3}
+--- !u!114 &1546216376 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6768886472016835551, guid: 91cc6c59895e15d4c8b295714f240efe, type: 3}
+  m_PrefabInstance: {fileID: 1546216375}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ba44017d790d849913a1c4832dae0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1828883836 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7763908152114811516, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
