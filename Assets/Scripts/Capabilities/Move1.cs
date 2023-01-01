@@ -228,7 +228,7 @@ public class Move1 : Move
 
     private void PassThroughPlatform(InputAction.CallbackContext context)
     {
-        Debug.Log("PassThroughPlatform");
+        _ground.PassCurPlatform(); //todo: put in move instead of move1
     }
     
     // private void CancelJump(InputAction.CallbackContext context)
