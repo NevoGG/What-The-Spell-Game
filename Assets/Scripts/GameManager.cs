@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]private int playersAlive;
     private List<Player> playerList;
     private List<Player> fallenPlayers;
+    private bool firstGameEnded;
     
 
 
@@ -54,11 +55,21 @@ public class GameManager : MonoBehaviour
         playersAlive = numberOfPlayers;
         addPlayersToList();
         countDownFinish = false;
+        SetGameManagerInPlayers();
+        firstGameEnded = false;
     }
 
     public void SetCountDownFinish()
     {
         countDownFinish = true;
+    }
+
+    private void SetGameManagerInPlayers()
+    {
+        foreach (var player in playerList)
+        {
+            player._gameManager = this;
+        }
     }
 
     /**
@@ -103,8 +114,9 @@ public class GameManager : MonoBehaviour
     {
         // UpdatePlayersAlive();
         gameEnded = Timer.timerDone || playersAlive == 0 || playersAlive == 1;
-        if (gameEnded)
+        if (gameEnded && !firstGameEnded)
         {
+            firstGameEnded = true;
             endGame();
         }
     }

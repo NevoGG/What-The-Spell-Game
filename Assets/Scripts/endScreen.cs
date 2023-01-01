@@ -28,7 +28,7 @@ public class endScreen : MonoBehaviour
 
         for (int i = 0; i < rankList.Count; i++)
         {
-            rankList[i].gameObject.transform.position = positions[i];
+            rankList[i].MoveToPosition(positions[i]);
         }
         
     }
