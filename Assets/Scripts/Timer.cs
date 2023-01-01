@@ -43,6 +43,7 @@ public class Timer : MonoBehaviour
         else
         {
             timerDone = true;
+            GetComponent<Renderer>().enabled = false;
         }
     }
 }

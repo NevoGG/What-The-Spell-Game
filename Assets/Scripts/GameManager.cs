@@ -35,9 +35,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Player Player2;
     [SerializeField] private Player Player3;
     [SerializeField] private Player Player4;
-    
+    [SerializeField] private GameObject endScreen;
+
     private int numberOfPlayers;
-    private int playersAlive;
+    [SerializeField]private int playersAlive;
     private List<Player> playerList;
     private List<Player> fallenPlayers;
     
@@ -122,16 +123,19 @@ public class GameManager : MonoBehaviour
     // }
     private void endGame()
     {
+        List<Player> rankList = new List<Player>();
         if (playersAlive == 0)
         {
             Tie();
         }
         else
         {
-            List<Player> rankList = new List<Player>();
             GetWinner(rankList);
         }
-        
+        endScreen.SetActive(true);
+        Witch1.gameObject.SetActive(false);
+        Witch2.gameObject.SetActive(false);
+        endScreen.GetComponent<endScreen>().EndGame(rankList);
     }
 
     private void Tie()
@@ -167,37 +171,13 @@ public class GameManager : MonoBehaviour
         {
             rankList.Add(player);
         }
-
         return rankList;
-
-        // int max = 0;
-        // foreach (var player in playerList)
-        // {
-        //     if (player.gameObject.activeSelf)
-        //     {
-        //         if (player.getScore() > max)
-        //         {
-        //             max = player.getScore();
-        //         }
-        //     }
-        // }
-        //
-        // foreach (var player in playerList)
-        // {
-        //     if (player.gameObject.activeSelf)
-        //     {
-        //         if (max == player.getScore())
-        //         {
-        //             rankList.Add(player);
-        //         }
-        //     }
-        // }
     }
 
     public void PlayerLost(Player player)
     {
         fallenPlayers.Insert(0, player);
-        playersAlive--;
+        playersAlive -= 1;
     }
         
         
