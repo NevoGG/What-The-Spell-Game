@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 	private int curAnimalIdx = 0;
 
 	private AnimalPower _animalPower;
-	[SerializeField] private GameObject _gameManager;
+	[SerializeField] public GameManager _gameManager;
 
 	//Online Parameters:
 	private int curXpFromLastLevel = 0;
@@ -131,7 +131,8 @@ public class Player : MonoBehaviour
     public void  HasLost()
     {
 	    
-	    _gameManager.GetComponent<GameManager>().PlayerLost(this);
+	    // _gameManager.GetComponent<GameManager>().PlayerLost(this);
+	    _gameManager.PlayerLost(this);
     }
 
     public void TurnToBlob()
