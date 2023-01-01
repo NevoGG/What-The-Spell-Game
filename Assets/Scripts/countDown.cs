@@ -9,7 +9,7 @@ public class countDown : MonoBehaviour
 
     public void SetCountDown()
     {
-        GM.countDownFinish = true;
+        GameManager.countDownFinish = true;
     }
     
 

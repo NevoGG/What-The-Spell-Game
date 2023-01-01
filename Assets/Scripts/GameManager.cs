@@ -21,10 +21,13 @@ public class GameManager : MonoBehaviour
     public const string TERRAIN_TAG = "Terrain";
     public const string POWER_TAG = "Power"; //todo: maybe for each power
     public const string FALL_BOUNDER_TAG = "fallBounder";
-    public bool countDownFinish;
+    
+    
     
     //Defaults:
     private static int defNumOfPlayers = 4;
+    public static bool gameEnded;
+    public static bool countDownFinish;
 
     //Offline Game Parameters:
     [SerializeField] private Witch Witch1;
@@ -36,7 +39,6 @@ public class GameManager : MonoBehaviour
     
     private int numberOfPlayers;
     private int playersAlive;
-    private bool gameEnded;
     private List<Player> playerList;
     
     

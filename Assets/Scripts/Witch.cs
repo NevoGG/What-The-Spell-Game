@@ -49,6 +49,15 @@ public class Witch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameManager.gameEnded && GameManager.countDownFinish)
+        {
+            CustomUpdate();
+        }
+    }
+
+
+    private void CustomUpdate()
+    {
         if (Vector3.Distance(transform.position, randomSpotVec) < distanceWitchFromDestPar)
         {
             gotToDest = true;
