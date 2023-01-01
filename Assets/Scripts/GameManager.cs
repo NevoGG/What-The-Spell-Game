@@ -24,8 +24,7 @@ public class GameManager : MonoBehaviour
     
     
     
-    //Defaults:
-    private static int defNumOfPlayers = 4;
+    //Statics:
     public static bool gameEnded;
     public static bool countDownFinish;
 
@@ -40,17 +39,20 @@ public class GameManager : MonoBehaviour
     private int numberOfPlayers;
     private int playersAlive;
     private List<Player> playerList;
+    private List<Player> fallenPlayers;
     
-    
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        fallenPlayers = new List<Player>();
         numberOfPlayers = WriteNumPlayers.numberOfPlayers;
         gameEnded = false;
         playersAlive = numberOfPlayers;
         addPlayersToList();
-        countDownFinish = false; //todo: add to other scripts
+        countDownFinish = false;
     }
 
     public void SetCountDownFinish()
@@ -63,7 +65,7 @@ public class GameManager : MonoBehaviour
      */
     private void addPlayersToList()
     {
-        playerList = new List<Player>(4);
+        playerList = new List<Player>();
         
         switch (numberOfPlayers)
         {
@@ -98,11 +100,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gameEnded)
-        {
-            
-        }
-        UpdatePlayersAlive();
+        // UpdatePlayersAlive();
         gameEnded = Timer.timerDone || playersAlive == 0 || playersAlive == 1;
         if (gameEnded)
         {
@@ -110,18 +108,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void UpdatePlayersAlive()
-    {
-        int count = 0;
-        foreach (var player in playerList)
-        {
-            if (player.gameObject.activeSelf)
-            {
-                count++;
-            }
-        }
-        playersAlive = count;
-    }
+    // private void UpdatePlayersAlive()
+    // {
+    //     int count = 0;
+    //     foreach (var player in playerList)
+    //     {
+    //         if (player.gameObject.activeSelf)
+    //         {
+    //             count++;
+    //         }
+    //     }
+    //     playersAlive = count;
+    // }
     private void endGame()
     {
         if (playersAlive == 0)
@@ -130,7 +128,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            List<Player> winnerList = GetWinner();
+            List<Player> rankList = new List<Player>();
+            GetWinner(rankList);
         }
         
     }
@@ -144,31 +143,62 @@ public class GameManager : MonoBehaviour
     /**
      * Gets a list of all the alive players with the max score.
      */
-    private List<Player> GetWinner()
+    private List<Player> GetWinner(List<Player> rankList)
     {
-        List<Player> winnerList = new List<Player>();
-        int max = 0;
         foreach (var player in playerList)
         {
             if (player.gameObject.activeSelf)
             {
-                if (player.getScore() > max)
-                {
-                    max = player.getScore();
-                }
+                rankList.Add(player);
             }
         }
-    
-        foreach (var player in playerList)
+        rankList.Sort(delegate(Player player1, Player player2)
         {
-            if (player.gameObject.activeSelf)
+            if (player1.xp > player2.xp) return 1;
+            if (player1.xp < player2.xp) return -1;
+            if (player1.xp == player2.xp)
             {
-                if (max == player.getScore())
-                {
-                    winnerList.Add(player);
-                }
+                if (player1.growSpells > player2.growSpells) return 1;
+                if (player1.growSpells < player2.growSpells) return -1;
             }
+            return 0;
+        });
+        foreach (var player in fallenPlayers)
+        {
+            rankList.Add(player);
         }
-        return winnerList;
+
+        return rankList;
+
+        // int max = 0;
+        // foreach (var player in playerList)
+        // {
+        //     if (player.gameObject.activeSelf)
+        //     {
+        //         if (player.getScore() > max)
+        //         {
+        //             max = player.getScore();
+        //         }
+        //     }
+        // }
+        //
+        // foreach (var player in playerList)
+        // {
+        //     if (player.gameObject.activeSelf)
+        //     {
+        //         if (max == player.getScore())
+        //         {
+        //             rankList.Add(player);
+        //         }
+        //     }
+        // }
     }
+
+    public void PlayerLost(Player player)
+    {
+        fallenPlayers.Insert(0, player);
+        playersAlive--;
+    }
+        
+        
 }
