@@ -133,7 +133,7 @@ public class Player : MonoBehaviour
     {
 	    _gameManager.PlayerLost(this);
     }
-
+//
     public int getScore()
     {
 	    return 0;
