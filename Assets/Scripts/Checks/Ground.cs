@@ -9,6 +9,8 @@ public class Ground : MonoBehaviour
 
     private Vector2 _normal;
     private PhysicsMaterial2D _material;
+    private Move _move;
+    private Collider2D _collider;
 
     private void OnCollisionExit2D(Collision2D collision)
     {
