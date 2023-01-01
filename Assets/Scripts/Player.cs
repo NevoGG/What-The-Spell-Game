@@ -51,7 +51,11 @@ public class Player : MonoBehaviour
 	{
 	
 	}
-	
+
+	public void MoveToPosition(Vector3 pos)
+	{
+		animals[curAnimalIdx].transform.position = pos;
+	}
 	
 	public void SpellCasted(SpellEnum spell)
 	{
