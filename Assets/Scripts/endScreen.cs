@@ -22,7 +22,7 @@ public class endScreen : MonoBehaviour
             if (!player.gameObject.activeSelf)
             {
                 player.gameObject.SetActive(true);
-                //player.TurnToBlob(); todo: activate
+                player.TurnToBlob();
             }
         }
 
