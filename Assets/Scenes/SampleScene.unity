@@ -509,7 +509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6981167472037866470, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
       propertyPath: movementSpeed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8630498272846322976, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
       propertyPath: m_Name
@@ -546,7 +546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9418b2f350c30344a4a78d88ae54574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countDownFinish: 0
   Witch1: {fileID: 1201171163}
   Witch2: {fileID: 1304767620}
   Player1: {fileID: 267313640}

@@ -27,6 +27,15 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("HadTimeStarted", GameManager.countDownFinish);
+        if (!GameManager.gameEnded && GameManager.countDownFinish)
+        {
+            CustomUpdate();
+        }
+    }
+
+    private void CustomUpdate()
+    {
         if (!timerDone && curTimer > 0)
         {
             curTimer -= Time.deltaTime;

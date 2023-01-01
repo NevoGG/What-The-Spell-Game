@@ -15,6 +15,14 @@ public class BackGroundMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameManager.gameEnded && GameManager.countDownFinish)
+        {
+            CustomUpdate();
+        }
+    }
+
+    private void CustomUpdate()
+    {
         if (acend)
         {
             if (transform.position.y > topBounder)
