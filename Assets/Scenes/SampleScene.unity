@@ -488,7 +488,7 @@ RectTransform:
   m_Children:
   - {fileID: 309796513}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -946,7 +946,7 @@ Transform:
   - {fileID: 1256519358}
   - {fileID: 913556542}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &601608619
 PrefabInstance:
@@ -1068,7 +1068,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &675997754 stripped
 GameObject:
@@ -1141,7 +1141,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &913556541
 GameObject:
@@ -1668,6 +1668,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 682752524, guid: 24a35dd2a8f54f94ba4e5b1bfd1b6b46, type: 3}
+    - target: {fileID: 2189769126269465687, guid: 2c0bdfa9784c13b429a6f18ac141fd40, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 4.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189769126269465687, guid: 2c0bdfa9784c13b429a6f18ac141fd40, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4.53
+      objectReference: {fileID: 0}
     - target: {fileID: 2316235554316586177, guid: 2c0bdfa9784c13b429a6f18ac141fd40, type: 3}
       propertyPath: _maxSpeed
       value: 137
