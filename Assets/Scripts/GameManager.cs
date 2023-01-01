@@ -180,8 +180,5 @@ public class GameManager : MonoBehaviour
         playersAlive --;
     }
 
-    public void TurnToBlob()
-    {
-        return;//todo: later.
-    }
+
 }

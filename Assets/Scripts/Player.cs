@@ -133,13 +133,11 @@ public class Player : MonoBehaviour
     {
 	    _gameManager.PlayerLost(this);
     }
-//
-    public int getScore()
+
+    public void TurnToBlob()
     {
-	    return 0;
-    } // todo: delete later.
-
-
+	    return;//todo: later.
+    }
 } //Upgrade the animal of the player
 
 
