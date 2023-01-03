@@ -22,7 +22,7 @@ public class Ground : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        OnGround = false;
+        // OnGround = false; todo:: change back
         Friction = 0;
         if (collision.gameObject.CompareTag("OneWayPlatform")) //todo: no magic numbers
         {
@@ -44,6 +44,32 @@ public class Ground : MonoBehaviour
             curOneWayPlatform = collision.gameObject;
         }
     }
+    /// <summary>
+    /// Patch as fuck todo: change.
+    /// </summary>
+    /// <param name="col"></param>
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        Debug.Log("Trigger");
+        if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
+            || col.gameObject.CompareTag("OneWayPlatform"))
+            {
+                OnGround = true;
+            }
+    }
+    
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
+            || col.gameObject.CompareTag("OneWayPlatform"))
+        {
+            OnGround = false;
+        }
+    }
+    /// <summary>
+    /// ///patch ends
+    /// </summary>
+    /// <param name="collision"></param>
 
     private void OnCollisionStay2D(Collision2D collision)
     {

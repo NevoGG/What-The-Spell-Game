@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -182,7 +183,7 @@ public class Move1 : Move
         power.Disable();
         crouch.Disable();
     }
-    
+
     private void JumpAction()
     {
         if (_onGround || _jumpPhase < _maxAirJumps)
