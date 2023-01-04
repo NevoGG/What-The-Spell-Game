@@ -694,6 +694,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4749319615660024406, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749319615660024406, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
       propertyPath: topBounder
       value: 425
       objectReference: {fileID: 0}
