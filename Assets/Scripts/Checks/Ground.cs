@@ -26,15 +26,15 @@ public class Ground : MonoBehaviour
         _collider = GetComponent<Collider2D>();
     }
 
-    private void Update()
-    {
-        List<Collider2D> collider2Ds = new List<Collider2D>();
-        _collider.GetContacts(collider2Ds);
-        if (collider2Ds.Count == 0 && _isTriggerOn == false)
-        {
-            OnGround = false; //todo: patch, delete later
-        }
-    }
+    // private void Update()
+    // {
+    //     List<Collider2D> collider2Ds = new List<Collider2D>();
+    //     _collider.GetContacts(collider2Ds);
+    //     if (collider2Ds.Count == 0 && _isTriggerOn == false)
+    //     {
+    //         OnGround = false; //todo: patch, delete later
+    //     }
+    // }
     
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -42,7 +42,7 @@ public class Ground : MonoBehaviour
             || collision.gameObject.CompareTag("OneWayPlatform")
             || collision.gameObject.CompareTag("Player"))
         {
-            // OnGround = false;
+            OnGround = false;
             Friction = 0;
         }
 
@@ -66,39 +66,39 @@ public class Ground : MonoBehaviour
             curOneWayPlatform = collision.gameObject;
         }
     }
-    // /// <summary>
-    // /// Patch as fuck todo: change.
-    // /// </summary>
-    // /// <param name="col"></param>
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
-            || col.gameObject.CompareTag("OneWayPlatform"))
-            {
-                OnGround = true;
-                _isTriggerOn = true;
-            }
-    }
-    
-    private void OnTriggerStay2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
-            || col.gameObject.CompareTag("OneWayPlatform"))
-        {
-            OnGround = true;
-            _isTriggerOn = true;
-        }
-    }
-    
-    private void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
-            || col.gameObject.CompareTag("OneWayPlatform"))
-        {
-            OnGround = false;
-            _isTriggerOn = false;
-        }
-    }
+    // // /// <summary>
+    // // /// Patch as fuck todo: change.
+    // // /// </summary>
+    // // /// <param name="col"></param>
+    // private void OnTriggerEnter2D(Collider2D col)
+    // {
+    //     if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
+    //         || col.gameObject.CompareTag("OneWayPlatform"))
+    //         {
+    //             OnGround = true;
+    //             _isTriggerOn = true;
+    //         }
+    // }
+    //
+    // private void OnTriggerStay2D(Collider2D col)
+    // {
+    //     if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
+    //         || col.gameObject.CompareTag("OneWayPlatform"))
+    //     {
+    //         OnGround = true;
+    //         _isTriggerOn = true;
+    //     }
+    // }
+    //
+    // private void OnTriggerExit2D(Collider2D col)
+    // {
+    //     if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
+    //         || col.gameObject.CompareTag("OneWayPlatform"))
+    //     {
+    //         OnGround = false;
+    //         _isTriggerOn = false;
+    //     }
+    // }
     /// <summary>
     /// ///patch ends
     /// </summary>
