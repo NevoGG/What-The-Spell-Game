@@ -143,6 +143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5706952600099739402}
   - component: {fileID: 5706952600099739403}
+  - component: {fileID: 7616985570815511225}
   m_Layer: 0
   m_Name: EndScreen
   m_TagString: Untagged
@@ -221,6 +222,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7616985570815511225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5706952600099739412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34608fa35089ed47a113223b242e840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 0}
+  positions:
+  - {x: 56.58, y: 2, z: 0}
+  - {x: 69.28, y: 2, z: 0}
+  - {x: 81.6, y: 2, z: 0}
+  - {x: 0, y: 0, z: 0}
 --- !u!1 &5706952600316269894
 GameObject:
   m_ObjectHideFlags: 0
