@@ -14,7 +14,7 @@ public class Witch : MonoBehaviour
     [SerializeField] private float bottomBounder = -5f;
     [SerializeField] private float spellingTime = 2f;
     [SerializeField] private float distanceWitchFromDestPar = 0.1f;
-    
+    private Animator animator;
     private Vector3 screenMoveDir; //to arrange witches accordingly
     private int playGroundWidth; // to arrange witches just outside play area
     private Vector3 randomSpotVec; //random spot to get to.
@@ -27,9 +27,12 @@ public class Witch : MonoBehaviour
     [SerializeField] private int facingRotation;
     [SerializeField] private int numberOfProjectiles;
     [SerializeField] private float projectileSpread;
+    public bool _isGrow = false;
+    public bool _isShrink = false;
+    private GameObject spell;
 
-    
-    // Setters- todo: implement.
+
+        // Setters- todo: implement.
     // public void SetWitchMovementSpeed( int speed){}
     // public void SetWitchShotPerMinute(int shotPerMinute){}
     // public void SetWitchGrowToShrinkRatio(float ratio){}
@@ -40,6 +43,7 @@ public class Witch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         positionX = transform.position.x;
         positionZ = transform.position.z;
         UpdateRandomDest();
@@ -49,6 +53,8 @@ public class Witch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("IsGrow", _isGrow);
+        animator.SetBool("IsShrink", _isShrink);
         if (!GameManager.gameEnded && GameManager.countDownFinish)
         {
             CustomUpdate();
@@ -81,6 +87,10 @@ public class Witch : MonoBehaviour
     private void UpdateRandomDest()
     {
         randomSpotVec = new Vector3(positionX, Random.Range(topBounder, bottomBounder), positionZ);
+        int choice = Random.Range(0, 2);
+        _isGrow = choice == 0 ? true : false;
+        _isShrink = choice == 1 ? true : false;
+        spell = choice == 0 ? growSpell : shrinkSpell;
     }
 
     private void CastSpell()
@@ -95,9 +105,12 @@ public class Witch : MonoBehaviour
         //         shrinkSpell.transform.rotation 
         //     }
         // }
-        int choice = Random.Range(0, 2);
-        GameObject spell;
-        spell = choice == 0 ? growSpell : shrinkSpell;
+        // int choice = Random.Range(0, 2);
+        // _isGrow = choice == 0 ? true : false;
+        // _isShrink = choice == 1 ? true : false;
+        
+        
+        // spell = choice == 0 ? growSpell : shrinkSpell;
         float startRotation = facingRotation*(+projectileSpread / 2f);
         float angleIcrease = projectileSpread / ((float)numberOfProjectiles - 1f);
         for (int i = 0; i < numberOfProjectiles; i++)
