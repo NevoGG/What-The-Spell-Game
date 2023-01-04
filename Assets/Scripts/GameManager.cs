@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     private List<Player> playerList;
     private List<Player> fallenPlayers;
     private bool firstGameEnded;
+    private bool PlayerCheckGame; // if we chose 1 player at beginning to check game
     
 
 
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
         countDownFinish = false;
         SetGameManagerInPlayers();
         firstGameEnded = false;
+        PlayerCheckGame = numberOfPlayers == 1;
     }
 
     public void SetCountDownFinish()
@@ -113,7 +115,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // UpdatePlayersAlive();
-        gameEnded = Timer.timerDone || playersAlive == 0 || playersAlive == 1;
+        gameEnded = Timer.timerDone || playersAlive == 0 || (playersAlive == 1 && !PlayerCheckGame);
         if (gameEnded && !firstGameEnded)
         {
             firstGameEnded = true;
