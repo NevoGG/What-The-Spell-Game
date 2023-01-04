@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 1953265232684812250}
   m_Layer: 0
   m_Name: Bunny
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,6 +57,7 @@ MonoBehaviour:
   _downwardMovementMultiplier: 20
   _upwardMovementMultiplier: 15
   _jumpHeight: 300
+  _multiJumpMultiplier: 0.75
   _groundLinearDrag: 10
   _upwardLinearDrag: 10
   _downardLinearDrag: 10

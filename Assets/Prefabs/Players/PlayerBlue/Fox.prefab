@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4607930117966743820}
   m_Layer: 0
   m_Name: Fox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +109,7 @@ MonoBehaviour:
   _downwardMovementMultiplier: 3
   _upwardMovementMultiplier: 1.7
   _jumpHeight: 100
+  _multiJumpMultiplier: 0.75
   _groundLinearDrag: 10
   _upwardLinearDrag: 10
   _downardLinearDrag: 10

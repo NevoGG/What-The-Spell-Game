@@ -24,7 +24,7 @@ public abstract class Move : MonoBehaviour
     //Jump Fields:
     [SerializeField, Range(0f, 100f)] protected float _downwardMovementMultiplier = 3f;
     [SerializeField, Range(0f, 100f)] protected float _upwardMovementMultiplier = 1.7f;
-    [SerializeField, Range(0f, 500f)] protected float _jumpHeight = 100f;
+    [SerializeField, Range(0f, 1000f)] protected float _jumpHeight = 100f;
     [SerializeField, Range(0f, 1f)] protected float _multiJumpMultiplier = 0.75f;
     
     //linear drag:
