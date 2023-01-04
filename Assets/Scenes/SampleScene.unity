@@ -1220,11 +1220,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099302683}
   m_CullTransparentMesh: 1
---- !u!1 &1164302518 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5353528191086742375, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
-  m_PrefabInstance: {fileID: 1224413798}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1194209716 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3130106552981440003, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
@@ -1344,14 +1339,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
-      propertyPath: animals.Array.data[1]
-      value: 
-      objectReference: {fileID: 1164302518}
-    - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
-      propertyPath: animals.Array.data[2]
-      value: 
-      objectReference: {fileID: 2088639709}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
 --- !u!114 &1304767620 stripped
@@ -1815,11 +1802,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f672c5701029e24596f4bb44b4f15fe, type: 3}
---- !u!1 &2088639709 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4911368947168538600, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
-  m_PrefabInstance: {fileID: 1224413798}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3130106553011633791
 PrefabInstance:
   m_ObjectHideFlags: 0
