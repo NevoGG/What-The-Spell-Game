@@ -55,6 +55,7 @@ public abstract class Move : MonoBehaviour
     
     protected int _maxAirJumps = 0;
     public abstract void SetMaxAirJumps(int k);
+    
 }
 
     
