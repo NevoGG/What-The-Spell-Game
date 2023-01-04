@@ -11,7 +11,8 @@ public class Ground : MonoBehaviour
     //todo: delete later:
     [SerializeField] private float bgMovementSpeed;
     private Vector3 _lastLocation;
-    
+
+    private bool _isTriggerOn = false;
     private Vector2 _normal;
     private PhysicsMaterial2D _material;
     private Move _move;
@@ -27,6 +28,12 @@ public class Ground : MonoBehaviour
 
     private void Update()
     {
+        List<Collider2D> collider2Ds = new List<Collider2D>();
+        _collider.GetContacts(collider2Ds);
+        if (collider2Ds.Count == 0 && _isTriggerOn == false)
+        {
+            OnGround = false; //todo: patch, delete later
+        }
     }
     
     private void OnCollisionExit2D(Collision2D collision)
@@ -35,7 +42,7 @@ public class Ground : MonoBehaviour
             || collision.gameObject.CompareTag("OneWayPlatform")
             || collision.gameObject.CompareTag("Player"))
         {
-            OnGround = false;
+            // OnGround = false;
             Friction = 0;
         }
 
@@ -69,6 +76,7 @@ public class Ground : MonoBehaviour
             || col.gameObject.CompareTag("OneWayPlatform"))
             {
                 OnGround = true;
+                _isTriggerOn = true;
             }
     }
     
@@ -78,6 +86,7 @@ public class Ground : MonoBehaviour
             || col.gameObject.CompareTag("OneWayPlatform"))
         {
             OnGround = true;
+            _isTriggerOn = true;
         }
     }
     
@@ -87,6 +96,7 @@ public class Ground : MonoBehaviour
             || col.gameObject.CompareTag("OneWayPlatform"))
         {
             OnGround = false;
+            _isTriggerOn = false;
         }
     }
     /// <summary>
