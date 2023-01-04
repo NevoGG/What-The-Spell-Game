@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,63 +9,9 @@ using UnityEngine.InputSystem.Interactions;
 public class Move4 : Move
 {
     private PlayerInput4 controls; 
-    // private InputAction move;
-    // private InputAction jump;
-    // private InputAction crouch;
-    // private InputAction power;
-    // //animation parameters: 
-    // public bool isFacingRight = true;
-    //
-    // //Movement Fields:
-    // [SerializeField, Range(0f, 1000f)] private float _maxSpeed = 15f;
-    // [SerializeField, Range(0f, 300f)] private float _maxAcceleration = 35f;
-    // [SerializeField, Range(0f, 1000f)] private float _maxAirAcceleration = 20f;
-    // [SerializeField, Range(0f, 10)] private float _downwardOnPressMultiplier = 2f;	
-    //
-    // //Jump Fields:
-    // [SerializeField, Range(0f, 20f)] private float _downwardMovementMultiplier = 3f;
-    // [SerializeField, Range(0f, 20f)] private float _upwardMovementMultiplier = 1.7f;
-    // [SerializeField, Range(0f, 500f)] private float _jumpHeight = 100f;
-    //
-    // //linear drag:
-    // [SerializeField, Range(0f, 10f)] private float  _groundLinearDrag= 10f;
-    // [SerializeField, Range(0f, 10f)] private float  _upwardLinearDrag= 10f;
-    // [SerializeField, Range(0f, 10f)] private float  _downardLinearDrag= 10f;
-    //
-    // [SerializeField, Range(0f, 15f)] private float _size = 10f;
-    //
-    // private int _maxAirJumps = 0;
-    // private int _jumpPhase;
-    // private float _downardMovementOnPress;
-    // private float _downardMovementWithoutPress;
-    //
-    // //todo: changed, were no default values
-    // private float _defaultGravityScale = 1;
-    // private float _jumpSpeed = 1;
-    // private float _maxSpeedChange, _acceleration;
-    // private bool _isDownPressed = false;
-    //
-    //
-    // private bool _desiredJump, _onGround;
-    //
-    // // private Controller _controller;
-    // private Vector2 _direction, _desiredVelocity, _velocity;
-    // private Rigidbody2D _body;
-    // private BoxCollider2D _boxCollider;
-    // private Ground _ground;
-    // private Animator animator;
 
-
-
-    //Setters:
-    public void SetMaxSpeed(float h) { _maxSpeed = h;}
-    public void SetMaxAcceleration(float h) { _maxAcceleration = h;}
-    public void SetMaxAirAcceleration(float h) { _maxAirAcceleration = h;}
-    public void SetJumpHeight(float h) { _jumpHeight = h;}
     public override void SetMaxAirJumps(int h) { _maxAirJumps = h;}
-    public void SetDownwardMovementMultiplier(float h) { _downwardMovementMultiplier = h;}
-    public void SetUpwardMovementMultiplier(float h) { _upwardMovementMultiplier = h;}
-    
+
     void Flip()
     {
         isFacingRight = !isFacingRight;
@@ -85,12 +32,16 @@ public class Move4 : Move
         
         _body.drag = _groundLinearDrag;
         transform.localScale = transform.localScale * _size;
-        _boxCollider.size = Vector2.one * 0.8f;
         //speed of falling while down key is pressed:
         _downardMovementWithoutPress = _downwardMovementMultiplier;
         _downardMovementOnPress = _downwardOnPressMultiplier * _downwardMovementMultiplier;
     }
-    
+
+    private void Start()
+    {
+        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+    }
+
 
     private void Update()
     {
@@ -182,7 +133,7 @@ public class Move4 : Move
         power.Disable();
         crouch.Disable();
     }
-    
+
     private void JumpAction()
     {
         if (_onGround || _jumpPhase < _maxAirJumps)
@@ -206,19 +157,16 @@ public class Move4 : Move
     private void Jump(InputAction.CallbackContext context)
     {
         _desiredJump = true;
-        Debug.Log("jump");
     }
     
     private void Crouch(InputAction.CallbackContext context)
     {
         _isDownPressed = true;
-        Debug.Log("crouch");
     }
     
     private void CrouchCanceled(InputAction.CallbackContext context)
     {
         _isDownPressed = false;
-        Debug.Log("crouch canceled");
     }
     
     private void JumpCanceled(InputAction.CallbackContext context)
@@ -228,12 +176,7 @@ public class Move4 : Move
 
     private void PassThroughPlatform(InputAction.CallbackContext context)
     {
-        Debug.Log("PassThroughPlatform");
+        _ground.PassCurPlatform(); //todo: put in move instead of move1
     }
-    
-    // private void CancelJump(InputAction.CallbackContext context)
-    // {
-    //     Debug.Log("jumped")
-    // }
-    
+
 }

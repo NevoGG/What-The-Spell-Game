@@ -157,19 +157,16 @@ public class Move1 : Move
     private void Jump(InputAction.CallbackContext context)
     {
         _desiredJump = true;
-        Debug.Log("jump");
     }
     
     private void Crouch(InputAction.CallbackContext context)
     {
         _isDownPressed = true;
-        Debug.Log("crouch");
     }
     
     private void CrouchCanceled(InputAction.CallbackContext context)
     {
         _isDownPressed = false;
-        Debug.Log("crouch canceled");
     }
     
     private void JumpCanceled(InputAction.CallbackContext context)
@@ -181,10 +178,5 @@ public class Move1 : Move
     {
         _ground.PassCurPlatform(); //todo: put in move instead of move1
     }
-    
-    // private void CancelJump(InputAction.CallbackContext context)
-    // {
-    //     Debug.Log("jumped")
-    // }
-    
+
 }
