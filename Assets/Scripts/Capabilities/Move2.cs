@@ -150,7 +150,7 @@ public class Move2 : Move
             {
                 _jumpSpeed += Mathf.Abs(_body.velocity.y);
             }
-            _velocity.y += _jumpSpeed;
+            _velocity.y += _jumpSpeed * (Mathf.Pow(_multiJumpMultiplier,_jumpPhase));
         }
     }
 
