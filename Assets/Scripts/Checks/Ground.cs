@@ -7,22 +7,37 @@ public class Ground : MonoBehaviour
 {
     public bool OnGround { get; private set; }
     public float Friction { get; private set; }
-
+    
+    //todo: delete later:
+    [SerializeField] private float bgMovementSpeed;
+    private Vector3 _lastLocation;
+    
     private Vector2 _normal;
     private PhysicsMaterial2D _material;
     private Move _move;
     private Collider2D _collider;
     private GameObject curOneWayPlatform;
-    private float _timeToWait = 0.25f;
+    private float _timeToWait = 0.5f; //todo: change to something good for every player.;
+    private double _threshold = 0.0001;
 
     private void Start()
     {
         _collider = GetComponent<Collider2D>();
     }
 
+    private void Update()
+    {
+        float toCompare = transform.position.y - (_lastLocation.y - bgMovementSpeed * Time.deltaTime);
+        if (toCompare < _threshold)
+        {
+            OnGround = true;
+        }
+        else OnGround = false;
+    }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
-        // OnGround = false; todo:: change back
+        // OnGround = false; //todo:: change back
         Friction = 0;
         if (collision.gameObject.CompareTag("OneWayPlatform")) //todo: no magic numbers
         {
@@ -34,38 +49,38 @@ public class Ground : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(GameManager.PLATFORM_TAG))
         {
-            EvaluateCollision(collision);
+            // EvaluateCollision(collision);
             RetrieveFriction(collision);  
         }
         if (collision.gameObject.CompareTag("OneWayPlatform")) //todo: no magic numbers
         {
-            EvaluateCollision(collision);
+            // EvaluateCollision(collision);
             RetrieveFriction(collision);
             curOneWayPlatform = collision.gameObject;
         }
     }
-    /// <summary>
-    /// Patch as fuck todo: change.
-    /// </summary>
-    /// <param name="col"></param>
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        Debug.Log("Trigger");
-        if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
-            || col.gameObject.CompareTag("OneWayPlatform"))
-            {
-                OnGround = true;
-            }
-    }
-    
-    private void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
-            || col.gameObject.CompareTag("OneWayPlatform"))
-        {
-            OnGround = false;
-        }
-    }
+    // /// <summary>
+    // /// Patch as fuck todo: change.
+    // /// </summary>
+    // /// <param name="col"></param>
+    // private void OnTriggerEnter2D(Collider2D col)
+    // {
+    //     Debug.Log("Trigger");
+    //     if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
+    //         || col.gameObject.CompareTag("OneWayPlatform"))
+    //         {
+    //             OnGround = true;
+    //         }
+    // }
+    //
+    // private void OnTriggerExit2D(Collider2D col)
+    // {
+    //     if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
+    //         || col.gameObject.CompareTag("OneWayPlatform"))
+    //     {
+    //         OnGround = false;
+    //     }
+    // }
     /// <summary>
     /// ///patch ends
     /// </summary>
@@ -75,13 +90,13 @@ public class Ground : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(GameManager.PLATFORM_TAG))
         {
-            EvaluateCollision(collision);
+            // EvaluateCollision(collision);
             RetrieveFriction(collision);  
         }
 
         if (collision.gameObject.CompareTag("OneWayPlatform")) //todo: no magic numbers
         {
-            EvaluateCollision(collision);
+            // EvaluateCollision(collision);
             RetrieveFriction(collision);
             curOneWayPlatform = collision.gameObject;
         }

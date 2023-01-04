@@ -106,9 +106,9 @@ MonoBehaviour:
   _maxAcceleration: 35
   _maxAirAcceleration: 20
   _downwardOnPressMultiplier: 2
-  _downwardMovementMultiplier: 3
-  _upwardMovementMultiplier: 1.7
-  _jumpHeight: 100
+  _downwardMovementMultiplier: 20
+  _upwardMovementMultiplier: 15
+  _jumpHeight: 200
   _groundLinearDrag: 10
   _upwardLinearDrag: 10
   _downardLinearDrag: 10
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dfef5b8d8abde84caf68419c3d6d89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgMovementSpeed: 3
 --- !u!114 &1953265232684812198
 MonoBehaviour:
   m_ObjectHideFlags: 0
