@@ -29,7 +29,6 @@ public class BackGroundMovement : MonoBehaviour
             {
                 
                 transform.position = new Vector3(0, transform.position.y - movementSpeed * Time.deltaTime, 0);
-                Debug.Log("acend!");
             }
             else
             {

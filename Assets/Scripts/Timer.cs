@@ -28,6 +28,10 @@ public class Timer : MonoBehaviour
     void Update()
     {
         animator.SetBool("HadTimeStarted", GameManager.countDownFinish);
+        if (GameManager.gameEnded)
+        {
+            GetComponent<Renderer>().enabled = false;
+        }
         if (!GameManager.gameEnded && GameManager.countDownFinish)
         {
             CustomUpdate();

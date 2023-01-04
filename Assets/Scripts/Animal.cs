@@ -72,12 +72,12 @@ public class Animal : MonoBehaviour
     private void SetAnimalPower()
     {
         switch (_power)
-        {
+        { //todo: set later to 1 and 0
             case AnimalPower.DoubleJump:
-                _move.SetMaxAirJumps(1);
+                _move.SetMaxAirJumps(2);
                 break;
             default:
-                _move.SetMaxAirJumps(0);
+                _move.SetMaxAirJumps(1);
                 break;
         }
     }
