@@ -102,18 +102,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4848414282a464582db3af88805fcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxSpeed: 15
-  _maxAcceleration: 35
-  _maxAirAcceleration: 20
-  _downwardOnPressMultiplier: 2
-  _downwardMovementMultiplier: 3
-  _upwardMovementMultiplier: 1.7
-  _jumpHeight: 100
+  _maxSpeed: 309
+  _maxAcceleration: 73
+  _maxAirAcceleration: 304
+  _downwardOnPressMultiplier: 8.61
+  _downwardMovementMultiplier: 30
+  _upwardMovementMultiplier: 3.5
+  _jumpHeight: 350
   _multiJumpMultiplier: 0.75
-  _groundLinearDrag: 10
-  _upwardLinearDrag: 10
+  _groundLinearDrag: 7.7
+  _upwardLinearDrag: 7.96
   _downardLinearDrag: 10
-  _size: 0.5
+  _size: 0.7
 --- !u!95 &4607930117966743925
 Animator:
   serializedVersion: 4
