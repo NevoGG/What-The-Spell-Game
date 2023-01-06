@@ -102,13 +102,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4848414282a464582db3af88805fcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxSpeed: 336
-  _maxAcceleration: 165
+  _maxSpeed: 570
+  _maxAcceleration: 110
   _maxAirAcceleration: 165
   _downwardOnPressMultiplier: 8.61
   _downwardMovementMultiplier: 30
-  _upwardMovementMultiplier: 3.5
-  _jumpHeight: 262
+  _upwardMovementMultiplier: 2
+  _jumpHeight: 700
   _multiJumpMultiplier: 0.75
   _groundLinearDrag: 6.16
   _upwardLinearDrag: 6.54
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61592dd13a84ca543ac66970076de426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _power: 0
+  _power: 1
   _xpNeeded: 2
 --- !u!50 &4607930117966743821
 Rigidbody2D:
