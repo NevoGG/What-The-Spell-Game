@@ -113,7 +113,7 @@ MonoBehaviour:
   _groundLinearDrag: 5.09
   _upwardLinearDrag: 5
   _downardLinearDrag: 1.59
-  _size: 0.8
+  _size: 1
 --- !u!95 &4607930117966743925
 Animator:
   serializedVersion: 4

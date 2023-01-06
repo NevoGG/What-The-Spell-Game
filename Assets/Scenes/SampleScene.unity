@@ -1113,6 +1113,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ba44017d790d849913a1c4832dae0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &779570282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8514855267839141014, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+  m_PrefabInstance: {fileID: 1224413798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &810017843 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3130106552031712422, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
@@ -1524,13 +1529,21 @@ PrefabInstance:
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[0]
       value: 
-      objectReference: {fileID: 1077187844}
+      objectReference: {fileID: 1798735401}
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[1]
       value: 
-      objectReference: {fileID: 1224413800}
+      objectReference: {fileID: 779570282}
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[2]
+      value: 
+      objectReference: {fileID: 1077187844}
+    - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: animals.Array.data[3]
+      value: 
+      objectReference: {fileID: 1224413800}
+    - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: animals.Array.data[4]
       value: 
       objectReference: {fileID: 1224413799}
     m_RemovedComponents: []
@@ -2005,6 +2018,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735048053}
   m_CullTransparentMesh: 1
+--- !u!1 &1798735401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5741686068324813842, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+  m_PrefabInstance: {fileID: 1224413798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3130106553011633791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2016,6 +2034,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 045fbff4b60982d459afba7e44a7cef7, type: 2}
+    - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
+      propertyPath: topBounder
+      value: 550
+      objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: movementSpeed
       value: 5
