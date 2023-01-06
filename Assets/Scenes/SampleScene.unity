@@ -1191,6 +1191,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1077187844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7542353352729002653, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+  m_PrefabInstance: {fileID: 1224413798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1099302683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,8 +1521,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: animals.Array.data[0]
+      value: 
+      objectReference: {fileID: 1077187844}
+    - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: animals.Array.data[1]
+      value: 
+      objectReference: {fileID: 1224413800}
+    - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: animals.Array.data[2]
+      value: 
+      objectReference: {fileID: 1224413799}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+--- !u!1 &1224413799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7731072355450855820, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+  m_PrefabInstance: {fileID: 1224413798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1224413800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5213613881976798309, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+  m_PrefabInstance: {fileID: 1224413798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1304767620 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7763908152114811517, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
