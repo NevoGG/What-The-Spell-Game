@@ -53,11 +53,14 @@ MonoBehaviour:
   bottomBounder: -14
   spellingTime: 2
   distanceWitchFromDestPar: 0.1
+  camera: {fileID: 3130106552981440003, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
   growSpell: {fileID: 5521266975769529211, guid: 5cfcdb3ec9894c747b7355f6d7ef32a5, type: 3}
   shrinkSpell: {fileID: 4522132101675834954, guid: e3ae8e8385f0d8c489c16689473f9015, type: 3}
   facingRotation: 0
   numberOfProjectiles: 0
   projectileSpread: 0
+  _isGrow: 0
+  _isShrink: 0
 --- !u!95 &9075775767561282803
 Animator:
   serializedVersion: 4
