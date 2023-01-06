@@ -28,7 +28,7 @@ public class CameraMovment : MonoBehaviour
             if (transform.position.y > bottomBounder )
             {
                 
-                transform.position = new Vector3(0, transform.position.y - movementSpeed * Time.deltaTime, 0);
+                transform.position = new Vector3(transform.position.x, transform.position.y - movementSpeed * Time.deltaTime, transform.position.z);
                 Debug.Log("acend!");
             }
             else

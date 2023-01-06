@@ -14,6 +14,8 @@ public class Witch : MonoBehaviour
     [SerializeField] private float bottomBounder = -5f;
     [SerializeField] private float spellingTime = 2f;
     [SerializeField] private float distanceWitchFromDestPar = 0.1f;
+    [SerializeField] private GameObject camera;
+    
     private Animator animator;
     private Vector3 screenMoveDir; //to arrange witches accordingly
     private int playGroundWidth; // to arrange witches just outside play area
@@ -21,6 +23,9 @@ public class Witch : MonoBehaviour
     private bool gotToDest; //checks if got to random spot
     private float positionX;
     private float positionZ;
+    private float topBounderReal;
+    private float bottomBounderReal;
+
     
     [SerializeField] private GameObject growSpell;
     [SerializeField] private GameObject shrinkSpell;
@@ -50,9 +55,15 @@ public class Witch : MonoBehaviour
         gotToDest = false;
     }
 
+    void UpdateBounderies()
+    {
+        topBounderReal = camera.transform.position.y + topBounder/2;
+        bottomBounderReal = camera.transform.position.y + bottomBounder/2;
+    }
     // Update is called once per frame
     void Update()
     {
+        UpdateBounderies();
         animator.SetBool("IsGrow", _isGrow);
         animator.SetBool("IsShrink", _isShrink);
         if (!GameManager.gameEnded && GameManager.countDownFinish)
@@ -86,7 +97,7 @@ public class Witch : MonoBehaviour
 
     private void UpdateRandomDest()
     {
-        randomSpotVec = new Vector3(positionX, Random.Range(topBounder, bottomBounder), positionZ);
+        randomSpotVec = new Vector3(positionX, Random.Range(topBounderReal, bottomBounderReal), positionZ);
         int choice = Random.Range(0, 2);
         _isGrow = choice == 0 ? true : false;
         _isShrink = choice == 1 ? true : false;
