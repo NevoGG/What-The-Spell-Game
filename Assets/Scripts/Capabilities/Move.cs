@@ -14,7 +14,8 @@ public abstract class Move : MonoBehaviour
     protected InputAction power;
     //animation parameters: 
     protected bool isFacingRight = true;
-    
+
+    public ParticleSystem dust;
     //Movement Fields:
     [SerializeField, Range(0f, 1000f)] protected float _maxSpeed = 15f;
     [SerializeField, Range(0f, 300f)] protected float _maxAcceleration = 35f;
@@ -56,7 +57,6 @@ public abstract class Move : MonoBehaviour
     
     protected int _maxAirJumps = 0;
     public abstract void SetMaxAirJumps(int k);
-    
 }
 
     

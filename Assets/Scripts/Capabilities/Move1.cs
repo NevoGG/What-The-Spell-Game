@@ -16,6 +16,8 @@ public class Move1 : Move
     {
         isFacingRight = !isFacingRight;
         transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+        CreateDust();
+        
     }
 
     private void Awake()
@@ -136,6 +138,7 @@ public class Move1 : Move
 
     private void JumpAction()
     {
+        CreateDust();
         if (_onGround || _jumpPhase < _maxAirJumps)
         {
             _jumpPhase += 1;
@@ -177,6 +180,11 @@ public class Move1 : Move
     private void PassThroughPlatform(InputAction.CallbackContext context)
     {
         _ground.PassCurPlatform(); //todo: put in move instead of move1
+    }
+
+    private void CreateDust()
+    {
+        dust.Play();
     }
 
 }

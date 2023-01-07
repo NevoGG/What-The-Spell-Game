@@ -49,8 +49,8 @@ public class Witch : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        positionX = transform.position.x;
-        positionZ = transform.position.z;
+        positionX = transform.localPosition.x;
+        positionZ = transform.localPosition.z;
         UpdateRandomDest();
         gotToDest = false;
     }
@@ -63,7 +63,7 @@ public class Witch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateBounderies();
+        //UpdateBounderies();
         animator.SetBool("IsGrow", _isGrow);
         animator.SetBool("IsShrink", _isShrink);
         if (!GameManager.gameEnded && GameManager.countDownFinish)
@@ -75,8 +75,9 @@ public class Witch : MonoBehaviour
 
     private void CustomUpdate()
     {
-        if (Vector3.Distance(transform.position, randomSpotVec) < distanceWitchFromDestPar)
+        if (Vector3.Distance(transform.localPosition, randomSpotVec) < distanceWitchFromDestPar)
         {
+            //print("current: " + transform.position.y);
             gotToDest = true;
             CastSpell();
             UpdateRandomDest();
@@ -84,20 +85,21 @@ public class Witch : MonoBehaviour
         }
         else if (!gotToDest)
         {
-            if (randomSpotVec.y - transform.position.y > 0)
+            if (randomSpotVec.y - transform.localPosition.y > 0)
             {
-                transform.position += new Vector3(0, witchMovementSpeed * Time.deltaTime, 0);
+                transform.localPosition += new Vector3(0, witchMovementSpeed * Time.deltaTime, 0);
             }
             else
             {
-                transform.position -= new Vector3(0, witchMovementSpeed * Time.deltaTime, 0);
+                transform.localPosition -= new Vector3(0, witchMovementSpeed * Time.deltaTime, 0);
             }
         }
     }
 
     private void UpdateRandomDest()
     {
-        randomSpotVec = new Vector3(positionX, Random.Range(topBounderReal, bottomBounderReal), positionZ);
+        randomSpotVec = new Vector3(positionX, Random.Range(topBounder, bottomBounder), positionZ);
+        //print("to get to: " + randomSpotVec.y);
         int choice = Random.Range(0, 2);
         _isGrow = choice == 0 ? true : false;
         _isShrink = choice == 1 ? true : false;
