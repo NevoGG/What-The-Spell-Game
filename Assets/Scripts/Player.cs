@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
 {
 	[SerializeField] private List<GameObject> animals;
 
+	public bool hasChanged = false;
 	//Other Parameters
 	private int _curAnimalXPNeeded;
 	private GameObject curAnimal;
@@ -60,9 +61,10 @@ public class Player : MonoBehaviour
 	
 	public void SpellCasted(SpellEnum spell)
 	{
+		hasChanged = true;
 		switch (spell)
 	    {
-	     case SpellEnum.Shrink:
+		    case SpellEnum.Shrink:
 		     curXpFromLastLevel -= 1;
 		     if (xp > 0) xp -= 1;
 		     shrinkSpells += 1;
