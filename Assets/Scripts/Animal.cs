@@ -63,13 +63,23 @@ public class Animal : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        SpellEnum spell = SpellEnum.None;
         switch (collision.gameObject.tag)
         {
+            case GameManager.SHRINKSPELL:
+                spell = SpellEnum.Shrink;
+                collision.gameObject.SetActive(false); //todo: spell set inactive
+                break;
+            case  GameManager.GROWSPELL:
+                spell = SpellEnum.Grow;
+                collision.gameObject.SetActive(false);
+                break;
             case GameManager.FALL_BOUNDER_TAG:
                 player.HasLost();
                 break;
             default: return;
         }
+        player.SpellCasted(spell);
     }
     
     private void SetAnimalPower()

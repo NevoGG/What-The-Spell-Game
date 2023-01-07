@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,7 +24,6 @@ public class Spell : MonoBehaviour
         if (fireTimeCounter <= 0)
         {
             Destroy(this.gameObject);
-            Debug.Log("kill teh spell!");
         } 
     }
 }

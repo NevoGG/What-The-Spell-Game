@@ -1537,6 +1537,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 59569620816238993, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 59569620816238993, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -765034583
+      objectReference: {fileID: 0}
     - target: {fileID: 535725479916953987, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: looping
       value: 0
@@ -1585,10 +1593,18 @@ PrefabInstance:
       propertyPath: _downwardMovementMultiplier
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 2939050170738794310, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939050170738794310, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -765034583
+      objectReference: {fileID: 0}
     - target: {fileID: 5233338931765586801, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: dust
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1911141445}
     - target: {fileID: 5353528191086742303, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.25
@@ -1609,6 +1625,14 @@ PrefabInstance:
       propertyPath: dust
       value: 
       objectReference: {fileID: 1586424683}
+    - target: {fileID: 6587236089623967147, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587236089623967147, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -765034583
+      objectReference: {fileID: 0}
     - target: {fileID: 6768886472016835539, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1713,6 +1737,14 @@ PrefabInstance:
       propertyPath: dust
       value: 
       objectReference: {fileID: 812114632}
+    - target: {fileID: 8299055566866069660, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8299055566866069660, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -765034583
+      objectReference: {fileID: 0}
     - target: {fileID: 8399439994459832462, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: looping
       value: 0
@@ -1724,6 +1756,14 @@ PrefabInstance:
     - target: {fileID: 8399439994459832462, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8791267537617441826, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8791267537617441826, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -765034583
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
@@ -2205,6 +2245,11 @@ CanvasRenderer:
 --- !u!1 &1798735401 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5741686068324813842, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+  m_PrefabInstance: {fileID: 1224413798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1911141445 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 535725479916953987, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
   m_PrefabInstance: {fileID: 1224413798}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2037826682

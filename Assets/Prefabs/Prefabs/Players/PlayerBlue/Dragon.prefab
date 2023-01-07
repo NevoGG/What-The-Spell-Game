@@ -217,6 +217,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4607930117966743927}
     m_Modifications:
+    - target: {fileID: 710393259711125873, guid: 0f4f4bddd9a65714898b2dbe375f254c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 710393259711125873, guid: 0f4f4bddd9a65714898b2dbe375f254c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -765034583
+      objectReference: {fileID: 0}
     - target: {fileID: 1789564029935176756, guid: 0f4f4bddd9a65714898b2dbe375f254c, type: 3}
       propertyPath: m_Name
       value: DustParticles
