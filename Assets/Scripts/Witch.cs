@@ -13,7 +13,7 @@ public class Witch : MonoBehaviour
     [SerializeField] private float topBounder = 5f;
     [SerializeField] private float bottomBounder = -5f;
     [SerializeField] private float spellingTime = 2f;
-    [SerializeField] private float distanceWitchFromDestPar = 0.4f;
+    [SerializeField] private float distanceWitchFromDestPar = 0.1f;
     [SerializeField] private GameObject camera;
     
     private Animator animator;
