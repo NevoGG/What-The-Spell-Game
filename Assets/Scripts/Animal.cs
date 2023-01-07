@@ -16,7 +16,7 @@ public class Animal : MonoBehaviour
     private Player player;
     private BoxCollider2D _boxCollider;
 
-
+//small change here
     
     //Setters:
     public void SetPlayer(Player p) { player = p;}
