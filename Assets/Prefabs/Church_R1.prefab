@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2603052448946326974}
   - component: {fileID: 6155946422285215381}
   m_Layer: 0
-  m_Name: WallStudy
+  m_Name: Church_R1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 6dd9bbda2ea5cae4e828b76fdbda2bb4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cfb24bdebf4ed6c469bbbab25d7a099d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
