@@ -49,8 +49,8 @@ MonoBehaviour:
   witchMovementSpeed: 10
   timeBetweenShots: 2
   witchGrowToShrinkRatio: 0
-  topBounder: 14
-  bottomBounder: -14
+  topBounder: 12.5
+  bottomBounder: -13
   spellingTime: 2
   distanceWitchFromDestPar: 0.1
   camera: {fileID: 3130106552981440003, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}

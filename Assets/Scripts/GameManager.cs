@@ -122,19 +122,7 @@ public class GameManager : MonoBehaviour
             endGame();
         }
     }
-
-    // private void UpdatePlayersAlive()
-    // {
-    //     int count = 0;
-    //     foreach (var player in playerList)
-    //     {
-    //         if (player.gameObject.activeSelf)
-    //         {
-    //             count++;
-    //         }
-    //     }
-    //     playersAlive = count;
-    // }
+    
     private void endGame()
     {
         List<Player> rankList = new List<Player>();
