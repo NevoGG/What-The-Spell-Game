@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -105,12 +106,14 @@ public class Player : MonoBehaviour
 
 
     private void UpdateAnimal() //Update animal to current index, update fields.
-    {	
+    {
+	    Vector3 velocity = curAnimal.GetComponent<Rigidbody2D>().velocity;
 	    transform.position = curAnimal.transform.position;
 	    curAnimal.SetActive(false);
 		curAnimal = animals[curAnimalIdx];
 		curAnimal.transform.position = transform.position;
 		curAnimal.SetActive(true);
+		curAnimal.GetComponent<Rigidbody2D>().velocity = velocity;
 		GetAnimalPhysics();
     }
     
@@ -122,15 +125,11 @@ public class Player : MonoBehaviour
 	    _animalPower = curAnimObj.GetAnimalPow();
 	    _curAnimalXPNeeded = curAnimObj.GetXpNeeded();
     }
-    
- //   public void getScore()
-   // {
-	//    int score;
-	//    foreach (var animal in animals)
-	//    {
-	//	    
-	//    }
-   // }
+    //returns cur animal, total xp needed for next, xp left. animal index starts from 0
+    public Tuple<int, int, int> GetScore() //returns cur animal, total xp needed for next, xp left.
+    {
+	    return new Tuple<int, int, int>(curAnimalIdx, _curAnimalXPNeeded, curXpFromLastLevel);
+    }
 
     public void  HasLost()
     {

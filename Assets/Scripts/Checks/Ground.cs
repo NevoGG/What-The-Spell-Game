@@ -11,6 +11,7 @@ public class Ground : MonoBehaviour
     //todo: delete later:
     [SerializeField] private float bgMovementSpeed;
     private Vector3 _lastLocation;
+    private Rigidbody2D _body;
 
     private bool _isTriggerOn = false;
     private Vector2 _normal;
@@ -24,18 +25,9 @@ public class Ground : MonoBehaviour
     private void Start()
     {
         _collider = GetComponent<Collider2D>();
+        _body = GetComponent<Rigidbody2D>();
     }
 
-    // private void Update()
-    // {
-    //     List<Collider2D> collider2Ds = new List<Collider2D>();
-    //     _collider.GetContacts(collider2Ds);
-    //     if (collider2Ds.Count == 0 && _isTriggerOn == false)
-    //     {
-    //         OnGround = false; //todo: patch, delete later
-    //     }
-    // }
-    
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(GameManager.PLATFORM_TAG)
@@ -66,43 +58,6 @@ public class Ground : MonoBehaviour
             curOneWayPlatform = collision.gameObject;
         }
     }
-    // // /// <summary>
-    // // /// Patch as fuck todo: change.
-    // // /// </summary>
-    // // /// <param name="col"></param>
-    // private void OnTriggerEnter2D(Collider2D col)
-    // {
-    //     if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
-    //         || col.gameObject.CompareTag("OneWayPlatform"))
-    //         {
-    //             OnGround = true;
-    //             _isTriggerOn = true;
-    //         }
-    // }
-    //
-    // private void OnTriggerStay2D(Collider2D col)
-    // {
-    //     if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
-    //         || col.gameObject.CompareTag("OneWayPlatform"))
-    //     {
-    //         OnGround = true;
-    //         _isTriggerOn = true;
-    //     }
-    // }
-    //
-    // private void OnTriggerExit2D(Collider2D col)
-    // {
-    //     if (col.gameObject.CompareTag(GameManager.PLATFORM_TAG)
-    //         || col.gameObject.CompareTag("OneWayPlatform"))
-    //     {
-    //         OnGround = false;
-    //         _isTriggerOn = false;
-    //     }
-    // }
-    /// <summary>
-    /// ///patch ends
-    /// </summary>
-    /// <param name="collision"></param>
 
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -125,7 +80,7 @@ public class Ground : MonoBehaviour
         for (int i = 0; i < collision.contactCount; i++)
         {
             _normal = collision.GetContact(i).normal;
-            OnGround |= _normal.y >= 0.9f;
+            OnGround |= (_normal.y >= 0.9f && _body.velocity.y < 0.001f);
         }
     }
 
