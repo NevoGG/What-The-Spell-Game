@@ -2457,7 +2457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: movementSpeed
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3130106552031712420, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: facingRotation
@@ -2574,14 +2574,6 @@ PrefabInstance:
     - target: {fileID: 7763908152114811516, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7763908152114811517, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
-      propertyPath: topBounder
-      value: 12.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7763908152114811517, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
-      propertyPath: bottomBounder
-      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 7763908152114811517, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: facingRotation
@@ -2716,6 +2708,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5706952600099739402, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706952600099739403, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5706952600099739412, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
