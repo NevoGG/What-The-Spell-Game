@@ -126,7 +126,7 @@ public class GameManager : MonoBehaviour
     private void endGame()
     {
         List<Player> rankList = new List<Player>();
-        if (playersAlive == 0)
+        if (playersAlive == -1)
         {
             Tie();
         }

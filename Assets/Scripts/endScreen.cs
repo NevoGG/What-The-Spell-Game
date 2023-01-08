@@ -10,6 +10,7 @@ public class endScreen : MonoBehaviour
     [SerializeField] private List<Vector3> positions;
     [SerializeField] private GameObject buttonMainMenu;
     [SerializeField] private GameObject buttonPlayAgain;
+    [SerializeField] private List<float> sizeIntoBubble; 
     
     [SerializeField] private SpriteRenderer spriteRendererBubble;
     [SerializeField] private SpriteRenderer spriteRendererText;
@@ -40,7 +41,6 @@ public class endScreen : MonoBehaviour
             if (!player.gameObject.activeSelf)
             {
                 player.gameObject.SetActive(true);
-                print("work");
                 player.TurnToBlob();
             }
         }
@@ -48,6 +48,7 @@ public class endScreen : MonoBehaviour
         for (int i = 0; i < rankList.Count; i++)
         {
             rankList[i].MoveToPosition(positions[i]);
+            //rankList[i].OperateEndGame(sizeIntoBubble[i]); //todo:activate
         }
 
         SetSprites(rankList[0]);
