@@ -43,7 +43,6 @@ public class CameraMovment : MonoBehaviour
             if (transform.position.y <topBounder)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + movementSpeed * Time.deltaTime, transform.position.z);
-                Debug.Log("decend!");
             }
             else
             {
