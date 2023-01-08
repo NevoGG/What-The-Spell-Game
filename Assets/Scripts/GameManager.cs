@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Player Player4;
     [SerializeField] private GameObject endScreen;
 
-    private int numberOfPlayers;
+    public int numberOfPlayers;
     [SerializeField]private int playersAlive;
     private List<Player> playerList;
     private List<Player> fallenPlayers;
