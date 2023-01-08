@@ -44,9 +44,7 @@ public class GameManager : MonoBehaviour
     private bool firstGameEnded;
     private bool PlayerCheckGame; // if we chose 1 player at beginning to check game
     
-
-
-
+    
     // Start is called before the first frame update
     void Start()
     {

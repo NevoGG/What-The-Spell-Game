@@ -2044,8 +2044,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: 045fbff4b60982d459afba7e44a7cef7, type: 2}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
+      propertyPath: topSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: topBounder
       value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
+      propertyPath: initialSpeed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: movementSpeed
