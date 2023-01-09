@@ -1,5 +1,5 @@
 {
-    "name": "PlayerInput1",
+    "name": "PlayerInput3",
     "maps": [
         {
             "name": "Player",
@@ -57,7 +57,7 @@
                 {
                     "name": "negative",
                     "id": "f6760f98-75c9-4f02-84d7-0d7b1851423f",
-                    "path": "<Keyboard>/leftArrow",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -68,7 +68,7 @@
                 {
                     "name": "positive",
                     "id": "ff5dffd2-d960-4544-b349-bbb4a33ee395",
-                    "path": "<Keyboard>/rightArrow",
+                    "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -79,7 +79,7 @@
                 {
                     "name": "",
                     "id": "a608b015-a4ae-4019-8d74-54eee02efcc6",
-                    "path": "<Keyboard>/upArrow",
+                    "path": "<Keyboard>/i",
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
@@ -101,7 +101,7 @@
                 {
                     "name": "",
                     "id": "e35a8ec4-edcd-467f-b985-72dd867fa97b",
-                    "path": "<Keyboard>/downArrow",
+                    "path": "<Keyboard>/k",
                     "interactions": "Hold",
                     "processors": "",
                     "groups": "",

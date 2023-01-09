@@ -79,7 +79,7 @@ public partial class @PlayerInput4 : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""negative"",
                     ""id"": ""f6760f98-75c9-4f02-84d7-0d7b1851423f"",
-                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""path"": ""<Keyboard>/numpad4"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -90,7 +90,7 @@ public partial class @PlayerInput4 : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""positive"",
                     ""id"": ""ff5dffd2-d960-4544-b349-bbb4a33ee395"",
-                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""path"": ""<Keyboard>/numpad6"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -101,7 +101,7 @@ public partial class @PlayerInput4 : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""a608b015-a4ae-4019-8d74-54eee02efcc6"",
-                    ""path"": ""<Keyboard>/upArrow"",
+                    ""path"": ""<Keyboard>/numpad8"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
@@ -123,7 +123,7 @@ public partial class @PlayerInput4 : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""e35a8ec4-edcd-467f-b985-72dd867fa97b"",
-                    ""path"": ""<Keyboard>/downArrow"",
+                    ""path"": ""<Keyboard>/numpad2"",
                     ""interactions"": ""Hold"",
                     ""processors"": """",
                     ""groups"": """",
