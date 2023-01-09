@@ -149,6 +149,11 @@ public class Player : MonoBehaviour
     {
 	    return;//todo: later.
     }
+
+    public void OperateEndGame(float size)
+    {
+	    curAnimal.transform.localScale *= size;
+    }
 } //Upgrade the animal of the player
 
 

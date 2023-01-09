@@ -966,6 +966,7 @@ MonoBehaviour:
   Player3: {fileID: 56517444}
   Player4: {fileID: 756100745}
   endScreen: {fileID: 592168559}
+  numberOfPlayers: 0
   playersAlive: 0
 --- !u!4 &612236751
 Transform:
@@ -2157,7 +2158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5670875191455993274, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: timerLenPerRound
-      value: 10
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6234106319086940325, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: m_Controller
@@ -2402,7 +2403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
       propertyPath: sizeIntoBubble.Array.data[0]
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
       propertyPath: sizeIntoBubble.Array.data[1]
@@ -2410,11 +2411,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
       propertyPath: sizeIntoBubble.Array.data[2]
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
       propertyPath: sizeIntoBubble.Array.data[3]
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8072254095337734002, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
       propertyPath: m_RootOrder

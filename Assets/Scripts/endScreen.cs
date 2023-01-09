@@ -48,7 +48,7 @@ public class endScreen : MonoBehaviour
         for (int i = 0; i < rankList.Count; i++)
         {
             rankList[i].MoveToPosition(positions[i]);
-            //rankList[i].OperateEndGame(sizeIntoBubble[i]); //todo:activate
+            rankList[i].OperateEndGame(sizeIntoBubble[i]); //todo:activate
         }
 
         SetSprites(rankList[0]);
