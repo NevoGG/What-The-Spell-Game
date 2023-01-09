@@ -1,0 +1,318 @@
+fileFormatVersion: 2
+guid: 60cf0a2deacb6c140bab5b43804ae050
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blue_Poof_0
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 609
+        width: 255
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37c62db728ff2943b4d33b789bb74f8
+      internalID: -598759593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Poof_1
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 597
+        width: 272
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b33bc463ad995e4e96e886d0a7341d4
+      internalID: 860171588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Poof_2
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 584
+        width: 292
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0907a98f3efbc46a64020027204d75
+      internalID: 1890040035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Poof_4
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 569
+        width: 329
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c485390998cd1e240baff8e03e4c77b5
+      internalID: -352252786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Poof_14
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 565
+        width: 328
+        height: 337
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1648feadb31294abbacb6f61d532e9
+      internalID: 1624867088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Poof_36
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 160
+        width: 355
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c154823ac8bdae4bba6f61aaa749382
+      internalID: 387063621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Poof_42
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 159
+        width: 353
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dca9f6dd75a98140b319d575849008f
+      internalID: 1346536857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Blue_Poof_47: 1275703909
+      Blue_Poof_39: -231564195
+      Blue_Poof_15: 1576657892
+      Blue_Poof_16: 1265628095
+      Blue_Poof_44: -1271978384
+      Blue_Poof_9: 1714594351
+      Blue_Poof_1: 860171588
+      Blue_Poof_3: -539506896
+      Blue_Poof_11: 1696934640
+      Blue_Poof_7: 1969677654
+      Blue_Poof_27: 567917125
+      Blue_Poof_38: -841598404
+      Blue_Poof_17: 1915095389
+      Blue_Poof_14: 1624867088
+      Blue_Poof_34: -159878748
+      Blue_Poof_13: 367244861
+      Blue_Poof_12: -1255672626
+      Blue_Poof_31: 781091702
+      Blue_Poof_40: -904179653
+      Blue_Poof_42: 1346536857
+      Blue_Poof_28: -2004284064
+      Blue_Poof_43: 1382404196
+      Blue_Poof_30: 362138755
+      Blue_Poof_4: -352252786
+      Blue_Poof_35: -76984732
+      Blue_Poof_22: -1313919900
+      Blue_Poof_36: 387063621
+      Blue_Poof_8: -905887325
+      Blue_Poof_20: 2105411705
+      Blue_Poof_46: -279827178
+      Blue_Poof_19: -1809731076
+      Blue_Poof_18: -148622352
+      Blue_Poof_21: 28641506
+      Blue_Poof_41: 1166189647
+      Blue_Poof_29: -218218097
+      Blue_Poof_37: 25714130
+      Blue_Poof_2: 1890040035
+      Blue_Poof_5: -10064453
+      Blue_Poof_32: -894623190
+      Blue_Poof_0: -598759593
+      Blue_Poof_10: -967491272
+      Blue_Poof_23: -1414347525
+      Blue_Poof_45: 886789449
+      Blue_Poof_33: 90023237
+      Blue_Poof_26: 699481898
+      Blue_Poof_24: -1073963622
+      Blue_Poof_25: -369636963
+      Blue_Poof_6: 1454441717
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,7 +9,8 @@ public class Animal : MonoBehaviour
     [SerializeField] private AnimalPower _power;
     [SerializeField, Range(0f, 10)] private int _xpNeeded;
     
-    	
+    // public ParticleSystem growParticles;
+    // public ParticleSystem shrinkParticles;
     private Move _move;
     private Ground _ground;
     private Rigidbody2D _body;

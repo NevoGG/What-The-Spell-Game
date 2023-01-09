@@ -66,12 +66,17 @@ public class Player : MonoBehaviour
 	    {
 		    case SpellEnum.Shrink:
 		     curXpFromLastLevel -= 1;
-		     if (xp > 0) xp -= 1;
+		     if (xp > 0)
+		     {
+			     // curAnimal.GetComponent<Animal>().shrinkParticles.Play();
+			     xp -= 1;
+		     }
 		     shrinkSpells += 1;
 		     if (curXpFromLastLevel < 0) Demote();
 		     break;
 	     case SpellEnum.Grow:
 		     xp += 1;
+		     // curAnimal.GetComponent<Animal>().growParticles.Play();
 		     growSpells += 1;
 			curXpFromLastLevel += 1;
 			if (curXpFromLastLevel == _curAnimalXPNeeded) Promote();

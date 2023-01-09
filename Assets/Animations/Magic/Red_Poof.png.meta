@@ -1,0 +1,318 @@
+fileFormatVersion: 2
+guid: 4856d75f61c98ed4f809ed2ad0b3d0f5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Red_Poof_0
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 609
+        width: 255
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07003644b4553224b821b79d20bdc9b3
+      internalID: 285049126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Poof_1
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 597
+        width: 272
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6ef798383de6c479396d1842aea1df
+      internalID: 152392316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Poof_2
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 584
+        width: 292
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04898283a55df43489b6d0dfd588caf9
+      internalID: -633822689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Poof_11
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 576
+        width: 316
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10967c17b781946468966050fec4d7a2
+      internalID: -875094409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Poof_14
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 569
+        width: 330
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9da84c5def9644d8728b44104db20c
+      internalID: -1172719136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Poof_36
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 170
+        width: 355
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e251a3b39d28d14198ab474693cc0ab
+      internalID: -670641507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Poof_42
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 173
+        width: 352
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf21cec9c854cf2428762c0907f436ac
+      internalID: -392934230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Red_Poof_18: -1004012371
+      Red_Poof_16: 1253247707
+      Red_Poof_30: -2010230416
+      Red_Poof_35: 1272180376
+      Red_Poof_46: 1657167673
+      Red_Poof_28: 32694045
+      Red_Poof_33: 55668489
+      Red_Poof_26: 1137454070
+      Red_Poof_19: 1924760484
+      Red_Poof_20: -159478987
+      Red_Poof_44: -638002024
+      Red_Poof_11: -875094409
+      Red_Poof_41: 322515579
+      Red_Poof_24: -1165364570
+      Red_Poof_17: 204467859
+      Red_Poof_29: 120186064
+      Red_Poof_13: -945465518
+      Red_Poof_2: -633822689
+      Red_Poof_22: 1119172792
+      Red_Poof_38: 1143409864
+      Red_Poof_14: -1172719136
+      Red_Poof_10: -737680889
+      Red_Poof_5: -515360272
+      Red_Poof_15: -2031215334
+      Red_Poof_27: 402019391
+      Red_Poof_23: -1182076687
+      Red_Poof_47: -661592031
+      Red_Poof_12: -1869706793
+      Red_Poof_25: -2098507653
+      Red_Poof_39: -141621742
+      Red_Poof_6: -327323150
+      Red_Poof_8: -910747875
+      Red_Poof_36: -670641507
+      Red_Poof_3: 1670202538
+      Red_Poof_45: -958475260
+      Red_Poof_37: -1737342946
+      Red_Poof_4: 2129744841
+      Red_Poof_31: -1630253262
+      Red_Poof_0: 285049126
+      Red_Poof_34: -1434891428
+      Red_Poof_21: -1208314366
+      Red_Poof_9: -61802984
+      Red_Poof_7: -1600502308
+      Red_Poof_43: -1080839610
+      Red_Poof_32: -1659876049
+      Red_Poof_42: -392934230
+      Red_Poof_40: -1006272021
+      Red_Poof_1: 152392316
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
