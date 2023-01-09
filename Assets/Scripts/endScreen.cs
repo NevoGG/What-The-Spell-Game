@@ -10,6 +10,20 @@ public class endScreen : MonoBehaviour
     [SerializeField] private List<Vector3> positions;
     [SerializeField] private GameObject buttonMainMenu;
     [SerializeField] private GameObject buttonPlayAgain;
+    [SerializeField] private List<float> sizeIntoBubble; 
+    
+    [SerializeField] private SpriteRenderer spriteRendererBubble;
+    [SerializeField] private SpriteRenderer spriteRendererText;
+    [SerializeField] private Sprite BlueBubble;
+    [SerializeField] private Sprite YellowBubble;
+    [SerializeField] private Sprite RedBubble;
+    [SerializeField] private Sprite GreenBubble;
+    [SerializeField] private Sprite blueWin;
+    [SerializeField] private Sprite yellowWin;
+    [SerializeField] private Sprite redWin;
+    [SerializeField] private Sprite greenWin;
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -34,8 +48,37 @@ public class endScreen : MonoBehaviour
         for (int i = 0; i < rankList.Count; i++)
         {
             rankList[i].MoveToPosition(positions[i]);
+            //rankList[i].OperateEndGame(sizeIntoBubble[i]); //todo:activate
         }
-        
+
+        SetSprites(rankList[0]);
+
+    }
+
+    private void SetSprites(Player player)
+    {
+        switch (player.gameObject.name)
+        {
+            case "PlayerBlue":
+                spriteRendererBubble.sprite = BlueBubble;
+                spriteRendererText.sprite = blueWin;
+                break;
+            
+            case "PlayerGreen":
+                spriteRendererBubble.sprite = GreenBubble;
+                spriteRendererText.sprite = greenWin;
+                break;
+
+            case "PlayerYellow":
+                spriteRendererBubble.sprite = YellowBubble;
+                spriteRendererText.sprite = yellowWin;
+                break;
+
+            case "PlayerRed":
+                spriteRendererBubble.sprite = RedBubble;
+                spriteRendererText.sprite = redWin;
+                break;
+        }
     }
 
     // Update is called once per frame

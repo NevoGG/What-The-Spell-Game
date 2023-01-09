@@ -44,9 +44,7 @@ public class GameManager : MonoBehaviour
     private bool firstGameEnded;
     private bool PlayerCheckGame; // if we chose 1 player at beginning to check game
     
-
-
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -126,7 +124,7 @@ public class GameManager : MonoBehaviour
     private void endGame()
     {
         List<Player> rankList = new List<Player>();
-        if (playersAlive == 0)
+        if (playersAlive == -1)
         {
             Tie();
         }
