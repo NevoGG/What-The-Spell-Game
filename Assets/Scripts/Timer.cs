@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour
 
     public static bool timerDone;
 
-    [SerializeField] static public float timerLenPerRound = 60;
+    [SerializeField] public float timerLenPerRound = 60;
     [SerializeField] private float curTimer;
     [SerializeField] private Animator animator;
     [SerializeField] private AnimationClip clip;

@@ -9,12 +9,13 @@ public class CameraMovment : MonoBehaviour
     [SerializeField] private float bottomBounder;
     [SerializeField] private float topSpeed;
     [SerializeField] private float initialSpeed;
+    [SerializeField] private Timer timer;
 
     private bool acend = true;
     // Start is called before the first frame update
     void Start()
     {
-        movementSpeed = initialSpeed + (topSpeed - initialSpeed) / (Timer.timerLenPerRound * Time.deltaTime);
+        movementSpeed = initialSpeed;
     }
     
 
@@ -29,6 +30,7 @@ public class CameraMovment : MonoBehaviour
 
     private void CustomUpdate()
     {
+        movementSpeed += (topSpeed - initialSpeed)* Time.deltaTime / (timer.timerLenPerRound);
         if (acend)
         {
             if (transform.position.y > bottomBounder )
