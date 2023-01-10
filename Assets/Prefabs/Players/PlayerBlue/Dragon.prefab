@@ -104,15 +104,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dust: {fileID: 419925087252493693}
-  _maxSpeed: 122
-  _maxAcceleration: 28
-  _maxAirAcceleration: 36
+  _maxSpeed: 194
+  _maxAcceleration: 55
+  _maxAirAcceleration: 72
   _downwardOnPressMultiplier: 6.52
-  _downwardMovementMultiplier: 0.99
-  _upwardMovementMultiplier: 18
-  _jumpHeight: 489
-  _multiJumpMultiplier: 0.75
-  _groundLinearDrag: 5.09
+  _downwardMovementMultiplier: 3
+  _upwardMovementMultiplier: 24
+  _jumpHeight: 1000
+  _multiJumpMultiplier: 0.59
+  _groundLinearDrag: 3.4
   _upwardLinearDrag: 5
   _downardLinearDrag: 1.59
   _size: 1
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _power: 0
-  _xpNeeded: 2
+  _xpNeeded: 1
 --- !u!50 &4607930117966743821
 Rigidbody2D:
   serializedVersion: 4

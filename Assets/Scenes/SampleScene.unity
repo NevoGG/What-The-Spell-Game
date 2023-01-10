@@ -1846,7 +1846,7 @@ PrefabInstance:
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[0]
       value: 
-      objectReference: {fileID: 1798735401}
+      objectReference: {fileID: 1064012223}
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[1]
       value: 
@@ -1858,15 +1858,15 @@ PrefabInstance:
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[3]
       value: 
-      objectReference: {fileID: 1064012223}
+      objectReference: {fileID: 1224413799}
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[4]
       value: 
-      objectReference: {fileID: 1224413799}
+      objectReference: {fileID: 1224413800}
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[5]
       value: 
-      objectReference: {fileID: 1224413800}
+      objectReference: {fileID: 1798735401}
     - target: {fileID: 7101385001190155549, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: looping
       value: 0

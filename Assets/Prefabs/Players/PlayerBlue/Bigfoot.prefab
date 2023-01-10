@@ -104,9 +104,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dust: {fileID: 1355874863189713019}
-  _maxSpeed: 311
-  _maxAcceleration: 73
-  _maxAirAcceleration: 304
+  _maxSpeed: 347
+  _maxAcceleration: 116
+  _maxAirAcceleration: 153
   _downwardOnPressMultiplier: 8.61
   _downwardMovementMultiplier: 30
   _upwardMovementMultiplier: 3.5
@@ -114,7 +114,7 @@ MonoBehaviour:
   _multiJumpMultiplier: 0.75
   _groundLinearDrag: 7.7
   _upwardLinearDrag: 7.96
-  _downardLinearDrag: 10
+  _downardLinearDrag: 4.6
   _size: 0.9
 --- !u!95 &4607930117966743925
 Animator:

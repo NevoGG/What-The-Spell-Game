@@ -105,17 +105,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dust: {fileID: 3090951952968706009}
   _maxSpeed: 600
-  _maxAcceleration: 241
-  _maxAirAcceleration: 147
+  _maxAcceleration: 200
+  _maxAirAcceleration: 245
   _downwardOnPressMultiplier: 2.45
-  _downwardMovementMultiplier: 49.5
+  _downwardMovementMultiplier: 14
   _upwardMovementMultiplier: 13.8
-  _jumpHeight: 700
-  _multiJumpMultiplier: 0.75
+  _jumpHeight: 923
+  _multiJumpMultiplier: 0.42
   _groundLinearDrag: 3.98
   _upwardLinearDrag: 2.88
-  _downardLinearDrag: 10
-  _size: 0.5
+  _downardLinearDrag: 3.5
+  _size: 0.35
 --- !u!95 &4607930117966743925
 Animator:
   serializedVersion: 4
@@ -161,8 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61592dd13a84ca543ac66970076de426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _power: 1
-  _xpNeeded: 2
+  _power: 0
+  _xpNeeded: 1
 --- !u!50 &4607930117966743821
 Rigidbody2D:
   serializedVersion: 4

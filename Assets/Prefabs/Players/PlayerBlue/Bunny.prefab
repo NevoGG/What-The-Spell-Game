@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _power: 0
-  _xpNeeded: 2
+  _xpNeeded: 1
 --- !u!50 &4607930117966743821
 Rigidbody2D:
   serializedVersion: 4
