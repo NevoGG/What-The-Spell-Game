@@ -79,6 +79,11 @@ public abstract class Move : MonoBehaviour
     _downardLinearDrag = animalParams._downardLinearDrag;
     _size = animalParams._size;
     }
+    
+    protected void CreateDust()
+    {
+        dust.Play();
+    }
 }
 
     

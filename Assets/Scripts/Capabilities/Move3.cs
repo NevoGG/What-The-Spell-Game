@@ -14,12 +14,14 @@ public class Move3 : Move
 
     void Flip()
     {
+        CreateDust();
         isFacingRight = !isFacingRight;
         transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
     }
 
     private void Awake()
     {
+        UpdateParams();
         _body = GetComponent<Rigidbody2D>();
         _ground = GetComponent<Ground>();
         animator = GetComponent<Animator>();
@@ -137,6 +139,7 @@ public class Move3 : Move
 
     private void JumpAction()
     {
+        CreateDust();
         if (_onGround || _jumpPhase < _maxAirJumps)
         {
             _jumpPhase += 1;

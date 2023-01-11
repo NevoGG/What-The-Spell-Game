@@ -22,6 +22,7 @@ public class Move1 : Move
 
     private void Awake()
     {
+        UpdateParams();
         _body = GetComponent<Rigidbody2D>();
         _ground = GetComponent<Ground>();
         animator = GetComponent<Animator>();
@@ -181,11 +182,6 @@ public class Move1 : Move
     private void PassThroughPlatform(InputAction.CallbackContext context)
     {
         _ground.PassCurPlatform(); //todo: put in move instead of move1
-    }
-
-    private void CreateDust()
-    {
-        dust.Play();
     }
 
 }

@@ -176,7 +176,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022951841, y: 0.028482199}
+  m_Offset: {x: -0.13708305, y: -0.8843969}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -187,7 +187,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.493665, y: 3.2869759}
+  m_Size: {x: 12.711117, y: 7.9050694}
   m_EdgeRadius: 0
 --- !u!114 &6769281793279247632
 MonoBehaviour:
@@ -217,6 +217,18 @@ PrefabInstance:
     - target: {fileID: 1037859650727485795, guid: 0f4f4bddd9a65714898b2dbe375f254c, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037859650727485795, guid: 0f4f4bddd9a65714898b2dbe375f254c, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.16470589
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037859650727485795, guid: 0f4f4bddd9a65714898b2dbe375f254c, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.9254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037859650727485795, guid: 0f4f4bddd9a65714898b2dbe375f254c, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.8862745
       objectReference: {fileID: 0}
     - target: {fileID: 1789564029935176756, guid: 0f4f4bddd9a65714898b2dbe375f254c, type: 3}
       propertyPath: m_Name

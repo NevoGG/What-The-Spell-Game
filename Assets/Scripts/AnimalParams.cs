@@ -14,7 +14,7 @@ public class AnimalParams : MonoBehaviour
     //Jump Fields:
     [SerializeField, Range(0f, 100f)] public float _downwardMovementMultiplier = 3f;
     [SerializeField, Range(0f, 100f)] public float _upwardMovementMultiplier = 1.7f;
-    [SerializeField, Range(0f, 1000f)] public float _jumpHeight = 100f;
+    [SerializeField, Range(0f, 5000f)] public float _jumpHeight = 100f;
     [SerializeField, Range(0f, 1f)] public float _multiJumpMultiplier = 0.75f;
     
     //linear drag:
