@@ -32,8 +32,8 @@ public class Witch : MonoBehaviour
     [SerializeField] private int facingRotation;
     [SerializeField] private int numberOfProjectiles;
     [SerializeField] private float projectileSpread;
-    public bool _isGrow = false;
-    public bool _isShrink = false;
+    private float _isGrow = 0f;
+    private float _isShrink = 0f;
     private GameObject spell;
 
 
@@ -64,8 +64,6 @@ public class Witch : MonoBehaviour
     void Update()
     {
         //UpdateBounderies();
-        animator.SetBool("IsGrow", _isGrow);
-        animator.SetBool("IsShrink", _isShrink);
         if (!GameManager.gameEnded && GameManager.countDownFinish)
         {
             CustomUpdate();
@@ -101,9 +99,32 @@ public class Witch : MonoBehaviour
         randomSpotVec = new Vector3(positionX, Random.Range(topBounder, bottomBounder), positionZ);
         //print("to get to: " + randomSpotVec.y);
         int choice = Random.Range(0, 2);
-        _isGrow = choice == 0 ? true : false;
-        _isShrink = choice == 1 ? true : false;
-        spell = choice == 0 ? growSpell : shrinkSpell;
+        _isGrow = (float)(choice);
+        _isShrink = choice == 1 ? 1f : 0f;
+        // if (choice == 0)
+        // {
+        //     _isGrow = true;
+        //     _isShrink = false;
+        // }
+        // else
+        // {
+        //     {
+        //         _isGrow = false;
+        //         _isShrink = true;
+        //     }
+        //     if (_isGrow)
+        //     {
+        //         animator.ResetTrigger("IsGrow");
+        //         animator.SetTrigger("IsGrow");
+        //     }
+        //
+        //     if (_isShrink)
+        //     {
+        //         animator.ResetTrigger("IsShrink");
+        //         animator.SetTrigger("IsGrow");
+        //     }
+            //todo: looks like shit but will hopefully work
+            spell = choice == 0 ? growSpell : shrinkSpell;
     }
 
     private void CastSpell()
