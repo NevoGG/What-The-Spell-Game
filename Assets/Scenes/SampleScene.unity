@@ -2919,6 +2919,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a45bbae47231d974dbfc324c5cb57918, type: 3}
     - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
+      propertyPath: textSpeed.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
       propertyPath: YellowBubble
       value: 
       objectReference: {fileID: 21300000, guid: 8ecdec718e11a854f80ba1bd5c9ecce4, type: 3}
@@ -2930,6 +2934,10 @@ PrefabInstance:
       propertyPath: buttonPlayAgain
       value: 
       objectReference: {fileID: 662330955}
+    - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
+      propertyPath: leftBounderText
+      value: -0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
       propertyPath: spriteRendererText
       value: 
