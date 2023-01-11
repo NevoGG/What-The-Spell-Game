@@ -59,9 +59,10 @@ public class GameManager : MonoBehaviour
         PlayerCheckGame = numberOfPlayers == 1;
     }
 
-    public void SetCountDownFinish()
+    public void CountDownFinish()
     {
         countDownFinish = true;
+        GetComponent<AudioSource>().Play();
     }
 
     private void SetGameManagerInPlayers()
@@ -123,6 +124,7 @@ public class GameManager : MonoBehaviour
     
     private void endGame()
     {
+        GetComponent<AudioSource>().Stop();
         List<Player> rankList = new List<Player>();
         if (playersAlive == -1)
         {
