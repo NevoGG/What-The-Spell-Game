@@ -55,9 +55,6 @@ public class Animal : MonoBehaviour
                 spell = SpellEnum.Grow;
                 collision.gameObject.SetActive(false);
                 break;
-            case GameManager.FALL_BOUNDER_TAG:
-                player.HasLost();
-                break;
             //Scalable. todo: more spells?
             default: return;
         }
