@@ -71,10 +71,12 @@ public class Animal : MonoBehaviour
         {
             case GameManager.SHRINKSPELL:
                 spell = SpellEnum.Shrink;
+                shrinkParticles.Play();
                 collision.gameObject.SetActive(false); //todo: spell set inactive
                 break;
             case  GameManager.GROWSPELL:
                 spell = SpellEnum.Grow;
+                growParticles.Play();
                 collision.gameObject.SetActive(false);
                 break;
             case GameManager.FALL_BOUNDER_TAG:
