@@ -45,6 +45,7 @@ public class Move2 : Move
 
     private void Update()
     {
+        UpdateParams();
         _direction.x = move.ReadValue<float>();
         _desiredVelocity = new Vector2(_direction.x, 0f) * Mathf.Max(_maxSpeed - _ground.Friction * Time.deltaTime, 0f);
         

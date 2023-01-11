@@ -14,25 +14,27 @@ public abstract class Move : MonoBehaviour
     protected InputAction power;
     //animation parameters: 
     protected bool isFacingRight = true;
-
     public ParticleSystem dust;
+    
+    public AnimalParams animalParams;
+    
     //Movement Fields:
-    [SerializeField, Range(0f, 1000f)] protected float _maxSpeed = 15f;
-    [SerializeField, Range(0f, 300f)] protected float _maxAcceleration = 35f;
-    [SerializeField, Range(0f, 1000f)] protected float _maxAirAcceleration = 20f;
-    [SerializeField, Range(0f, 10)] protected float _downwardOnPressMultiplier = 2f;	
+    protected float _maxSpeed = 15f;
+    protected float _maxAcceleration = 35f;
+    protected float _maxAirAcceleration = 20f;
+    protected float _downwardOnPressMultiplier = 2f;	
     
     //Jump Fields:
-    [SerializeField, Range(0f, 100f)] protected float _downwardMovementMultiplier = 3f;
-    [SerializeField, Range(0f, 100f)] protected float _upwardMovementMultiplier = 1.7f;
-    [SerializeField, Range(0f, 1000f)] protected float _jumpHeight = 100f;
-    [SerializeField, Range(0f, 1f)] protected float _multiJumpMultiplier = 0.75f;
+    protected float _downwardMovementMultiplier = 3f;
+    protected float _upwardMovementMultiplier = 1.7f;
+    protected float _jumpHeight = 100f;
+    protected float _multiJumpMultiplier = 0.75f;
     
     //linear drag:
-    [SerializeField, Range(0f, 10f)] protected float  _groundLinearDrag= 10f;
-    [SerializeField, Range(0f, 10f)] protected float  _upwardLinearDrag= 10f;
-    [SerializeField, Range(0f, 10f)] protected float  _downardLinearDrag= 10f;
-    [SerializeField, Range(0f, 15f)] protected float _size = 1f;
+    protected float  _groundLinearDrag= 10f;
+    protected float  _upwardLinearDrag= 10f;
+    protected float  _downardLinearDrag= 10f;
+    protected float _size = 1f;
     
     protected int _jumpPhase;
     protected float _downardMovementOnPress;
@@ -43,8 +45,7 @@ public abstract class Move : MonoBehaviour
     protected float _jumpSpeed = 1;
     protected float _maxSpeedChange, _acceleration;
     protected bool _isDownPressed = false;
-    
-    
+
     protected bool _desiredJump, _onGround;
     
     // private Controller _controller;
@@ -57,6 +58,27 @@ public abstract class Move : MonoBehaviour
     
     protected int _maxAirJumps = 0;
     public abstract void SetMaxAirJumps(int k);
+
+    protected void UpdateParams()
+    {
+    //Movement Fields:
+    _maxSpeed = animalParams._maxSpeed;
+    _maxAcceleration  = animalParams._maxAcceleration;
+    _maxAirAcceleration = animalParams._maxAirAcceleration;
+    _downwardOnPressMultiplier = animalParams._downwardOnPressMultiplier;	
+    
+    //Jump Fields:
+    _downwardMovementMultiplier = animalParams._downwardMovementMultiplier;
+    _upwardMovementMultiplier = animalParams._upwardMovementMultiplier;
+    _jumpHeight = animalParams._jumpHeight;
+    _multiJumpMultiplier = animalParams._multiJumpMultiplier;
+    
+    //linear drag:
+    _groundLinearDrag = animalParams._groundLinearDrag;
+    _upwardLinearDrag = animalParams._upwardLinearDrag;
+    _downardLinearDrag = animalParams._downardLinearDrag;
+    _size = animalParams._size;
+    }
 }
 
     

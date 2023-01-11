@@ -24,6 +24,6 @@ public class AnimalParams : MonoBehaviour
     [SerializeField, Range(0f, 15f)] public float _size = 1f;
     
     //Power and xp:
-    [SerializeField] public AnimalPower _power;
-    [SerializeField, Range(0f, 10)] public int _xpNeeded;
+    // [SerializeField] public AnimalPower _power;
+    // [SerializeField, Range(0f, 10)] public int _xpNeeded;
 }
