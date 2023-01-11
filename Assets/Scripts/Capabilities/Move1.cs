@@ -183,9 +183,4 @@ public class Move1 : Move
         _ground.PassCurPlatform(); //todo: put in move instead of move1
     }
 
-    private void CreateDust()
-    {
-        dust.Play();
-    }
-
 }

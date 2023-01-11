@@ -14,6 +14,7 @@ public class Move2 : Move
 
     void Flip()
     {
+        CreateDust();
         isFacingRight = !isFacingRight;
         transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
     }
@@ -137,6 +138,7 @@ public class Move2 : Move
 
     private void JumpAction()
     {
+        CreateDust();
         if (_onGround || _jumpPhase < _maxAirJumps)
         {
             _jumpPhase += 1;
