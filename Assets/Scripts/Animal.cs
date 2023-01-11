@@ -8,6 +8,8 @@ public class Animal : MonoBehaviour
 
     [SerializeField] private AnimalPower _power = AnimalPower.DoubleJump;
     [SerializeField, Range(0f, 10)] private int _xpNeeded = 2;
+    [SerializeField] private ParticleSystem growParticles;
+    [SerializeField] private ParticleSystem shrinkParticles; 
     
     // public ParticleSystem growParticles;
     // public ParticleSystem shrinkParticles;
@@ -53,9 +55,6 @@ public class Animal : MonoBehaviour
                 spell = SpellEnum.Grow;
                 collision.gameObject.SetActive(false);
                 break;
-            case GameManager.FALL_BOUNDER_TAG:
-                player.HasLost();
-                break;
             //Scalable. todo: more spells?
             default: return;
         }
@@ -69,10 +68,12 @@ public class Animal : MonoBehaviour
         {
             case GameManager.SHRINKSPELL:
                 spell = SpellEnum.Shrink;
+                shrinkParticles.Play();
                 collision.gameObject.SetActive(false); //todo: spell set inactive
                 break;
             case  GameManager.GROWSPELL:
                 spell = SpellEnum.Grow;
+                growParticles.Play();
                 collision.gameObject.SetActive(false);
                 break;
             case GameManager.FALL_BOUNDER_TAG:
