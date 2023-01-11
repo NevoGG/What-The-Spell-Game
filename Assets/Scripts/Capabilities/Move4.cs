@@ -21,6 +21,7 @@ public class Move4 : Move
 
     private void Awake()
     {
+        UpdateParams();
         _body = GetComponent<Rigidbody2D>();
         _ground = GetComponent<Ground>();
         animator = GetComponent<Animator>();
