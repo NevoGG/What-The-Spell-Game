@@ -9,7 +9,7 @@ public class AnimalParams : MonoBehaviour
     [SerializeField, Range(0f, 1000f)] public float _maxSpeed = 15f;
     [SerializeField, Range(0f, 300f)] public float _maxAcceleration = 35f;
     [SerializeField, Range(0f, 1000f)] public float _maxAirAcceleration = 20f;
-    [SerializeField, Range(0f, 10)] public float _downwardOnPressMultiplier = 2f;	
+    [SerializeField, Range(-50f, 0)] public float _downwardOnPressMultiplier = 2f;	
     
     //Jump Fields:
     [SerializeField, Range(0f, 100f)] public float _downwardMovementMultiplier = 3f;

@@ -65,8 +65,12 @@ public class Move1 : Move
         //Jump and linear drag:
         if (!_onGround)
         {
+            if (_isDownPressed)
+            {
+                _body.velocity = new Vector2(_body.velocity.x, _downwardOnPressMultiplier);
+            }
             //set downward movement speed:
-            _downwardMovementMultiplier = _isDownPressed ? _downardMovementOnPress : _downardMovementWithoutPress;
+            // _downwardMovementMultiplier = _isDownPressed ? _downardMovementOnPress : _downardMovementWithoutPress;
             //set linear drag:
             _body.drag = (_body.velocity.y > 0) ? _upwardLinearDrag : _downardLinearDrag;
         }
