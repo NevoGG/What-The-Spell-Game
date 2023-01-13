@@ -10,7 +10,11 @@ public class endScreen : MonoBehaviour
     [SerializeField] private List<Vector3> positions;
     [SerializeField] private GameObject buttonMainMenu;
     [SerializeField] private GameObject buttonPlayAgain;
-    [SerializeField] private List<float> sizeIntoBubble; 
+    [SerializeField] private List<float> sizeIntoBubble;
+    [SerializeField] private Vector3 textSpeed = new  Vector3(0.01f, 0, 0);
+    private GameObject textWinner;
+    private Vector3 initTextPos;
+    [SerializeField] private float leftBounderText;
     
     [SerializeField] private SpriteRenderer spriteRendererBubble;
     [SerializeField] private SpriteRenderer spriteRendererText;
@@ -32,6 +36,8 @@ public class endScreen : MonoBehaviour
             mainCam.transform.position.z);
         buttonMainMenu.SetActive(true);
         buttonPlayAgain.SetActive(true);
+        textWinner = transform.GetChild(1).gameObject;
+        initTextPos = textWinner.transform.position;
     }
 
     public void EndGame(List<Player> rankList)
@@ -84,7 +90,11 @@ public class endScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        textWinner.transform.position -= textSpeed * Time.deltaTime;
+        if (textWinner.transform.position.x < leftBounderText)
+        {
+            textWinner.transform.position = initTextPos;
+        }
     }
 
     public void MainMenu()
