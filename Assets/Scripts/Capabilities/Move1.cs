@@ -8,7 +8,9 @@ using UnityEngine.InputSystem.Interactions;
 
 public class Move1 : Move
 {
-    private PlayerInput1 controls; 
+    private PlayerInput1 controls;
+    private static readonly int IsJumping = Animator.StringToHash("IsJumping");
+    private static readonly int Speed = Animator.StringToHash("Speed");
 
     public override void SetMaxAirJumps(int h) { _maxAirJumps = h;}
 
@@ -48,13 +50,15 @@ public class Move1 : Move
 
     private void Update()
     {
+        if (isDashing) return;
         UpdateParams();
         _direction.x = move.ReadValue<float>();
         _desiredVelocity = new Vector2(_direction.x, 0f) * Mathf.Max(_maxSpeed - _ground.Friction * Time.deltaTime, 0f);
         
         //Animator control parameters:
-        animator.SetFloat("Speed", Mathf.Abs(_body.velocity.x));
-        animator.SetBool("IsJumping", !_ground.OnGround);
+        animator.SetFloat(Speed, Mathf.Abs(_body.velocity.x));
+        animator.SetBool(IsJumping, !_ground.OnGround);
+        // animator.SetBool("IsDashing", !isDashing);
         if (isFacingRight && _direction.x < 0) Flip();
         if (!isFacingRight && _direction.x > 0) Flip();
         
@@ -71,7 +75,8 @@ public class Move1 : Move
 
     private void FixedUpdate()
     {
-        _onGround = _ground.OnGround;
+        if (isDashing) return;
+            _onGround = _ground.OnGround;
         _velocity = _body.velocity;
 
         _acceleration = _onGround ? _maxAcceleration : _maxAirAcceleration;
@@ -110,6 +115,7 @@ public class Move1 : Move
 
     private void OnEnable()
     {
+        
         move = controls.Player.Move;
         move.Enable();
         jump = controls.Player.Jump;
@@ -125,8 +131,9 @@ public class Move1 : Move
             if (context.interaction is MultiTapInteraction) PassThroughPlatform(context);
         };
         crouch.canceled += CrouchCanceled;
-        power =controls.Player.Power;
-        power.Enable();
+        dash =controls.Player.Dash;
+        dash.Enable();
+        dash.performed += DashFunc;
         // power.performed += Power; todo: when adding power
     }
 
@@ -134,7 +141,7 @@ public class Move1 : Move
     {
         move.Disable();
         jump.Disable();
-        power.Disable();
+        dash.Disable();
         crouch.Disable();
     }
 
@@ -162,6 +169,11 @@ public class Move1 : Move
     private void Jump(InputAction.CallbackContext context)
     {
         _desiredJump = true;
+    }
+
+    private void DashFunc(InputAction.CallbackContext context)
+    {
+        if (canDash) StartCoroutine(Dash());
     }
     
     private void Crouch(InputAction.CallbackContext context)

@@ -2397,6 +2397,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 675971103221629572, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 675971103221629572, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1782988505
+      objectReference: {fileID: 0}
+    - target: {fileID: 1493756119293599743, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1493756119293599743, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1782988505
+      objectReference: {fileID: 0}
+    - target: {fileID: 3610428453183399694, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3610428453183399694, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1782988505
+      objectReference: {fileID: 0}
     - target: {fileID: 5233338931765586801, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animalParams
       value: 
@@ -2405,10 +2429,26 @@ PrefabInstance:
       propertyPath: animalParams
       value: 
       objectReference: {fileID: 2070665898}
+    - target: {fileID: 5505066536014981552, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505066536014981552, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1782988505
+      objectReference: {fileID: 0}
     - target: {fileID: 6178956967982919275, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animalParams
       value: 
       objectReference: {fileID: 995025096}
+    - target: {fileID: 6423461210849353787, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6423461210849353787, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1782988505
+      objectReference: {fileID: 0}
     - target: {fileID: 6692921858907498671, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -2525,6 +2565,34 @@ PrefabInstance:
       propertyPath: animalParams
       value: 
       objectReference: {fileID: 720983799}
+    - target: {fileID: 8167778121158257399, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_Emitting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167778121158257399, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167778121158257399, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1782988505
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177047533711483977, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_Emitting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177047533711483977, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177047533711483977, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1782988505
+      objectReference: {fileID: 0}
+    - target: {fileID: 8177047533711483977, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9153794558860026449, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animalParams
       value: 
@@ -2975,7 +3043,7 @@ PrefabInstance:
       objectReference: {fileID: 3130106553011633793}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: topSpeed
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: topBounder
@@ -2983,7 +3051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: initialSpeed
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: movementSpeed

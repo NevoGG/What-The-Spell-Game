@@ -9,6 +9,7 @@ TagManager:
   - Platform
   - fallBounder
   - OneWayPlatform
+  - Dashing
   layers:
   - Default
   - TransparentFX

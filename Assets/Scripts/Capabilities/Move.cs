@@ -7,10 +7,19 @@ using UnityEngine.InputSystem.Interactions;
 
 public abstract class Move : MonoBehaviour
 {
+    //Dash Params:
+    protected bool canDash = true;
+    protected bool isDashing;
+    protected float dashPower = 40f;
+    protected float dashTime = 0.2f;
+    protected float dashCooldown = 1f;
+    [SerializeField] protected TrailRenderer tr;
+    
     protected PlayerInput1 controls; 
     protected InputAction move;
     protected InputAction jump;
     protected InputAction crouch;
+    protected InputAction dash;
     protected InputAction power;
     //animation parameters: 
     protected bool isFacingRight = true;
@@ -83,6 +92,30 @@ public abstract class Move : MonoBehaviour
     protected void CreateDust()
     {
         dust.Play();
+    }
+
+    protected IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        
+        
+        float originalDrag = _body.drag;
+        float originalGravity = _body.gravityScale;
+        string originalTag = tag;
+        tag = "Dashing";
+        _body.gravityScale = 0f;
+        _body.drag = 2;
+        _body.velocity = new Vector2(transform.localScale.x * dashPower * -1, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashTime);
+        tr.emitting = false;
+        _body.gravityScale = originalGravity;
+        isDashing = false;
+        tag = originalTag;
+        _body.drag = originalDrag;
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
 }
 
