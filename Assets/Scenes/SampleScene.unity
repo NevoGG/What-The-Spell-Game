@@ -1073,6 +1073,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
+      propertyPath: animals.Array.data[0]
+      value: 
+      objectReference: {fileID: 1518987561}
+    - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
+      propertyPath: animals.Array.data[1]
+      value: 
+      objectReference: {fileID: 572289304}
+    - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
+      propertyPath: animals.Array.data[2]
+      value: 
+      objectReference: {fileID: 572289302}
+    - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
+      propertyPath: animals.Array.data[3]
+      value: 
+      objectReference: {fileID: 572289301}
+    - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
+      propertyPath: animals.Array.data[4]
+      value: 
+      objectReference: {fileID: 572289303}
+    - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
+      propertyPath: animals.Array.data[5]
+      value: 
+      objectReference: {fileID: 572289300}
+    - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
+      propertyPath: animals.Array.data[6]
+      value: 
+      objectReference: {fileID: 572289299}
     - target: {fileID: 7984308076919295651, guid: ba32a59f94676624491758f747661459, type: 3}
       propertyPath: animalParams
       value: 
@@ -1098,6 +1126,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ba44017d790d849913a1c4832dae0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &572289299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 295634478162889690, guid: ba32a59f94676624491758f747661459, type: 3}
+  m_PrefabInstance: {fileID: 572289297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &572289300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7980295256876817149, guid: ba32a59f94676624491758f747661459, type: 3}
+  m_PrefabInstance: {fileID: 572289297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &572289301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5970630829409882591, guid: ba32a59f94676624491758f747661459, type: 3}
+  m_PrefabInstance: {fileID: 572289297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &572289302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 706607895744954876, guid: ba32a59f94676624491758f747661459, type: 3}
+  m_PrefabInstance: {fileID: 572289297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &572289303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6295753809016881379, guid: ba32a59f94676624491758f747661459, type: 3}
+  m_PrefabInstance: {fileID: 572289297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &572289304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4183120487456737685, guid: ba32a59f94676624491758f747661459, type: 3}
+  m_PrefabInstance: {fileID: 572289297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &592168559 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5706952600099739412, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
@@ -1813,6 +1871,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+      propertyPath: animals.Array.data[0]
+      value: 
+      objectReference: {fileID: 1480431523}
+    - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+      propertyPath: animals.Array.data[1]
+      value: 
+      objectReference: {fileID: 1480431522}
+    - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+      propertyPath: animals.Array.data[2]
+      value: 
+      objectReference: {fileID: 1480431520}
+    - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+      propertyPath: animals.Array.data[3]
+      value: 
+      objectReference: {fileID: 1480431519}
+    - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+      propertyPath: animals.Array.data[4]
+      value: 
+      objectReference: {fileID: 1480431521}
+    - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+      propertyPath: animals.Array.data[5]
+      value: 
+      objectReference: {fileID: 1480431518}
+    - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+      propertyPath: animals.Array.data[6]
+      value: 
+      objectReference: {fileID: 1480431517}
     - target: {fileID: 7164380103793137272, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -1838,10 +1924,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ba44017d790d849913a1c4832dae0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1480431517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7164380103793137275, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+  m_PrefabInstance: {fileID: 1480431515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1480431518 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7236384499542743912, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+  m_PrefabInstance: {fileID: 1480431515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1480431519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1315952188954308000, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+  m_PrefabInstance: {fileID: 1480431515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1480431520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3130626086547016165, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+  m_PrefabInstance: {fileID: 1480431515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1480431521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3006671438194058935, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+  m_PrefabInstance: {fileID: 1480431515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1480431522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 554860740110375867, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+  m_PrefabInstance: {fileID: 1480431515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1480431523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4731779075677241325, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+  m_PrefabInstance: {fileID: 1480431515}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1503319081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5741686068324813842, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
   m_PrefabInstance: {fileID: 1801775307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1518987561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5688682203900013906, guid: ba32a59f94676624491758f747661459, type: 3}
+  m_PrefabInstance: {fileID: 572289297}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1561434712
 PrefabInstance:
@@ -1992,7 +2118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
-      value: 0.5
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxSpeed
@@ -2370,15 +2496,15 @@ PrefabInstance:
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[2]
       value: 
-      objectReference: {fileID: 1503319081}
+      objectReference: {fileID: 821807344}
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[3]
       value: 
-      objectReference: {fileID: 821807344}
+      objectReference: {fileID: 1644034373}
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[4]
       value: 
-      objectReference: {fileID: 1644034373}
+      objectReference: {fileID: 1503319081}
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[5]
       value: 
@@ -2687,15 +2813,15 @@ PrefabInstance:
     - target: {fileID: 6768886472016835551, guid: 87e1647c7cf466244b5d83ff4d851e46, type: 3}
       propertyPath: animals.Array.data[2]
       value: 
-      objectReference: {fileID: 2016240385}
+      objectReference: {fileID: 2016240384}
     - target: {fileID: 6768886472016835551, guid: 87e1647c7cf466244b5d83ff4d851e46, type: 3}
       propertyPath: animals.Array.data[3]
       value: 
-      objectReference: {fileID: 2016240384}
+      objectReference: {fileID: 2016240383}
     - target: {fileID: 6768886472016835551, guid: 87e1647c7cf466244b5d83ff4d851e46, type: 3}
       propertyPath: animals.Array.data[4]
       value: 
-      objectReference: {fileID: 2016240383}
+      objectReference: {fileID: 2016240385}
     - target: {fileID: 6768886472016835551, guid: 87e1647c7cf466244b5d83ff4d851e46, type: 3}
       propertyPath: animals.Array.data[5]
       value: 
