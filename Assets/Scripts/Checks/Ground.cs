@@ -22,7 +22,7 @@ public class Ground : MonoBehaviour
     private GameObject curOneWayPlatform;
     private float _timeToWait = 0.5f; //todo: change to something good for every player.;
     private double _threshold = 0.0001;
-    private float _bounceFactor = 80f;
+    private float _bounceFactor = 50f;
     private float _yPushVelocity= 40f;
     private float _pushFactor = 100f;
 

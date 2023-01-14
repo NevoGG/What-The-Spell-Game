@@ -1977,6 +1977,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _mass
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
       value: 0.35
       objectReference: {fileID: 0}
@@ -2023,6 +2027,10 @@ PrefabInstance:
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardMovementMultiplier
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _mass
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
@@ -2073,6 +2081,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _mass
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
       value: 0.75
       objectReference: {fileID: 0}
@@ -2115,6 +2127,10 @@ PrefabInstance:
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardMovementMultiplier
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
@@ -2165,8 +2181,12 @@ PrefabInstance:
       value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _mass
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxSpeed
@@ -2261,6 +2281,10 @@ PrefabInstance:
       value: Parameters
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _mass
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
       value: 0.9
       objectReference: {fileID: 0}
@@ -2307,6 +2331,10 @@ PrefabInstance:
     - target: {fileID: 8436395277352743197, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165868669780030985, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _mass
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 9165868669780030985, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size

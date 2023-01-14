@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 4607930117966743924}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2.1253986, z: 2}
+  m_LocalScale: {x: 1, y: 1.0626993, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5155684678065316012}
@@ -255,7 +255,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.5
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -319,6 +319,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4607930117966743927}
     m_Modifications:
+    - target: {fileID: 710393259711125873, guid: 0f4f4bddd9a65714898b2dbe375f254c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 710393259711125873, guid: 0f4f4bddd9a65714898b2dbe375f254c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1037859650727485795, guid: 0f4f4bddd9a65714898b2dbe375f254c, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 0.5
