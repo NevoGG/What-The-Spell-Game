@@ -10,18 +10,23 @@ public class CameraMovment : MonoBehaviour
     [SerializeField] private float topSpeed;
     [SerializeField] private float initialSpeed;
     [SerializeField] private Timer timer;
-
+    public static Vector2 cameraCenter;
+    public static float cameraWidth;
+    public static float cameraBottomBounder;
+    
     private bool acend = true;
     // Start is called before the first frame update
     void Start()
     {
         movementSpeed = initialSpeed;
+        cameraWidth = topBounder - bottomBounder;
     }
     
 
     // Update is called once per frame
     void Update()
     {
+        cameraCenter = transform.position;
         if (!GameManager.gameEnded && GameManager.countDownFinish)
         {
             CustomUpdate();
