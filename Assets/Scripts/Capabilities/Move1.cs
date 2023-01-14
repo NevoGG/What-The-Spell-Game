@@ -9,22 +9,14 @@ using UnityEngine.InputSystem.Interactions;
 public class Move1 : Move
 {
     private PlayerInput1 controls;
-    private static readonly int IsJumping = Animator.StringToHash("IsJumping");
-    private static readonly int Speed = Animator.StringToHash("Speed");
+
 
     public override void SetMaxAirJumps(int h) { _maxAirJumps = h;}
 
-    void Flip()
-    {
-        isFacingRight = !isFacingRight;
-        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
-        CreateDust();
-        
-    }
+
 
     private void Awake()
     {
-        UpdateParams();
         _body = GetComponent<Rigidbody2D>();
         _ground = GetComponent<Ground>();
         animator = GetComponent<Animator>();
@@ -40,6 +32,7 @@ public class Move1 : Move
         //speed of falling while down key is pressed:
         _downardMovementWithoutPress = _downwardMovementMultiplier;
         _downardMovementOnPress = _downwardOnPressMultiplier * _downwardMovementMultiplier;
+        UpdateParams();
     }
 
     private void Start()
@@ -148,56 +141,4 @@ public class Move1 : Move
         dash.Disable();
         crouch.Disable();
     }
-
-    private void JumpAction()
-    {
-        CreateDust();
-        if (_onGround || _jumpPhase < _maxAirJumps)
-        {
-            _jumpPhase += 1;
-                
-            _jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * _jumpHeight);
-                
-            if (_velocity.y > 0f)
-            {
-                _jumpSpeed = Mathf.Max(_jumpSpeed - _velocity.y, 0f);
-            }
-            else if (_velocity.y < 0f)
-            {
-                _jumpSpeed += Mathf.Abs(_body.velocity.y);
-            }
-            _velocity.y += _jumpSpeed * (Mathf.Pow(_multiJumpMultiplier,_jumpPhase));
-        }
-    }
-
-    private void Jump(InputAction.CallbackContext context)
-    {
-        _desiredJump = true;
-    }
-
-    private void DashFunc(InputAction.CallbackContext context)
-    {
-        if (canDash) StartCoroutine(Dash());
-    }
-    
-    private void Crouch(InputAction.CallbackContext context)
-    {
-        _isDownPressed = true;
-    }
-    
-    private void CrouchCanceled(InputAction.CallbackContext context)
-    {
-        _isDownPressed = false;
-    }
-    
-    private void JumpCanceled(InputAction.CallbackContext context)
-    {
-        _desiredJump = false;
-    }
-
-    private void PassThroughPlatform(InputAction.CallbackContext context)
-    {
-        _ground.PassCurPlatform(); //todo: put in move instead of move1
-    }
-
 }

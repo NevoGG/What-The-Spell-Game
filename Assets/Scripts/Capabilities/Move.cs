@@ -67,6 +67,9 @@ public abstract class Move : MonoBehaviour
     
     protected int _maxAirJumps = 0;
     public abstract void SetMaxAirJumps(int k);
+    
+    protected static readonly int IsJumping = Animator.StringToHash("IsJumping");
+    protected static readonly int Speed = Animator.StringToHash("Speed");
 
     protected void UpdateParams()
     {
@@ -87,6 +90,8 @@ public abstract class Move : MonoBehaviour
     _upwardLinearDrag = animalParams._upwardLinearDrag;
     _downardLinearDrag = animalParams._downardLinearDrag;
     _size = animalParams._size;
+    dashPower = animalParams._dashPower;
+    _body.mass = animalParams._mass;
     }
     
     protected void CreateDust()
@@ -117,6 +122,65 @@ public abstract class Move : MonoBehaviour
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
+    
+    protected void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+        CreateDust();
+    }
+    
+    protected void JumpAction()
+    {
+        CreateDust();
+        if (_onGround || _jumpPhase < _maxAirJumps)
+        {
+            _jumpPhase += 1;
+                
+            _jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * _jumpHeight);
+                
+            if (_velocity.y > 0f)
+            {
+                _jumpSpeed = Mathf.Max(_jumpSpeed - _velocity.y, 0f);
+            }
+            else if (_velocity.y < 0f)
+            {
+                _jumpSpeed += Mathf.Abs(_body.velocity.y);
+            }
+            _velocity.y += _jumpSpeed * (Mathf.Pow(_multiJumpMultiplier,_jumpPhase));
+        }
+    }
+    
+    protected void Jump(InputAction.CallbackContext context)
+    {
+        _desiredJump = true;
+    }
+
+    protected void DashFunc(InputAction.CallbackContext context)
+    {
+        if (canDash) StartCoroutine(Dash());
+    }
+    
+    protected void Crouch(InputAction.CallbackContext context)
+    {
+        _isDownPressed = true;
+    }
+    
+    protected void CrouchCanceled(InputAction.CallbackContext context)
+    {
+        _isDownPressed = false;
+    }
+    
+    protected void JumpCanceled(InputAction.CallbackContext context)
+    {
+        _desiredJump = false;
+    }
+
+    protected void PassThroughPlatform(InputAction.CallbackContext context)
+    {
+        _ground.PassCurPlatform(); //todo: put in move instead of move1
+    }
+    
 }
 
     
