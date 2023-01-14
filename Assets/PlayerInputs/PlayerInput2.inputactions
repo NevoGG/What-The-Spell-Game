@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Power",
+                    "name": "Dash",
                     "type": "Button",
                     "id": "db4cb9b9-5c98-496f-8671-4ef907571734",
                     "expectedControlType": "Button",
@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "Hold,MultiTap",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Power",
+                    "type": "Button",
+                    "id": "a6865991-f722-4dff-85d2-55986d0cd630",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -90,11 +99,11 @@
                 {
                     "name": "",
                     "id": "d64deba5-6896-40ec-9ca5-1592bd2ad0e2",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/q",
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Power",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -106,6 +115,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9833a846-2939-4cfe-bd98-7c4bcd4f6d64",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Power",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

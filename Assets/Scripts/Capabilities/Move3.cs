@@ -10,13 +10,10 @@ public class Move3 : Move
 {
     private PlayerInput3 controls; 
 
+
     public override void SetMaxAirJumps(int h) { _maxAirJumps = h;}
 
-    void Flip()
-    {
-        isFacingRight = !isFacingRight;
-        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
-    }
+
 
     private void Awake()
     {
@@ -35,6 +32,7 @@ public class Move3 : Move
         //speed of falling while down key is pressed:
         _downardMovementWithoutPress = _downwardMovementMultiplier;
         _downardMovementOnPress = _downwardOnPressMultiplier * _downwardMovementMultiplier;
+        UpdateParams();
     }
 
     private void Start()
@@ -45,21 +43,27 @@ public class Move3 : Move
 
     private void Update()
     {
+        if (isDashing) return;
         UpdateParams();
         _direction.x = move.ReadValue<float>();
         _desiredVelocity = new Vector2(_direction.x, 0f) * Mathf.Max(_maxSpeed - _ground.Friction * Time.deltaTime, 0f);
         
         //Animator control parameters:
-        animator.SetFloat("Speed", Mathf.Abs(_body.velocity.x));
-        animator.SetBool("IsJumping", !_ground.OnGround);
+        animator.SetFloat(Speed, Mathf.Abs(_body.velocity.x));
+        animator.SetBool(IsJumping, !_ground.OnGround);
+        // animator.SetBool("IsDashing", !isDashing);
         if (isFacingRight && _direction.x < 0) Flip();
         if (!isFacingRight && _direction.x > 0) Flip();
         
         //Jump and linear drag:
         if (!_onGround)
         {
+            if (_isDownPressed)
+            {
+                _body.velocity = new Vector2(_body.velocity.x, _downwardOnPressMultiplier);
+            }
             //set downward movement speed:
-            _downwardMovementMultiplier = _isDownPressed ? _downardMovementOnPress : _downardMovementWithoutPress;
+            // _downwardMovementMultiplier = _isDownPressed ? _downardMovementOnPress : _downardMovementWithoutPress;
             //set linear drag:
             _body.drag = (_body.velocity.y > 0) ? _upwardLinearDrag : _downardLinearDrag;
         }
@@ -68,7 +72,8 @@ public class Move3 : Move
 
     private void FixedUpdate()
     {
-        _onGround = _ground.OnGround;
+        if (isDashing) return;
+            _onGround = _ground.OnGround;
         _velocity = _body.velocity;
 
         _acceleration = _onGround ? _maxAcceleration : _maxAirAcceleration;
@@ -107,6 +112,7 @@ public class Move3 : Move
 
     private void OnEnable()
     {
+        
         move = controls.Player.Move;
         move.Enable();
         jump = controls.Player.Jump;
@@ -122,8 +128,9 @@ public class Move3 : Move
             if (context.interaction is MultiTapInteraction) PassThroughPlatform(context);
         };
         crouch.canceled += CrouchCanceled;
-        power =controls.Player.Power;
-        power.Enable();
+        dash =controls.Player.Dash;
+        dash.Enable();
+        dash.performed += DashFunc;
         // power.performed += Power; todo: when adding power
     }
 
@@ -131,53 +138,7 @@ public class Move3 : Move
     {
         move.Disable();
         jump.Disable();
-        power.Disable();
+        dash.Disable();
         crouch.Disable();
     }
-
-    private void JumpAction()
-    {
-        if (_onGround || _jumpPhase < _maxAirJumps)
-        {
-            _jumpPhase += 1;
-                
-            _jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * _jumpHeight);
-                
-            if (_velocity.y > 0f)
-            {
-                _jumpSpeed = Mathf.Max(_jumpSpeed - _velocity.y, 0f);
-            }
-            else if (_velocity.y < 0f)
-            {
-                _jumpSpeed += Mathf.Abs(_body.velocity.y);
-            }
-            _velocity.y += _jumpSpeed * (Mathf.Pow(_multiJumpMultiplier,_jumpPhase));
-        }
-    }
-
-    private void Jump(InputAction.CallbackContext context)
-    {
-        _desiredJump = true;
-    }
-    
-    private void Crouch(InputAction.CallbackContext context)
-    {
-        _isDownPressed = true;
-    }
-    
-    private void CrouchCanceled(InputAction.CallbackContext context)
-    {
-        _isDownPressed = false;
-    }
-    
-    private void JumpCanceled(InputAction.CallbackContext context)
-    {
-        _desiredJump = false;
-    }
-
-    private void PassThroughPlatform(InputAction.CallbackContext context)
-    {
-        _ground.PassCurPlatform(); //todo: put in move instead of move1
-    }
-
 }

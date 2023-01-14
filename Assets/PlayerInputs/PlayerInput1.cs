@@ -46,7 +46,7 @@ public partial class @PlayerInput1 : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Power"",
+                    ""name"": ""Dash"",
                     ""type"": ""Button"",
                     ""id"": ""db4cb9b9-5c98-496f-8671-4ef907571734"",
                     ""expectedControlType"": ""Button"",
@@ -116,7 +116,7 @@ public partial class @PlayerInput1 : IInputActionCollection2, IDisposable
                     ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Power"",
+                    ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -140,7 +140,7 @@ public partial class @PlayerInput1 : IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
-        m_Player_Power = m_Player.FindAction("Power", throwIfNotFound: true);
+        m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
         m_Player_Crouch = m_Player.FindAction("Crouch", throwIfNotFound: true);
     }
 
@@ -203,7 +203,7 @@ public partial class @PlayerInput1 : IInputActionCollection2, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Jump;
-    private readonly InputAction m_Player_Power;
+    private readonly InputAction m_Player_Dash;
     private readonly InputAction m_Player_Crouch;
     public struct PlayerActions
     {
@@ -211,7 +211,7 @@ public partial class @PlayerInput1 : IInputActionCollection2, IDisposable
         public PlayerActions(@PlayerInput1 wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
-        public InputAction @Power => m_Wrapper.m_Player_Power;
+        public InputAction @Dash => m_Wrapper.m_Player_Dash;
         public InputAction @Crouch => m_Wrapper.m_Player_Crouch;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
@@ -228,9 +228,9 @@ public partial class @PlayerInput1 : IInputActionCollection2, IDisposable
                 @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Power.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
-                @Power.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
-                @Power.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
+                @Dash.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
+                @Dash.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
+                @Dash.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
                 @Crouch.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouch;
                 @Crouch.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouch;
                 @Crouch.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouch;
@@ -244,9 +244,9 @@ public partial class @PlayerInput1 : IInputActionCollection2, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
-                @Power.started += instance.OnPower;
-                @Power.performed += instance.OnPower;
-                @Power.canceled += instance.OnPower;
+                @Dash.started += instance.OnDash;
+                @Dash.performed += instance.OnDash;
+                @Dash.canceled += instance.OnDash;
                 @Crouch.started += instance.OnCrouch;
                 @Crouch.performed += instance.OnCrouch;
                 @Crouch.canceled += instance.OnCrouch;
@@ -258,7 +258,7 @@ public partial class @PlayerInput1 : IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
-        void OnPower(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
     }
 }

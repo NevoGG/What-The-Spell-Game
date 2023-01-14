@@ -7,7 +7,7 @@ public class Animal : MonoBehaviour
     //Other Fields:
 
     [SerializeField] private AnimalPower _power = AnimalPower.DoubleJump;
-    [SerializeField, Range(0f, 10)] private int _xpNeeded = 2;
+     private int _xpNeeded = 1;
     [SerializeField] private ParticleSystem growParticles;
     [SerializeField] private ParticleSystem shrinkParticles; 
     
