@@ -29,7 +29,6 @@ public class PlatformScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(_timeTilConjure);
         if (_isConjuring)
         {
             _timeTilConjure -= Time.deltaTime;

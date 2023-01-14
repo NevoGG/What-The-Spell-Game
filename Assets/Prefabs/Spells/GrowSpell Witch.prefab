@@ -267,6 +267,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrowMove Variant 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7845293259747868817, guid: c135dbe748c915440b7e319296cbde86, type: 3}
+      propertyPath: m_TagString
+      value: Grow
+      objectReference: {fileID: 0}
     - target: {fileID: 9074200470871496148, guid: c135dbe748c915440b7e319296cbde86, type: 3}
       propertyPath: m_SortingLayer
       value: 1

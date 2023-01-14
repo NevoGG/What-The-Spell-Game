@@ -124,6 +124,7 @@ public class Player : MonoBehaviour
     private void UpdateAnimal() //Update animal to current index, update fields.
     {
 	    Vector3 velocity = curAnimal.GetComponent<Rigidbody2D>().velocity;
+	    print(velocity);
 	    transform.position = curAnimal.transform.position;
 	    curAnimal.SetActive(false);
 		curAnimal = animals[curAnimalIdx];
