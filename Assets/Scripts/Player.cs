@@ -51,9 +51,9 @@ public class Player : MonoBehaviour
     {
 	    if (!this._hasChanged)
 	    {
-		    SpellCasted(SpellEnum.Grow);
-		    SpellCasted(SpellEnum.Grow);
-		    SpellCasted(SpellEnum.Grow);
+		    // SpellCasted(SpellEnum.Grow);
+		    // SpellCasted(SpellEnum.Grow);
+		    // SpellCasted(SpellEnum.Grow);
 		    _hasChanged = true;
 	    }
     }

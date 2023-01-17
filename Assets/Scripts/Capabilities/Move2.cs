@@ -37,7 +37,7 @@ public class Move2 : Move
 
     private void Start()
     {
-        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y) * _size;
     }
 
 

@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61592dd13a84ca543ac66970076de426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _power: 1
+  _power: 0
   growParticles: {fileID: 6846706744499771577}
   shrinkParticles: {fileID: 8494960490809908097}
 --- !u!50 &4607930117966743821
