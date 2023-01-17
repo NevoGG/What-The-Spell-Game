@@ -28,7 +28,7 @@ public class WriteNumPlayers : MonoBehaviour
 
     private void ActivateChoosePlayerScene()
     {
-        SceneManager.LoadScene("SampleScene");//change scene
+        SceneManager.LoadScene("ChoosePlayer");
     }
 
     public void Player1()

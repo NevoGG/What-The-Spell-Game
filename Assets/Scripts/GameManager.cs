@@ -49,14 +49,43 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         fallenPlayers = new List<Player>();
-        numberOfPlayers = WriteNumPlayers.numberOfPlayers;
+        //numberOfPlayers = WriteNumPlayers.numberOfPlayers;
+        numberOfPlayers = ChoosePlayerManager.numberOfPlayers;
         gameEnded = false;
         playersAlive = numberOfPlayers;
-        addPlayersToList();
+        //addPlayersToList();
+        AddPlayersToListNew();
         countDownFinish = false;
         SetGameManagerInPlayers();
         firstGameEnded = false;
         PlayerCheckGame = numberOfPlayers == 1;
+    }
+
+    private void AddPlayersToListNew()
+    {
+        playerList = new List<Player>();
+        List<bool> playerBoolList = ChoosePlayerManager.playersArr;
+
+        if (playerBoolList[0])
+        {
+            playerList.Add(Player1);
+        }
+        if (playerBoolList[1])
+        {
+            playerList.Add(Player2);
+        }
+        if (playerBoolList[2])
+        {
+            playerList.Add(Player3);
+        }
+        if (playerBoolList[3])
+        {
+            playerList.Add(Player4);
+        }
+        foreach (Player player in playerList)
+        {
+            player.gameObject.SetActive(true);
+        }
     }
 
     public void CountDownFinish()

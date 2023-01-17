@@ -8,6 +8,7 @@ public class ChoosePlayerManager : MonoBehaviour
 {
 
     public static List<bool> playersArr = new List<bool>{false, false, false, false};
+    public static int numberOfPlayers = 0;
 
     [SerializeField] private Image redKeysRenderer;
     [SerializeField] private Image blueKeysRenderer;
@@ -35,9 +36,44 @@ public class ChoosePlayerManager : MonoBehaviour
         {
             ResetPlayers();
         }
-        if (Input.GetKey(KeyCode.Return))
+        if (Input.GetKey(KeyCode.Return) && numberOfPlayers != 0)
         {
-            SceneManager.LoadScene("Tutorial");
+            SceneManager.LoadScene("SampleScene");
+        }
+
+        check();
+        countPlayers();
+    }
+
+    private void countPlayers()
+    {
+        numberOfPlayers = 0;
+        foreach (var player in playersArr)
+        {
+            if (player)
+            {
+                numberOfPlayers++;
+            }
+        }
+    }
+
+    private void check()
+    {
+        if (Input.GetKey(KeyCode.A))
+        {
+            ActivatePlayer1();
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            ActivatePlayer2();
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            ActivatePlayer3();
+        }
+        if (Input.GetKey(KeyCode.F))
+        {
+            ActivatePlayer4();
         }
     }
 
