@@ -1978,259 +1978,283 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _mass
-      value: 6
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
-      value: 0.35
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxSpeed
-      value: 600
+      value: 818
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _dashPower
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
-      value: 923
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
-      value: 200
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _groundLinearDrag
-      value: 3.98
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _upwardLinearDrag
-      value: 2.88
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downardLinearDrag
+      value: 1.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _maxAirAcceleration
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _multiJumpMultiplier
+      value: 0.832
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _upwardMovementMultiplier
       value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
-      propertyPath: _maxAirAcceleration
-      value: 245
-      objectReference: {fileID: 0}
-    - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
-      propertyPath: _multiJumpMultiplier
-      value: 0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
-      propertyPath: _upwardMovementMultiplier
-      value: 13.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardOnPressMultiplier
-      value: -30
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardMovementMultiplier
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _mass
-      value: 3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
-      value: 0.95
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxSpeed
-      value: 400
+      value: 818
+      objectReference: {fileID: 0}
+    - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _dashPower
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
-      value: 500
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
-      value: 106
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _groundLinearDrag
-      value: 8.55
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _upwardLinearDrag
-      value: 2.07
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downardLinearDrag
-      value: 10
+      value: 1.32
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAirAcceleration
-      value: 155
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _multiJumpMultiplier
-      value: 0.43
+      value: 0.832
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _upwardMovementMultiplier
-      value: 4.7
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardOnPressMultiplier
-      value: -30
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardMovementMultiplier
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _mass
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _size
       value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
-      propertyPath: _size
-      value: 0.75
+      propertyPath: _maxSpeed
+      value: 818
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
-      propertyPath: _maxSpeed
-      value: 570
+      propertyPath: _dashPower
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
-      value: 500
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
-      value: 110
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _groundLinearDrag
-      value: 6.16
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _upwardLinearDrag
-      value: 6.54
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downardLinearDrag
-      value: 7.4
+      value: 1.32
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAirAcceleration
-      value: 165
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _multiJumpMultiplier
+      value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _upwardMovementMultiplier
-      value: 2
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardOnPressMultiplier
-      value: -30
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardMovementMultiplier
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
-      propertyPath: _mass
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _mass
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
-      value: 0.9
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxSpeed
-      value: 123
+      value: 818
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _dashPower
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
-      value: 2000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
-      value: 0
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _groundLinearDrag
-      value: 5.02
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _upwardLinearDrag
-      value: 4.82
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downardLinearDrag
-      value: 4.99
+      value: 1.32
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAirAcceleration
-      value: 115
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _multiJumpMultiplier
-      value: 0.288
+      value: 0.832
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _upwardMovementMultiplier
-      value: 13.4
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardOnPressMultiplier
-      value: -30
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardMovementMultiplier
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _mass
-      value: 3.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
-      value: 12
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxSpeed
-      value: 194
+      value: 818
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _dashPower
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
-      value: 55
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _groundLinearDrag
-      value: 3.4
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _upwardLinearDrag
-      value: 5
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downardLinearDrag
-      value: 1.59
+      value: 1.32
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAirAcceleration
-      value: 72
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _multiJumpMultiplier
-      value: 0.59
+      value: 0.832
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _upwardMovementMultiplier
-      value: 24
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardOnPressMultiplier
-      value: -30
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardMovementMultiplier
-      value: 3
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5622522278602862971, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: m_RootOrder
@@ -2282,39 +2306,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _mass
-      value: 1.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _size
-      value: 0.9
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxSpeed
-      value: 347
+      value: 818
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _dashPower
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
-      value: 350
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
-      value: 116
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _groundLinearDrag
-      value: 7.7
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _upwardLinearDrag
-      value: 7.96
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downardLinearDrag
-      value: 4.6
+      value: 1.32
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAirAcceleration
-      value: 153
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _multiJumpMultiplier
+      value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _upwardMovementMultiplier
@@ -2322,11 +2354,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardOnPressMultiplier
-      value: -30
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardMovementMultiplier
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8436395277352743197, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -2378,7 +2410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9165868669780030985, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardOnPressMultiplier
-      value: -30
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 9165868669780030985, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _downwardMovementMultiplier
@@ -3083,7 +3115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: topBounder
-      value: 550
+      value: 248.7
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: initialSpeed
