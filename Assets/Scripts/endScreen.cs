@@ -8,8 +8,8 @@ public class endScreen : MonoBehaviour
     
     [SerializeField] GameObject mainCam;
     [SerializeField] private List<Vector3> positions;
-    [SerializeField] private GameObject buttonMainMenu;
-    [SerializeField] private GameObject buttonPlayAgain;
+    //[SerializeField] private GameObject buttonMainMenu;
+    //[SerializeField] private GameObject buttonPlayAgain;
     [SerializeField] private List<float> sizeIntoBubble;
     [SerializeField] private Vector3 textSpeed = new  Vector3(0.01f, 0, 0);
     private GameObject textWinner;
@@ -34,8 +34,8 @@ public class endScreen : MonoBehaviour
     {
         mainCam.transform.position = new Vector3(transform.position.x, transform.position.y,
             mainCam.transform.position.z);
-        buttonMainMenu.SetActive(true);
-        buttonPlayAgain.SetActive(true);
+        //buttonMainMenu.SetActive(true);
+        //buttonPlayAgain.SetActive(true);
         textWinner = transform.GetChild(1).gameObject;
         initTextPos = textWinner.transform.position;
     }
