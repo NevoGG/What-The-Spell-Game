@@ -410,8 +410,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
-  topBounder: 412
+  topBounder: 248.7
   bottomBounder: 0
+  topSpeed: 0
+  initialSpeed: 0
+  timer: {fileID: 0}
 --- !u!1 &5553617604574900892
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +545,11 @@ MonoBehaviour:
   player2Exp: {fileID: 5592145329263917943}
   player3Exp: {fileID: 9215665740457495341}
   player4Exp: {fileID: 751131480934242580}
+  Player1: {fileID: 0}
+  Player2: {fileID: 0}
+  Player3: {fileID: 0}
+  Player4: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &5592145329263917943
 GameObject:
   m_ObjectHideFlags: 0
