@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Power",
+                    "name": "Dash",
                     "type": "Button",
                     "id": "db4cb9b9-5c98-496f-8671-4ef907571734",
                     "expectedControlType": "Button",
@@ -94,7 +94,7 @@
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Power",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

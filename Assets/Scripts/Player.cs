@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public enum ScoreEnum {XP, GrowSpells, ShrinkSpells, BiggestAnimal, TimeAsBiggest }
@@ -20,7 +21,7 @@ public class Player : MonoBehaviour
 
 	//Online Parameters:
 	private int curXpFromLastLevel = 0;
-
+	private bool _hasChanged = false;
 	//Score:
 	public int xp = 0;
 	public int growSpells = 0;
@@ -42,11 +43,19 @@ public class Player : MonoBehaviour
 		}
 		curAnimal = animals[curAnimalIdx];
 		UpdateAnimal();
+
 	}
 	// Update is called once per frame
 	
     void Update()
     {
+	    if (!this._hasChanged)
+	    {
+		    SpellCasted(SpellEnum.Grow);
+		    SpellCasted(SpellEnum.Grow);
+		    SpellCasted(SpellEnum.Grow);
+		    _hasChanged = true;
+	    }
     }
 
 	void FixedUpdate()
@@ -115,6 +124,7 @@ public class Player : MonoBehaviour
     private void UpdateAnimal() //Update animal to current index, update fields.
     {
 	    Vector3 velocity = curAnimal.GetComponent<Rigidbody2D>().velocity;
+	    print(velocity);
 	    transform.position = curAnimal.transform.position;
 	    curAnimal.SetActive(false);
 		curAnimal = animals[curAnimalIdx];

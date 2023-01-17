@@ -16,7 +16,19 @@ public class WriteNumPlayers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+        if (Input.GetKey(KeyCode.Return))
+        {
+            ActivateChoosePlayerScene();
+        }
+    }
+
+    private void ActivateChoosePlayerScene()
+    {
+        SceneManager.LoadScene("ChoosePlayer");
     }
 
     public void Player1()
