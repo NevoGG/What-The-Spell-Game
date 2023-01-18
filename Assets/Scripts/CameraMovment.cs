@@ -14,7 +14,7 @@ public class CameraMovment : MonoBehaviour
     public static float cameraWidth;
     public static float cameraBottomBounder;
     
-    private bool acend = true;
+    private bool acend = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,12 +40,13 @@ public class CameraMovment : MonoBehaviour
         {
             if (transform.position.y > bottomBounder )
             {
-                
+                print("1");
                 transform.position = new Vector3(transform.position.x, transform.position.y - movementSpeed * Time.deltaTime, transform.position.z);
-                Debug.Log("acend!");
+
             }
             else
             {
+                print("2");
                 acend = false;
             }
             
@@ -55,10 +56,12 @@ public class CameraMovment : MonoBehaviour
         {
             if (transform.position.y <topBounder)
             {
+                print("3");
                 transform.position = new Vector3(transform.position.x, transform.position.y + movementSpeed * Time.deltaTime, transform.position.z);
             }
             else
             {
+                print("4");
                 acend = true;
             }
         }
