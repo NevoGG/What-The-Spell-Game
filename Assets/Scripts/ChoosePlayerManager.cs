@@ -10,6 +10,7 @@ public class ChoosePlayerManager : MonoBehaviour
 
     public static List<bool> playersArr = new List<bool>{false, false, false, false};
     public static int numberOfPlayers = 0;
+    
     private PlayerInput1 controls1;
     protected InputAction move1;
     protected InputAction jump1;
@@ -33,7 +34,10 @@ public class ChoosePlayerManager : MonoBehaviour
     protected InputAction jump4;
     protected InputAction crouch4;
     protected InputAction dash4;
-    
+
+
+    [SerializeField] private Image enterRenderer;
+    [SerializeField] private Sprite enterClicked;
     [SerializeField] private Image redKeysRenderer;
     [SerializeField] private Image blueKeysRenderer;
     [SerializeField] private Image greenKeysRenderer;
@@ -54,6 +58,7 @@ public class ChoosePlayerManager : MonoBehaviour
         controls2 = new PlayerInput2();
         controls3 = new PlayerInput3();
         controls4 = new PlayerInput4();
+        ResetPlayers();
     }
     
     private void OnEnable()
@@ -148,10 +153,9 @@ public class ChoosePlayerManager : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Return) && numberOfPlayers != 0)
         {
+            enterRenderer.sprite = enterClicked;
             SceneManager.LoadScene("SampleScene");
         }
-
-        // check();
         countPlayers();
     }
 
@@ -167,26 +171,6 @@ public class ChoosePlayerManager : MonoBehaviour
         }
     }
 
-    // private void check()
-    // {
-    //     if (Input.GetKey(KeyCode.A))
-    //     {
-    //         ActivatePlayer1();
-    //     }
-    //     if (Input.GetKey(KeyCode.S))
-    //     {
-    //         ActivatePlayer2();
-    //     }
-    //     if (Input.GetKey(KeyCode.D))
-    //     {
-    //         ActivatePlayer3();
-    //     }
-    //     if (Input.GetKey(KeyCode.F))
-    //     {
-    //         ActivatePlayer4();
-    //     }
-    // }
-
     private void ResetPlayers()
     {
         for (int i = 0; i < playersArr.Count; i++)
@@ -201,7 +185,7 @@ public class ChoosePlayerManager : MonoBehaviour
 
     public void ActivatePlayer1(InputAction.CallbackContext context)
     {
-        redKeysRenderer.sprite = redKeys;
+        blueKeysRenderer.sprite = blueKeys;
         playersArr[0] = true;
     }
     
@@ -213,7 +197,7 @@ public class ChoosePlayerManager : MonoBehaviour
     
     public void ActivatePlayer3(InputAction.CallbackContext context)
     {
-        blueKeysRenderer.sprite = blueKeys;
+        redKeysRenderer.sprite = redKeys;
         playersArr[2] = true;
     }
     
