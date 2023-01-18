@@ -2010,7 +2010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _dashPower
-      value: 40
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
@@ -2122,7 +2122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _dashPower
-      value: 40
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
@@ -2178,7 +2178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _dashPower
-      value: 40
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
@@ -2234,7 +2234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _dashPower
-      value: 50
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
@@ -2395,6 +2395,10 @@ PrefabInstance:
     - target: {fileID: 9165868669780030985, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxSpeed
       value: 903
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165868669780030985, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _dashPower
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9165868669780030985, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
