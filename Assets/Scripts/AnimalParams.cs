@@ -25,7 +25,7 @@ public class AnimalParams : MonoBehaviour
 
     [SerializeField, Range(0f, 15f)] public float _mass = 1f;
     [SerializeField, Range(0f, 100f)] public float _dashPower = 40f;
-
+    [SerializeField, Range(0f, 100f)] public float _bouncePower = 40f;
 //Power and xp:
     // [SerializeField] public AnimalPower _power;
     // [SerializeField, Range(0f, 10)] public int _xpNeeded;

@@ -2017,6 +2017,10 @@ PrefabInstance:
       value: 381
       objectReference: {fileID: 0}
     - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _bouncePower
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492588239722468476, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
       value: 99
       objectReference: {fileID: 0}
@@ -2071,6 +2075,10 @@ PrefabInstance:
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
       value: 438
+      objectReference: {fileID: 0}
+    - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _bouncePower
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2590629356016893106, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
@@ -2129,6 +2137,10 @@ PrefabInstance:
       value: 420
       objectReference: {fileID: 0}
     - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _bouncePower
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989129739090572290, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
       value: 91
       objectReference: {fileID: 0}
@@ -2185,6 +2197,10 @@ PrefabInstance:
       value: 406
       objectReference: {fileID: 0}
     - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _bouncePower
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112358330720305087, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
       value: 0
       objectReference: {fileID: 0}
@@ -2239,6 +2255,10 @@ PrefabInstance:
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
       value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _bouncePower
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4018219292053395819, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
@@ -2345,6 +2365,10 @@ PrefabInstance:
       value: 422
       objectReference: {fileID: 0}
     - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _bouncePower
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428780599042397460, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration
       value: 85
       objectReference: {fileID: 0}
@@ -2403,6 +2427,10 @@ PrefabInstance:
     - target: {fileID: 9165868669780030985, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _jumpHeight
       value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165868669780030985, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
+      propertyPath: _bouncePower
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 9165868669780030985, guid: 1d869dffc5316a84a911574aef3f4b07, type: 3}
       propertyPath: _maxAcceleration

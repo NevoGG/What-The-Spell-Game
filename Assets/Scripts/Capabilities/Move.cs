@@ -92,6 +92,9 @@ public abstract class Move : MonoBehaviour
     _size = animalParams._size;
     dashPower = animalParams._dashPower;
     _body.mass = animalParams._mass;
+    
+    //bounce factor: 
+    GetComponent<Ground>()._bounceFactor = animalParams._bouncePower;
     }
     
     protected void CreateDust()
