@@ -8,8 +8,13 @@ public class Animal : MonoBehaviour
 
     [SerializeField] private AnimalPower _power = AnimalPower.DoubleJump;
      private int _xpNeeded = 1;
-    [SerializeField] private ParticleSystem growParticles;
+    [SerializeField] public ParticleSystem growParticles;
     [SerializeField] private ParticleSystem shrinkParticles; 
+    
+    //dash pushed factor
+    private float _yPushVelocity= 40f;
+    private float _pushFactor = 100f;
+    
     
     // public ParticleSystem growParticles;
     // public ParticleSystem shrinkParticles;
@@ -55,6 +60,14 @@ public class Animal : MonoBehaviour
                 spell = SpellEnum.Grow;
                 collision.gameObject.SetActive(false);
                 break;
+            case "Player":
+                if (tag == "Dashing")
+                {
+                    growParticles.Play();
+                    PushPlayer(collision);
+                }
+
+                break;
             //Scalable. todo: more spells?
             default: return;
         }
@@ -68,12 +81,12 @@ public class Animal : MonoBehaviour
         {
             case GameManager.SHRINKSPELL:
                 spell = SpellEnum.Shrink;
-                shrinkParticles.Play();
+                // shrinkParticles.Play();
                 collision.gameObject.SetActive(false); //todo: spell set inactive
                 break;
             case  GameManager.GROWSPELL:
                 spell = SpellEnum.Grow;
-                growParticles.Play();
+                // growParticles.Play();
                 collision.gameObject.SetActive(false);
                 break;
             case GameManager.FALL_BOUNDER_TAG:
@@ -96,6 +109,14 @@ public class Animal : MonoBehaviour
                 break;
         }
     }
+    
+    private void PushPlayer(Collision2D collision)
+    {
+        float otherVelocityX = _body.velocity.x;
+        int pushDir = otherVelocityX > 0 ? 1 : -1;
+        _body.velocity = new Vector2(pushDir * _pushFactor, _yPushVelocity); //todo: push factor by animal
+    }
+
     
 }
 
