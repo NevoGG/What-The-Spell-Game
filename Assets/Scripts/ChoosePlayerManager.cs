@@ -10,6 +10,7 @@ public class ChoosePlayerManager : MonoBehaviour
 
     public static List<bool> playersArr = new List<bool>{false, false, false, false};
     public static int numberOfPlayers = 0;
+    
     private PlayerInput1 controls1;
     protected InputAction move1;
     protected InputAction jump1;
@@ -33,7 +34,10 @@ public class ChoosePlayerManager : MonoBehaviour
     protected InputAction jump4;
     protected InputAction crouch4;
     protected InputAction dash4;
-    
+
+
+    [SerializeField] private Image enterRenderer;
+    [SerializeField] private Sprite enterClicked;
     [SerializeField] private Image redKeysRenderer;
     [SerializeField] private Image blueKeysRenderer;
     [SerializeField] private Image greenKeysRenderer;
@@ -149,6 +153,7 @@ public class ChoosePlayerManager : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Return) && numberOfPlayers != 0)
         {
+            enterRenderer.sprite = enterClicked;
             SceneManager.LoadScene("SampleScene");
         }
         countPlayers();

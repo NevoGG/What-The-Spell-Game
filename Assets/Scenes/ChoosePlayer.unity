@@ -623,6 +623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c39960113d21d40808b91a5bab0f09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enterRenderer: {fileID: 2125786266}
+  enterClicked: {fileID: 21300000, guid: d9a7048339e86714d9a51d6d5defa008, type: 3}
   redKeysRenderer: {fileID: 1513435875}
   blueKeysRenderer: {fileID: 472434682}
   greenKeysRenderer: {fileID: 1245974756}
@@ -746,7 +748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 45.3, y: -130.7}
+  m_AnchoredPosition: {x: 45.30005, y: -130.69995}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2004235683
