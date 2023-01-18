@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 15863
+  controlID: 18710
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -48,7 +48,7 @@ MonoBehaviour:
     x: 210.33333
     y: 19
     width: 754
-    height: 307
+    height: 348.33334
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -96,22 +96,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 754
-      height: 286
-    m_Scale: {x: 0.39722222, y: 0.39722222}
-    m_Translation: {x: 377, y: 143}
+      height: 327.33334
+    m_Scale: {x: 0.45462963, y: 0.45462963}
+    m_Translation: {x: 377, y: 163.66667}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -949.09094
+      x: -829.24646
       y: -360
-      width: 1898.1819
+      width: 1658.4929
       height: 720
     m_MinimalGUI: 1
-  m_defaultScale: 0.39722222
-  m_LastWindowPixelSize: {x: 1131, y: 460.5}
+  m_defaultScale: 0.45462963
+  m_LastWindowPixelSize: {x: 1131, y: 522.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 15864
+  controlID: 18700
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 15865
+  controlID: 18701
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d27bfdffa88afdff3a97fdffd6a7fdff82b8fdffe6a1feffbea6feff4ab3feff74f5fefffefafeff8a07ffffcca1ffff08fbffff
+      m_ExpandedIDs: 784ffdffb261fdfffc61fdff4662fdffd27bfdffa88afdff3a97fdffd6a7fdff82b8fdffe6a1feffbea6feff4ab3feff74f5fefffefafeff8a07ffffcca1ffff08fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
