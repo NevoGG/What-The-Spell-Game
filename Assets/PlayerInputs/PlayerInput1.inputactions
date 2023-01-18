@@ -77,10 +77,54 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "1D Axis",
+                    "id": "c2437d82-24b2-4d63-94a0-fb3e1b449c36",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "e9d1530d-7f5e-46fa-ba5a-9cd0f9abb93c",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "3aba61dd-9483-4f65-8c81-3ee787c82453",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "a608b015-a4ae-4019-8d74-54eee02efcc6",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ab71a7da-6e24-4cc5-af41-49208edd2975",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
@@ -100,9 +144,31 @@
                 },
                 {
                     "name": "",
+                    "id": "952ba39f-29e2-4c34-96f0-50757bfcedb6",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e35a8ec4-edcd-467f-b985-72dd867fa97b",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "40d50d64-6ad9-4b96-b834-dad83223f825",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Crouch",

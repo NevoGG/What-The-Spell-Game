@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="settings">
+    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput3.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput3.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput3.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput4.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput4.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Witch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Witch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -129,7 +125,8 @@
       <workItem from="1673995660301" duration="204000" />
       <workItem from="1674036805058" duration="2314000" />
       <workItem from="1674052078052" duration="2736000" />
-      <workItem from="1674057487059" duration="2439000" />
+      <workItem from="1674057487059" duration="3495000" />
+      <workItem from="1674067068370" duration="307000" />
     </task>
     <task id="LOCAL-00003" summary="git makes me do it!">
       <created>1673697448284</created>
@@ -201,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674055012580</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="bunch">
+      <created>1674065615452</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674065615452</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +239,7 @@
     <MESSAGE value="Added top bg" />
     <MESSAGE value="bounce factor added" />
     <MESSAGE value="settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="settings" />
+    <MESSAGE value="bunch" />
+    <option name="LAST_COMMIT_MESSAGE" value="bunch" />
   </component>
 </project>

@@ -71,6 +71,17 @@ public abstract class Move : MonoBehaviour
     protected static readonly int IsJumping = Animator.StringToHash("IsJumping");
     protected static readonly int Speed = Animator.StringToHash("Speed");
 
+    // private void OnMove(InputValue inp)
+    // {
+    //     if (inp.isPressed)
+    //     {
+    //         
+    //     }
+    //     else
+    //     {
+    //         
+    //     }
+    // }
     protected void UpdateParams()
     {
     //Movement Fields:
