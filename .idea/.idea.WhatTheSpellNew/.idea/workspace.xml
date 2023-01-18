@@ -3,6 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/SpellHit/Hitting Player/GrowImpact.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Particles/SpellHit/Hitting Player/GrowImpact.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Bigfoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Bigfoot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Bunny.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Dragon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Dragon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Fox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Fox.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Hypogriff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Hypogriff.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Narwhal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Narwhal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Unicorn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Unicorn.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Checks/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Checks/Ground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +32,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Particles/Confetti/Confetti (1).prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChoosePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -115,6 +131,7 @@
       <workItem from="1673697307509" duration="18310000" />
       <workItem from="1673984144370" duration="289000" />
       <workItem from="1673995660301" duration="204000" />
+      <workItem from="1674036805058" duration="2314000" />
     </task>
     <task id="LOCAL-00003" summary="git makes me do it!">
       <created>1673697448284</created>
@@ -144,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673995591233</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="confetti fixed">
+      <created>1674036831335</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674036831335</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +196,7 @@
     <MESSAGE value="added appearing spells instead of witches" />
     <MESSAGE value="spells updated" />
     <MESSAGE value="Muerta Unicornio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Muerta Unicornio" />
+    <MESSAGE value="confetti fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="confetti fixed" />
   </component>
 </project>

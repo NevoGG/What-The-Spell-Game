@@ -23,8 +23,6 @@ public class Ground : MonoBehaviour
     private float _timeToWait = 0.5f; //todo: change to something good for every player.;
     private double _threshold = 0.0001;
     private float _bounceFactor = 50f;
-    private float _yPushVelocity= 40f;
-    private float _pushFactor = 100f;
 
     private void Start()
     {
@@ -64,8 +62,6 @@ public class Ground : MonoBehaviour
             case "Player":
                 CheckAndBouncePlayer(collision);
                 break;
-            case "Dashing":
-                PushPlayer(collision);
                 break;
             default: return;
         }
@@ -97,12 +93,6 @@ public class Ground : MonoBehaviour
         }
     }
 
-    private void PushPlayer(Collision2D collision)
-    {
-        float otherVelocityX = collision.gameObject.GetComponent<Rigidbody2D>().velocity.x;
-        int pushDir = otherVelocityX > 0 ? 1 : -1;
-        _body.velocity = new Vector2(pushDir * _pushFactor, _yPushVelocity); //todo: push factor by animal
-    }
 
     private void EvaluateCollision(Collision2D collision)
     {

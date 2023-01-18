@@ -158,7 +158,10 @@ public abstract class Move : MonoBehaviour
 
     protected void DashFunc(InputAction.CallbackContext context)
     {
-        if (canDash) StartCoroutine(Dash());
+        if (canDash)
+        {
+            StartCoroutine(Dash());
+        }
     }
     
     protected void Crouch(InputAction.CallbackContext context)
