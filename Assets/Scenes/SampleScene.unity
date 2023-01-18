@@ -3135,7 +3135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: topBounder
-      value: 248.7
+      value: 295
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: initialSpeed
