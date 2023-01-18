@@ -3,28 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ClockAnimation.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ClockAnimation.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Fox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Fox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Narwhal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Narwhal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Unicorn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Unicorn.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerGreen/Fox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerGreen/Fox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerGreen/Unicorn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerGreen/Unicorn.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerRed/Fox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerRed/Fox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerRed/Unicorn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerRed/Unicorn.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerYellow/Fox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerYellow/Fox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerYellow/PlayerYellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerYellow/PlayerYellow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerYellow/Unicorn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerYellow/Unicorn.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move3.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,13 +107,14 @@
       <updated>1673697229001</updated>
     </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9796e9e0-675e-4ac2-ab28-0fe8b5d74f9b" name="Changes" comment="Dash works for all four players, fixed falling through floor bug" />
+      <changelist id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="" />
       <created>1673697304862</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673697304862</updated>
       <workItem from="1673697307509" duration="18310000" />
       <workItem from="1673984144370" duration="289000" />
+      <workItem from="1673995660301" duration="204000" />
     </task>
     <task id="LOCAL-00003" summary="git makes me do it!">
       <created>1673697448284</created>
@@ -158,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673726264525</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Muerta Unicornio">
+      <created>1673995591233</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673995591233</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +171,7 @@
     <MESSAGE value="git makes me do it!" />
     <MESSAGE value="added appearing spells instead of witches" />
     <MESSAGE value="spells updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="spells updated" />
+    <MESSAGE value="Muerta Unicornio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Muerta Unicornio" />
   </component>
 </project>
