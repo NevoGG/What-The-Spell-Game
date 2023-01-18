@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput1.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" afterDir="false" />
+    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="random shit">
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +18,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChoosePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Plugins/PlayerInput/PlayerInputManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -127,6 +120,7 @@
       <workItem from="1674052078052" duration="2736000" />
       <workItem from="1674057487059" duration="3495000" />
       <workItem from="1674067068370" duration="307000" />
+      <workItem from="1674069137428" duration="348000" />
     </task>
     <task id="LOCAL-00003" summary="git makes me do it!">
       <created>1673697448284</created>
@@ -205,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674065615452</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Input controllers">
+      <created>1674069256474</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674069256474</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +241,8 @@
     <MESSAGE value="bounce factor added" />
     <MESSAGE value="settings" />
     <MESSAGE value="bunch" />
-    <option name="LAST_COMMIT_MESSAGE" value="bunch" />
+    <MESSAGE value="Input controllers" />
+    <MESSAGE value="random shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="random shit" />
   </component>
 </project>
