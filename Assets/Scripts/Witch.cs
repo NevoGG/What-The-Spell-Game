@@ -101,29 +101,7 @@ public class Witch : MonoBehaviour
         int choice = Random.Range(0, 2);
         _isGrow = (float)(choice);
         _isShrink = choice == 1 ? 1f : 0f;
-        // if (choice == 0)
-        // {
-        //     _isGrow = true;
-        //     _isShrink = false;
-        // }
-        // else
-        // {
-        //     {
-        //         _isGrow = false;
-        //         _isShrink = true;
-        //     }
-        //     if (_isGrow)
-        //     {
-        //         animator.ResetTrigger("IsGrow");
-        //         animator.SetTrigger("IsGrow");
-        //     }
-        //
-        //     if (_isShrink)
-        //     {
-        //         animator.ResetTrigger("IsShrink");
-        //         animator.SetTrigger("IsGrow");
-        //     }
-            //todo: looks like shit but will hopefully work
+        //todo: looks like shit but will hopefully work
             spell = choice == 0 ? growSpell : shrinkSpell;
     }
 

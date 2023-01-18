@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="Added top bg">
+    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="settings">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalParams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalParams.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Checks/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Checks/Ground.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput2.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput3.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput3.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput4.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputs/PlayerInput4.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BackGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BackGround.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Witch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Witch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +29,6 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Prefabs/BackGround.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChoosePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -51,7 +58,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/Build/13.1\What The Spell.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds\What The Spell.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\GameJam\WhatTheSpellNew\Build\13.1" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -121,7 +128,8 @@
       <workItem from="1673984144370" duration="289000" />
       <workItem from="1673995660301" duration="204000" />
       <workItem from="1674036805058" duration="2314000" />
-      <workItem from="1674052078052" duration="2325000" />
+      <workItem from="1674052078052" duration="2736000" />
+      <workItem from="1674057487059" duration="2439000" />
     </task>
     <task id="LOCAL-00003" summary="git makes me do it!">
       <created>1673697448284</created>
@@ -179,7 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674054304426</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="bounce factor added">
+      <created>1674054790789</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674054790789</updated>
+    </task>
+    <task id="LOCAL-00012" summary="settings">
+      <created>1674055012580</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674055012580</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +233,8 @@
     <MESSAGE value="Dash feedback added" />
     <MESSAGE value="Dash parameters fixed" />
     <MESSAGE value="Added top bg" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added top bg" />
+    <MESSAGE value="bounce factor added" />
+    <MESSAGE value="settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="settings" />
   </component>
 </project>

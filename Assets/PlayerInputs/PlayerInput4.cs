@@ -121,7 +121,7 @@ public partial class @PlayerInput4 : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""d64deba5-6896-40ec-9ca5-1592bd2ad0e2"",
-                    ""path"": ""<Keyboard>/numpad7"",
+                    ""path"": ""<Keyboard>/numpad0"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",

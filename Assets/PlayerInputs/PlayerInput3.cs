@@ -121,7 +121,7 @@ public partial class @PlayerInput3 : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""d64deba5-6896-40ec-9ca5-1592bd2ad0e2"",
-                    ""path"": ""<Keyboard>/u"",
+                    ""path"": ""<Keyboard>/ctrl"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
