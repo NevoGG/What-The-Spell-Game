@@ -7,7 +7,7 @@ public class PlatformScript : MonoBehaviour
 {
     [SerializeField] private GameObject growSpell;
     [SerializeField] private GameObject shrinkSpell;
-    [SerializeField] private float _timePerSpell = 10; //in seconds
+    [SerializeField] private float _timePerSpell = 14; //in seconds
     [SerializeField] private Vector2 conjureRate = new Vector2(1, 200); //summon between x and y seconds
     private float _timeTilConjure;
     private float _timeTilVanish;
