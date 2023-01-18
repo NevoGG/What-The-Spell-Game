@@ -10,6 +10,8 @@ public class CameraMovment : MonoBehaviour
     [SerializeField] private float topSpeed;
     [SerializeField] private float initialSpeed;
     [SerializeField] private Timer timer;
+    [SerializeField] private int waitTime;
+    private bool inDelay = false;
     public static Vector2 cameraCenter;
     public static float cameraWidth;
     public static float cameraBottomBounder;
@@ -32,6 +34,13 @@ public class CameraMovment : MonoBehaviour
             CustomUpdate();
         }
     }
+    
+    IEnumerator DelayAtUpBounder()
+    {
+        yield return new WaitForSeconds(waitTime);
+        acend = true;
+        inDelay = false;
+    }
 
     private void CustomUpdate()
     {
@@ -40,13 +49,11 @@ public class CameraMovment : MonoBehaviour
         {
             if (transform.position.y > bottomBounder )
             {
-                print("1");
                 transform.position = new Vector3(transform.position.x, transform.position.y - movementSpeed * Time.deltaTime, transform.position.z);
 
             }
             else
             {
-                print("2");
                 acend = false;
             }
             
@@ -56,13 +63,12 @@ public class CameraMovment : MonoBehaviour
         {
             if (transform.position.y <topBounder)
             {
-                print("3");
                 transform.position = new Vector3(transform.position.x, transform.position.y + movementSpeed * Time.deltaTime, transform.position.z);
             }
-            else
+            else if(!inDelay)
             {
-                print("4");
-                acend = true;
+                inDelay = true;
+                StartCoroutine(DelayAtUpBounder());
             }
         }
     }
