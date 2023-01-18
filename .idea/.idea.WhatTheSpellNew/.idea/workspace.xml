@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="Dash feedback added">
+    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="Added top bg">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlatformScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalParams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalParams.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Checks/Ground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Checks/Ground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Prefabs/BackGround.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChoosePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -120,7 +121,7 @@
       <workItem from="1673984144370" duration="289000" />
       <workItem from="1673995660301" duration="204000" />
       <workItem from="1674036805058" duration="2314000" />
-      <workItem from="1674052078052" duration="1551000" />
+      <workItem from="1674052078052" duration="2325000" />
     </task>
     <task id="LOCAL-00003" summary="git makes me do it!">
       <created>1673697448284</created>
@@ -164,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674052114614</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Dash parameters fixed">
+      <created>1674053904702</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674053904702</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added top bg">
+      <created>1674054304426</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674054304426</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +209,8 @@
     <MESSAGE value="Muerta Unicornio" />
     <MESSAGE value="confetti fixed" />
     <MESSAGE value="Dash feedback added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dash feedback added" />
+    <MESSAGE value="Dash parameters fixed" />
+    <MESSAGE value="Added top bg" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added top bg" />
   </component>
 </project>
