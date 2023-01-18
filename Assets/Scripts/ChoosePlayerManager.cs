@@ -54,6 +54,7 @@ public class ChoosePlayerManager : MonoBehaviour
         controls2 = new PlayerInput2();
         controls3 = new PlayerInput3();
         controls4 = new PlayerInput4();
+        ResetPlayers();
     }
     
     private void OnEnable()
@@ -150,8 +151,6 @@ public class ChoosePlayerManager : MonoBehaviour
         {
             SceneManager.LoadScene("SampleScene");
         }
-
-        // check();
         countPlayers();
     }
 
@@ -167,26 +166,6 @@ public class ChoosePlayerManager : MonoBehaviour
         }
     }
 
-    // private void check()
-    // {
-    //     if (Input.GetKey(KeyCode.A))
-    //     {
-    //         ActivatePlayer1();
-    //     }
-    //     if (Input.GetKey(KeyCode.S))
-    //     {
-    //         ActivatePlayer2();
-    //     }
-    //     if (Input.GetKey(KeyCode.D))
-    //     {
-    //         ActivatePlayer3();
-    //     }
-    //     if (Input.GetKey(KeyCode.F))
-    //     {
-    //         ActivatePlayer4();
-    //     }
-    // }
-
     private void ResetPlayers()
     {
         for (int i = 0; i < playersArr.Count; i++)
@@ -201,7 +180,7 @@ public class ChoosePlayerManager : MonoBehaviour
 
     public void ActivatePlayer1(InputAction.CallbackContext context)
     {
-        redKeysRenderer.sprite = redKeys;
+        blueKeysRenderer.sprite = blueKeys;
         playersArr[0] = true;
     }
     
@@ -213,7 +192,7 @@ public class ChoosePlayerManager : MonoBehaviour
     
     public void ActivatePlayer3(InputAction.CallbackContext context)
     {
-        blueKeysRenderer.sprite = blueKeys;
+        redKeysRenderer.sprite = redKeys;
         playersArr[2] = true;
     }
     
