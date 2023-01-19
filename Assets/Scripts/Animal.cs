@@ -73,6 +73,25 @@ public class Animal : MonoBehaviour
         }
         player.SpellCasted(spell);
     }
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        
+        SpellEnum spell = SpellEnum.None;
+        switch (collision.gameObject.tag)
+        {
+            case GameManager.SHRINKSPELL:
+                spell = SpellEnum.Shrink;
+                collision.gameObject.SetActive(false); //todo: spell set inactive
+                break;
+            case  GameManager.GROWSPELL:
+                spell = SpellEnum.Grow;
+                collision.gameObject.SetActive(false);
+                break;
+            //Scalable. todo: more spells?
+            default: return;
+        }
+        player.SpellCasted(spell);
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {

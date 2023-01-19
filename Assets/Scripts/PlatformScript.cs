@@ -61,8 +61,8 @@ public class PlatformScript : MonoBehaviour
     {
         int choice = Random.Range(0, 2);
         spell = choice == 0 ? growSpell : shrinkSpell;
-        float colliderLen = GetColliderLen() * 2/3f;
-        float xPos = Random.Range(-colliderLen / 2, colliderLen / 2);
+        float colliderLen = GetColliderLen() * 0.5f;
+        float xPos = Random.Range(0f, colliderLen) - colliderLen / 2;
         Vector3 spellPos = new Vector3(transform.position.x + xPos, transform.position.y + 3f, transform.position.z);
         curSpell = Instantiate(spell, spellPos ,transform.rotation);
         _isActiveSpell = true;

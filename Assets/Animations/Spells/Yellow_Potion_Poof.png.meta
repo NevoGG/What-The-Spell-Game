@@ -1,0 +1,318 @@
+fileFormatVersion: 2
+guid: 46ea86acb467f8045b2bfc842bdd8ad7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Yellow_Potion_Poof_23
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 660
+        width: 325
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7a44df73092364caefd13b612fe5ea
+      internalID: 108919852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Potion_Poof_25
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 663
+        width: 310
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b7b52da3240c740b84456072f80c2c
+      internalID: 372519508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Potion_Poof_30
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 702
+        width: 255
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ad9afcd7bb8d64ab595ed99bc3975e
+      internalID: -1934492744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Potion_Poof_38
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 644
+        width: 367
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28014f6d66a0eb469721a10c58660da
+      internalID: 1344677510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Potion_Poof_45
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 200
+        width: 292
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b2149a2b920774a989097e90e5d4d8
+      internalID: -1095209033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Potion_Poof_46
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 223
+        width: 271
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b4062c34ed9e347a96857690db76af
+      internalID: 1022873235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Potion_Poof_47
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 239
+        width: 255
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13decdedcd3b5748ae733c2c45df572
+      internalID: 1574257805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Yellow_Potion_Poof_7: -657614338
+      Yellow_Potion_Poof_31: -868254290
+      Yellow_Potion_Poof_12: 745345087
+      Yellow_Potion_Poof_23: 108919852
+      Yellow_Potion_Poof_34: -2069349282
+      Yellow_Potion_Poof_4: -1772391539
+      Yellow_Potion_Poof_24: 1594723520
+      Yellow_Potion_Poof_16: 210675495
+      Yellow_Potion_Poof_20: -493838947
+      Yellow_Potion_Poof_14: 262616927
+      Yellow_Potion_Poof_35: -401767916
+      Yellow_Potion_Poof_15: 1620539895
+      Yellow_Potion_Poof_46: 1022873235
+      Yellow_Potion_Poof_33: 288832364
+      Yellow_Potion_Poof_40: 1548441538
+      Yellow_Potion_Poof_47: 1574257805
+      Yellow_Potion_Poof_39: -306443617
+      Yellow_Potion_Poof_0: 747333572
+      Yellow_Potion_Poof_19: -1669353658
+      Yellow_Potion_Poof_21: -222866328
+      Yellow_Potion_Poof_45: -1095209033
+      Yellow_Potion_Poof_26: -856640845
+      Yellow_Potion_Poof_32: -1448724988
+      Yellow_Potion_Poof_5: -1793451466
+      Yellow_Potion_Poof_6: -1947673205
+      Yellow_Potion_Poof_2: -643582317
+      Yellow_Potion_Poof_3: -78016612
+      Yellow_Potion_Poof_43: 692442155
+      Yellow_Potion_Poof_8: -73856408
+      Yellow_Potion_Poof_22: -314699699
+      Yellow_Potion_Poof_28: -296084132
+      Yellow_Potion_Poof_29: -984686658
+      Yellow_Potion_Poof_30: -1934492744
+      Yellow_Potion_Poof_10: 1742664952
+      Yellow_Potion_Poof_27: -1954883187
+      Yellow_Potion_Poof_18: -1275160646
+      Yellow_Potion_Poof_25: 372519508
+      Yellow_Potion_Poof_1: -138726438
+      Yellow_Potion_Poof_11: -377024092
+      Yellow_Potion_Poof_38: 1344677510
+      Yellow_Potion_Poof_36: -876903865
+      Yellow_Potion_Poof_17: -1028756486
+      Yellow_Potion_Poof_37: 910995278
+      Yellow_Potion_Poof_41: -1420245177
+      Yellow_Potion_Poof_42: -534779642
+      Yellow_Potion_Poof_13: -1011276557
+      Yellow_Potion_Poof_44: 2144937616
+      Yellow_Potion_Poof_9: -853432394
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
