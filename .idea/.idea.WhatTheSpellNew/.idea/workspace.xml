@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="random shit">
+    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Spells/Shrinking_Spell_Hands_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Spells/Shrinking_Spell_Hands_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/SpellHit/GrowHit.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/SpellHit/GrowHit.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/SpellHit/ShrinkMove.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles/SpellHit/ShrinkMove.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spells/GrowSpell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spells/GrowSpell.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spells/ShrinkSpell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spells/ShrinkSpell.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpellStandAlone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpellStandAlone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Neta" />
       </map>
     </option>
   </component>
@@ -121,6 +133,7 @@
       <workItem from="1674057487059" duration="3495000" />
       <workItem from="1674067068370" duration="307000" />
       <workItem from="1674069137428" duration="348000" />
+      <workItem from="1674134058245" duration="2310000" />
     </task>
     <task id="LOCAL-00003" summary="git makes me do it!">
       <created>1673697448284</created>
