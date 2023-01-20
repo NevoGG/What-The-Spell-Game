@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="Arrow animations added">
+    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="Arrow files">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674137839296</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Arrow almost done- still only works for blue rabbit and not for down">
+      <created>1674215172746</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674215172746</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Arrow files">
+      <created>1674215193698</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674215193698</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +274,9 @@
     <MESSAGE value="Input controllers" />
     <MESSAGE value="random shit" />
     <MESSAGE value="Preparation for spell &quot;warm up&quot; time added. bigfoot + unicorn stats improved" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparation for spell &quot;warm up&quot; time added. bigfoot + unicorn stats improved" />
+    <MESSAGE value="Arrow almost done- still only works for blue rabbit and not for down" />
+    <MESSAGE value="Arrow files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrow files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

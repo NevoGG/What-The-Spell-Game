@@ -10,16 +10,17 @@ public class Arrow : MonoBehaviour
     private float upY;
     private float downY;
     private bool isFlipped = false;
-    private float fallThreshold = 0.2f;
-    
+    private float fallThreshold = 0.3f;
+    private Vector2 initScale;
 
-    private float _distFromEdge = (CameraMovment.cameraWidth / 2) * (3f/4f);
+    private float _distFromEdge = 14f;
     // Start is called before the first frame update
     void Start()
     {
+        initScale = transform.localScale;
         _camera = Camera.main;
         _animator = GetComponent<Animator>();
-        upY =  12f;
+        upY =  _distFromEdge;
         downY = CameraMovment.cameraWidth - _distFromEdge;
     }
 
@@ -32,15 +33,25 @@ public class Arrow : MonoBehaviour
         {
             _animator.SetBool("IsOutOfScreen", true);
              transform.localPosition = new Vector3(toFollow.transform.position.x, upY, screenPoint.z);
-             if (screenPoint.y > 1 + fallThreshold)
+             if (screenPoint.y > 1)
              {
-                 _animator.SetTrigger("DeadUp");
+                 _animator.SetBool("IsOutOfScreen", true);
+                 transform.localScale = initScale * (1 / (screenPoint.y * 1.3f));
+                 if (screenPoint.y > 1 + fallThreshold)
+                 {
+                     _animator.SetTrigger("DeadUp");
+                 }  
              }
-             if(screenPoint.y < 0 - fallThreshold){}
+             
+             if (screenPoint.y < 0)
+             {
+                 if(screenPoint.y < 0 - fallThreshold){}
+             }
         }
         else
         {
             _animator.SetBool("IsOutOfScreen", false);
+            transform.localScale = initScale;
         }
     }
 }
