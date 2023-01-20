@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="">
+    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="Arrow animations added">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Spells/Grow.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Spells/Grow.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Spells/Grow.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Spells/Grow.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Spells/Shrink.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Spells/Shrink.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Spells/Shrink.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Spells/Shrink.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Spells/Sizing_Spell_Hands_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Spells/Sizing_Spell_Hands_0.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spells/GrowSpell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spells/GrowSpell.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spells/ShrinkSpell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spells/ShrinkSpell.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlatformScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpellStandAlone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpellStandAlone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -29,7 +22,11 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Animal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Animal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Arrow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChoosePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OutOfScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Plugins/PlayerInput/PlayerInputManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">

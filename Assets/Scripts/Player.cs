@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 	public bool hasChanged = false;
 	//Other Parameters
 	private int _curAnimalXPNeeded;
-	private GameObject curAnimal;
+	public GameObject curAnimal;
 	private int curAnimalIdx = 0;
 
 	private AnimalPower _animalPower;
