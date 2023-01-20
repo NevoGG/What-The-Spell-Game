@@ -32,11 +32,12 @@ public class Arrow : MonoBehaviour
         if (!onScreen)
         {
             _animator.SetBool("IsOutOfScreen", true);
-             transform.localPosition = new Vector3(toFollow.transform.position.x, upY, screenPoint.z);
-             if (screenPoint.y > 1)
+            if (screenPoint.y > 1)
              {
+                 if(isFlipped) Flip();
+                 transform.localPosition = new Vector3(toFollow.transform.position.x, upY, screenPoint.z);
                  _animator.SetBool("IsOutOfScreen", true);
-                 transform.localScale = initScale * (1 / (screenPoint.y * 1.3f));
+                 transform.localScale = initScale * (1 / (screenPoint.y * 1.5f));
                  if (screenPoint.y > 1 + fallThreshold)
                  {
                      _animator.SetTrigger("DeadUp");
@@ -45,6 +46,10 @@ public class Arrow : MonoBehaviour
              
              if (screenPoint.y < 0)
              {
+                 if(!isFlipped) Flip();
+                 transform.localPosition = new Vector3(toFollow.transform.position.x, -upY, screenPoint.z);
+                 _animator.SetBool("IsOutOfScreen", true);
+                 transform.localScale = initScale * (1 / (1 + (screenPoint.y * -1) * 1.5f));
                  if(screenPoint.y < 0 - fallThreshold){}
              }
         }
@@ -53,5 +58,11 @@ public class Arrow : MonoBehaviour
             _animator.SetBool("IsOutOfScreen", false);
             transform.localScale = initScale;
         }
+    }
+
+    private void Flip()
+    {
+        isFlipped = !isFlipped;
+        transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y * -1);
     }
 }
