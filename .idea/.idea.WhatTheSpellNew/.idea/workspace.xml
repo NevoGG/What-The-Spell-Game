@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="Arrow shrinks as player goes up">
+    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="Arrow location on bottom fixed- still no flip">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue_death (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue_death (1).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Blue OOS.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Blue OOS.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BlueExplotion.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BlueExplotion.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Death_blue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Death_blue.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/Arrow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/Arrow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OpeningScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OpeningScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +33,7 @@
     <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Animal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Arrow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Arrow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Arrow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChoosePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OutOfScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Plugins/PlayerInput/PlayerInputManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -244,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674217109904</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Arrow location on bottom fixed- still no flip">
+      <created>1674217940648</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674217940648</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +303,8 @@
     <MESSAGE value="Arrow almost done- still only works for blue rabbit and not for down" />
     <MESSAGE value="Arrow files" />
     <MESSAGE value="Arrow shrinks as player goes up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrow shrinks as player goes up" />
+    <MESSAGE value="Arrow location on bottom fixed- still no flip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrow location on bottom fixed- still no flip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -113,7 +113,7 @@ TextureImporter:
         width: 290
         height: 293
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,6 +121,48 @@ TextureImporter:
       bones: []
       spriteID: 447f77dc1dee8074ca411082c567ea9e
       internalID: 339185205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_blue (1) 2_0
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 702
+        width: 189
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce20270add08d04499d2cf27cba7306
+      internalID: 36170758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_blue (1) 2_1
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 710
+        width: 172
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4618d6f5c07308c4c8fbac17b809887b
+      internalID: 714629807
       vertices: []
       indices: 
       edges: []
@@ -137,6 +179,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Arrow_blue (1) 1_0: 339185205
+      Arrow_blue (1) 2_0: 36170758
+      Arrow_blue (1) 2_1: 714629807
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

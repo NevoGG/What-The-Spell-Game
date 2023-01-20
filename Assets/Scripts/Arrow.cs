@@ -7,16 +7,31 @@ public class Arrow : MonoBehaviour
     [SerializeField] private GameObject toFollow;
     private Camera _camera;
     private Animator _animator;
+
+    [SerializeField] private GameObject _boom;
+    private Animator _boomAnimator;
     private float upY;
     private float downY;
     private bool isFlipped = false;
     private float fallThreshold = 0.3f;
     private Vector2 initScale;
+    private float _mushroomScale = 2;
 
     private float _distFromEdge = 14f;
+
+    private static readonly int DeadUp = Animator.StringToHash("DeadUp");
+    private static readonly int IsOutOfScreen = Animator.StringToHash("IsOutOfScreen");
+    private static readonly int DeadDown = Animator.StringToHash("DeadDown");
+
     // Start is called before the first frame update
     void Start()
     {
+        //flip boom: 
+        Vector3 ang = _boom.transform.localEulerAngles;
+        _boom.transform.localEulerAngles = new Vector3(ang.x, ang.y, ang.z + 180);
+        _boom.transform.localScale *= 2;
+        
+        _boomAnimator = _boom.GetComponent<Animator>();
         initScale = transform.localScale;
         _camera = Camera.main;
         _animator = GetComponent<Animator>();
@@ -31,16 +46,16 @@ public class Arrow : MonoBehaviour
         bool onScreen = screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
         if (!onScreen)
         {
-            _animator.SetBool("IsOutOfScreen", true);
+            _animator.SetBool(IsOutOfScreen, true);
             if (screenPoint.y > 1)
              {
                  if(isFlipped) Flip();
                  transform.localPosition = new Vector3(toFollow.transform.position.x, upY, screenPoint.z);
-                 _animator.SetBool("IsOutOfScreen", true);
+                 _animator.SetBool(IsOutOfScreen, true);
                  transform.localScale = initScale * (1 / (screenPoint.y * 1.5f));
                  if (screenPoint.y > 1 + fallThreshold)
                  {
-                     _animator.SetTrigger("DeadUp");
+                     _animator.SetTrigger(DeadUp);
                  }  
              }
              
@@ -48,21 +63,35 @@ public class Arrow : MonoBehaviour
              {
                  if(!isFlipped) Flip();
                  transform.localPosition = new Vector3(toFollow.transform.position.x, -upY, screenPoint.z);
-                 _animator.SetBool("IsOutOfScreen", true);
+                 _animator.SetBool(IsOutOfScreen, true);
                  transform.localScale = initScale * (1 / (1 + (screenPoint.y * -1) * 1.5f));
-                 if(screenPoint.y < 0 - fallThreshold){}
+                 if (screenPoint.y < 0 - fallThreshold)
+                 {
+                     // Flip();
+                     _boom.transform.localScale *= 2;
+                     _boom.transform.localPosition = new Vector3(toFollow.transform.position.x, 4f, screenPoint.z);
+                     _animator.SetTrigger(DeadDown);
+                     _boomAnimator.SetTrigger(DeadDown);
+                     // transform.localScale = initScale * _mushroomScale; //-CameraMovment.cameraWidth / 2
+                 }
              }
         }
         else
         {
-            _animator.SetBool("IsOutOfScreen", false);
+            _animator.SetBool(IsOutOfScreen, false);
             transform.localScale = initScale;
         }
     }
 
+    public void SetFollowing(GameObject g)
+    {
+        toFollow = g;
+        
+    }
     private void Flip()
     {
         isFlipped = !isFlipped;
-        transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y * -1);
+        Vector3 ang = transform.localEulerAngles;
+        transform.localEulerAngles = new Vector3(ang.x, ang.y, ang.z + 180);
     }
 }

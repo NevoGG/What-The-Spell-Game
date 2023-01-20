@@ -195,7 +195,7 @@ TextureImporter:
         x: 39
         y: 661
         width: 160
-        height: 98
+        height: 281
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,9 +277,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1447
-        y: 168
-        width: 473
-        height: 422
+        y: 166
+        width: 448
+        height: 414
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,6 +289,27 @@ TextureImporter:
       bones: []
       spriteID: 1255d5f373b754d4ebc8a07c9a16c0f2
       internalID: -1730479787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_blue_3
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 3
+        width: 69
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe8b78602ab7144881b34c8d25d4899
+      internalID: -801665308
       vertices: []
       indices: 
       edges: []
