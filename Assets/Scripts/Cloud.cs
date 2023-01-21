@@ -5,9 +5,14 @@ using UnityEngine;
 public class Cloud : MonoBehaviour
 {
     private Vector3 initCloudPos;
-    [SerializeField] private Vector3 cloudSpeed;
-    [SerializeField] private float leftBounderCloud;
+    // [SerializeField] private Vector3 cloudSpeed;
+    // [SerializeField] private float leftBounderCloud;
     // Start is called before the first frame update
+    [SerializeField] private float cloudSpeed;
+    [SerializeField] private float leftBounderCloud;
+    [SerializeField] private float rigthBounderCloud;
+
+    private bool left = true;
     void Start()
     {
         initCloudPos = transform.localPosition;
@@ -16,10 +21,39 @@ public class Cloud : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += cloudSpeed * Time.deltaTime;
-        if (transform.position.x < leftBounderCloud)
+        if (!GameManager.gameEnded && GameManager.countDownFinish)
         {
-            transform.localPosition = initCloudPos;
+            CustomUpdate();
+        }
+    }
+    private void CustomUpdate()
+    {
+        if (left)
+        {
+            if (transform.position.x > rigthBounderCloud )
+            {
+                
+                transform.position = new Vector3( transform.position.x - cloudSpeed * Time.deltaTime,0, 0);
+            }
+            else
+            {
+                left = false;
+            }
+            
+            
+        }
+        else
+        {
+            if (transform.position.x <leftBounderCloud)
+            {
+                transform.position = new Vector3( transform.position.x + cloudSpeed * Time.deltaTime,0, 0);
+                Debug.Log("left!");
+            }
+            else
+            {
+                left = true;
+            }
         }
     }
 }
+
