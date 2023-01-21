@@ -9,8 +9,8 @@ public class Cloud : MonoBehaviour
     // [SerializeField] private float leftBounderCloud;
     // Start is called before the first frame update
     [SerializeField] private float cloudSpeed;
-    [SerializeField] private float leftBounderCloud;
-    [SerializeField] private float rigthBounderCloud;
+    [SerializeField] private float rightBounder;
+    [SerializeField] private float leftBounder;
 
     private bool left = true;
     void Start()
@@ -30,10 +30,10 @@ public class Cloud : MonoBehaviour
     {
         if (left)
         {
-            if (transform.position.x > rigthBounderCloud )
+            if (transform.position.x > leftBounder )
             {
                 
-                transform.position = new Vector3( transform.position.x - cloudSpeed * Time.deltaTime,0, 0);
+                transform.position = new Vector3( transform.position.x - cloudSpeed * Time.deltaTime,transform.position.y, 0);
             }
             else
             {
@@ -44,9 +44,9 @@ public class Cloud : MonoBehaviour
         }
         else
         {
-            if (transform.position.x <leftBounderCloud)
+            if (transform.position.x <rightBounder)
             {
-                transform.position = new Vector3( transform.position.x + cloudSpeed * Time.deltaTime,0, 0);
+                transform.position = new Vector3( transform.position.x + cloudSpeed * Time.deltaTime,transform.position.y, 0);
                 Debug.Log("left!");
             }
             else
