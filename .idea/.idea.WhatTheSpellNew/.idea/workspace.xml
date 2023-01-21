@@ -3,17 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="Arrow location on bottom fixed- still no flip">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue_death (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue_death (1).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Blue OOS.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Blue OOS.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/ArrowExplotion.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/ArrowExplotion.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue_death (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue_death (1).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Blue OOS.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Blue OOS.controller.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BlueExplotion.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BlueExplotion.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Death_blue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Death_blue.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/Arrow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/Arrow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OpeningScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OpeningScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BoomBlue.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BoomBlue.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BoomBlue.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BoomBlue.controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Death_green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Death_green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Death_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Death_red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Death_yellow 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Death_yellow 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/BlueArrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/BlueArrow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerGreen/GreenArrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerGreen/GreenArrow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerRed/RedArrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerRed/RedArrow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerYellow/YellowArrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerYellow/YellowArrow.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move4.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +48,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Animal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Animal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Arrow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Arrow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Arrow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Arrow.cs" root0="SKIP_HIGHLIGHTING" />
