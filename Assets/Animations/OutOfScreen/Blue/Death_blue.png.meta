@@ -1,0 +1,402 @@
+fileFormatVersion: 2
+guid: 1d5a5b012973fe14b9b0f4e0b87dde6d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death_blue_0
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 661
+        width: 315
+        height: 335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2507295e379da7a4d917cf4346117575
+      internalID: -1691909668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_blue_2
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 661
+        width: 337
+        height: 348
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b860f5ddc2c5fc438172aff2b40c6c1
+      internalID: -1552097832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_blue_7
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 651
+        width: 360
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6e37119c885344cafc3f83bd388a3c
+      internalID: -692219864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_blue_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 661
+        width: 203
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e59a6109512934e9987cb59f80c331
+      internalID: -1465860508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_blue_11
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 661
+        width: 160
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b08c5de0db85424ba034422ee012312
+      internalID: 1603303434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_blue_26
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 206
+        width: 379
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc4ffc0b5dde2244baa9296d66b4dc7
+      internalID: -938070299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_blue_37
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 204
+        width: 425
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8dba3699f0e32447bd6d8662dd4a48b
+      internalID: 26756393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_blue_38
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 198
+        width: 419
+        height: 372
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41a9b7358a85184aa2a86f35a3140f9
+      internalID: -1440687912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_blue_1
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 166
+        width: 448
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1255d5f373b754d4ebc8a07c9a16c0f2
+      internalID: -1730479787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_blue_3
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 3
+        width: 69
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe8b78602ab7144881b34c8d25d4899
+      internalID: -801665308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Death_blue_42: -706347309
+      Death_blue_9: 1805236799
+      Death_blue_32: 970180308
+      Death_blue_33: 319994019
+      Death_blue_67: 1656978407
+      Death_blue_0: -1691909668
+      Death_blue_11: 1603303434
+      Death_blue_13: -786036042
+      Death_blue_66: -1823310951
+      Death_blue_37: 26756393
+      Death_blue_3: -801665308
+      Death_blue_34: -1454161717
+      Death_blue_61: -1951140821
+      Death_blue_15: -1330053921
+      Death_blue_18: 685974939
+      Death_blue_47: -15004284
+      Death_blue_68: 1374216767
+      Death_blue_17: -1385590514
+      Death_blue_29: 215482294
+      Death_blue_30: 1705595760
+      Death_blue_28: 218413512
+      Death_blue_54: -497371227
+      Death_blue_35: 73751188
+      Death_blue_59: -163057896
+      Death_blue_46: 435557590
+      Death_blue_16: -101076672
+      Death_blue_27: 800635436
+      Death_blue_26: -938070299
+      Death_blue_57: 1335486541
+      Death_blue_55: 575066552
+      Death_blue_40: 627200896
+      Death_blue_36: 1802724115
+      Death_blue_38: -1440687912
+      Death_blue_41: 1154204226
+      Death_blue_39: 910739936
+      Death_blue_1: -1730479787
+      Death_blue_8: -1465860508
+      Death_blue_23: 1907983172
+      Death_blue_51: 880148651
+      Death_blue_65: 1748987081
+      Death_blue_4: 1415915324
+      Death_blue_24: -911609598
+      Death_blue_25: -2121855012
+      Death_blue_22: -2090987336
+      Death_blue_63: -1160032819
+      Death_blue_50: 1863560835
+      Death_blue_20: -787386557
+      Death_blue_48: 284156360
+      Death_blue_19: -796844782
+      Death_blue_60: -1634778264
+      Death_blue_45: -1985901255
+      Death_blue_62: -1226094256
+      Death_blue_58: -841084981
+      Death_blue_5: 1024334008
+      Death_blue_49: 1534105998
+      Death_blue_6: 2144591183
+      Death_blue_7: -692219864
+      Death_blue_2: -1552097832
+      Death_blue_21: -986083323
+      Death_blue_31: 750866440
+      Death_blue_44: 739613894
+      Death_blue_64: 781330084
+      Death_blue_43: -1934712502
+      Death_blue_52: -1185346215
+      Death_blue_56: -1468278827
+      Death_blue_10: -247731054
+      Death_blue_14: 1253112622
+      Death_blue_53: 1042382212
+      Death_blue_12: 1804840686
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -56,8 +56,8 @@ MonoBehaviour:
   _upwardLinearDrag: 10
   _downardLinearDrag: 10
   _size: 1
-  _power: 0
-  _xpNeeded: 0
+  _mass: 4
+  _dashPower: 40
 --- !u!1 &702125693781686042
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,8 +114,8 @@ MonoBehaviour:
   _upwardLinearDrag: 10
   _downardLinearDrag: 10
   _size: 1
-  _power: 0
-  _xpNeeded: 0
+  _mass: 1
+  _dashPower: 40
 --- !u!1 &817078728328026604
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,8 +172,8 @@ MonoBehaviour:
   _upwardLinearDrag: 10
   _downardLinearDrag: 10
   _size: 1
-  _power: 0
-  _xpNeeded: 0
+  _mass: 2
+  _dashPower: 40
 --- !u!1 &3209207951679415911
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,8 +230,8 @@ MonoBehaviour:
   _upwardLinearDrag: 10
   _downardLinearDrag: 10
   _size: 1
-  _power: 0
-  _xpNeeded: 0
+  _mass: 6
+  _dashPower: 40
 --- !u!1 &4043178686927048226
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,8 +288,8 @@ MonoBehaviour:
   _upwardLinearDrag: 10
   _downardLinearDrag: 10
   _size: 1
-  _power: 0
-  _xpNeeded: 0
+  _mass: 7
+  _dashPower: 40
 --- !u!1 &5304729554445496123
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,8 +384,8 @@ MonoBehaviour:
   _upwardLinearDrag: 10
   _downardLinearDrag: 10
   _size: 1
-  _power: 0
-  _xpNeeded: 0
+  _mass: 3
+  _dashPower: 40
 --- !u!1 &7823807957991164995
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,5 +442,5 @@ MonoBehaviour:
   _upwardLinearDrag: 10
   _downardLinearDrag: 10
   _size: 1
-  _power: 0
-  _xpNeeded: 0
+  _mass: 5
+  _dashPower: 40

@@ -9,11 +9,11 @@ public enum ScoreEnum {XP, GrowSpells, ShrinkSpells, BiggestAnimal, TimeAsBigges
 public class Player : MonoBehaviour
 {
 	[SerializeField] private List<GameObject> animals;
-
+	[SerializeField] private Arrow arrow;
 	public bool hasChanged = false;
 	//Other Parameters
 	private int _curAnimalXPNeeded;
-	private GameObject curAnimal;
+	public GameObject curAnimal;
 	private int curAnimalIdx = 0;
 
 	private AnimalPower _animalPower;
@@ -51,9 +51,9 @@ public class Player : MonoBehaviour
     {
 	    if (!this._hasChanged)
 	    {
-		    SpellCasted(SpellEnum.Grow);
-		    SpellCasted(SpellEnum.Grow);
-		    SpellCasted(SpellEnum.Grow);
+		    // SpellCasted(SpellEnum.Grow);
+		    // SpellCasted(SpellEnum.Grow);
+		    // SpellCasted(SpellEnum.Grow);
 		    _hasChanged = true;
 	    }
     }
@@ -129,6 +129,7 @@ public class Player : MonoBehaviour
 		curAnimal = animals[curAnimalIdx];
 		curAnimal.transform.position = transform.position;
 		curAnimal.SetActive(true);
+		arrow.SetFollowing(curAnimal);
 		curAnimal.GetComponent<Rigidbody2D>().velocity = velocity;
 		GetAnimalPhysics();
     }

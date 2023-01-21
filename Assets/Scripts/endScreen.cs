@@ -90,6 +90,14 @@ public class endScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.Return))
+        {
+            PlayAgain();
+        }
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            MainMenu();
+        }
         textWinner.transform.position -= textSpeed * Time.deltaTime;
         if (textWinner.transform.position.x < leftBounderText)
         {

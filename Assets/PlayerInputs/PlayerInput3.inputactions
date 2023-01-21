@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Power",
+                    "name": "Dash",
                     "type": "Button",
                     "id": "db4cb9b9-5c98-496f-8671-4ef907571734",
                     "expectedControlType": "Button",
@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "Hold,MultiTap",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Power",
+                    "type": "Button",
+                    "id": "2e0c747c-8187-4233-9f15-80ca0cd16cf9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -90,11 +99,11 @@
                 {
                     "name": "",
                     "id": "d64deba5-6896-40ec-9ca5-1592bd2ad0e2",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/ctrl",
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Power",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -106,6 +115,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "53d329de-f9e6-4b7f-80b4-3e693eb9c041",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Power",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -9,6 +9,8 @@ TagManager:
   - Platform
   - fallBounder
   - OneWayPlatform
+  - Dashing
+  - IgnorePlayer
   layers:
   - Default
   - TransparentFX
@@ -43,6 +45,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Sky
+    uniqueID: 2973700163
+    locked: 0
+  - name: Clouds
+    uniqueID: 3969529449
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

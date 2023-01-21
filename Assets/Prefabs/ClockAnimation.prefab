@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6d9fee8f5dfba46ba4f4ff262e1eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerLenPerRound: 30
+  timerLenPerRound: 60
   curTimer: 0
   animator: {fileID: 2031906530221105425}
   clip: {fileID: 0}

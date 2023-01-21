@@ -7,10 +7,19 @@ using UnityEngine.InputSystem.Interactions;
 
 public abstract class Move : MonoBehaviour
 {
+    //Dash Params:
+    protected bool canDash = true;
+    protected bool isDashing;
+    protected float dashPower = 40f;
+    protected float dashTime = 0.2f;
+    protected float dashCooldown = 1f;
+    [SerializeField] protected TrailRenderer tr;
+    
     protected PlayerInput1 controls; 
     protected InputAction move;
     protected InputAction jump;
     protected InputAction crouch;
+    protected InputAction dash;
     protected InputAction power;
     //animation parameters: 
     protected bool isFacingRight = true;
@@ -58,7 +67,21 @@ public abstract class Move : MonoBehaviour
     
     protected int _maxAirJumps = 0;
     public abstract void SetMaxAirJumps(int k);
+    
+    protected static readonly int IsJumping = Animator.StringToHash("IsJumping");
+    protected static readonly int Speed = Animator.StringToHash("Speed");
 
+    // private void OnMove(InputValue inp)
+    // {
+    //     if (inp.isPressed)
+    //     {
+    //         
+    //     }
+    //     else
+    //     {
+    //         
+    //     }
+    // }
     protected void UpdateParams()
     {
     //Movement Fields:
@@ -78,12 +101,103 @@ public abstract class Move : MonoBehaviour
     _upwardLinearDrag = animalParams._upwardLinearDrag;
     _downardLinearDrag = animalParams._downardLinearDrag;
     _size = animalParams._size;
+    dashPower = animalParams._dashPower;
+    _body.mass = animalParams._mass;
+    
+    //bounce factor: 
+    GetComponent<Ground>()._bounceFactor = animalParams._bouncePower;
     }
     
     protected void CreateDust()
     {
         dust.Play();
     }
+
+    protected IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        
+        
+        float originalDrag = _body.drag;
+        float originalGravity = _body.gravityScale;
+        string originalTag = tag;
+        tag = "Dashing";
+        _body.gravityScale = 0f;
+        _body.drag = 2;
+        _body.velocity = new Vector2(transform.localScale.x * dashPower * -1, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashTime);
+        tr.emitting = false;
+        _body.gravityScale = originalGravity;
+        isDashing = false;
+        tag = originalTag;
+        _body.drag = originalDrag;
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
+    }
+    
+    protected void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+        CreateDust();
+    }
+    
+    protected void JumpAction()
+    {
+        CreateDust();
+        if (_onGround || _jumpPhase < _maxAirJumps)
+        {
+            _jumpPhase += 1;
+                
+            _jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * _jumpHeight);
+                
+            if (_velocity.y > 0f)
+            {
+                _jumpSpeed = Mathf.Max(_jumpSpeed - _velocity.y, 0f);
+            }
+            else if (_velocity.y < 0f)
+            {
+                _jumpSpeed += Mathf.Abs(_body.velocity.y);
+            }
+            _velocity.y += _jumpSpeed * (Mathf.Pow(_multiJumpMultiplier,_jumpPhase));
+        }
+    }
+    
+    protected void Jump(InputAction.CallbackContext context)
+    {
+        _desiredJump = true;
+    }
+
+    protected void DashFunc(InputAction.CallbackContext context)
+    {
+        if (canDash)
+        {
+            StartCoroutine(Dash());
+        }
+    }
+    
+    protected void Crouch(InputAction.CallbackContext context)
+    {
+        _isDownPressed = true;
+    }
+    
+    protected void CrouchCanceled(InputAction.CallbackContext context)
+    {
+        _isDownPressed = false;
+    }
+    
+    protected void JumpCanceled(InputAction.CallbackContext context)
+    {
+        _desiredJump = false;
+    }
+
+    protected void PassThroughPlatform(InputAction.CallbackContext context)
+    {
+        _ground.PassCurPlatform(); //todo: put in move instead of move1
+    }
+    
 }
 
     

@@ -46,7 +46,7 @@ public partial class @PlayerInput2 : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Power"",
+                    ""name"": ""Dash"",
                     ""type"": ""Button"",
                     ""id"": ""db4cb9b9-5c98-496f-8671-4ef907571734"",
                     ""expectedControlType"": ""Button"",
@@ -62,6 +62,15 @@ public partial class @PlayerInput2 : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": ""Hold,MultiTap"",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Power"",
+                    ""type"": ""Button"",
+                    ""id"": ""a6865991-f722-4dff-85d2-55986d0cd630"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -99,6 +108,39 @@ public partial class @PlayerInput2 : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""e65e23de-c5ef-41c9-8070-b0f61e444526"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""c9e97c66-578a-460f-aba9-426a840dd172"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""0955686b-0acb-48af-ad3e-e256ada63eef"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""a608b015-a4ae-4019-8d74-54eee02efcc6"",
                     ""path"": ""<Keyboard>/w"",
@@ -111,12 +153,34 @@ public partial class @PlayerInput2 : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""b53ec1c9-82d6-43e4-a67b-3ddafce71025"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""d64deba5-6896-40ec-9ca5-1592bd2ad0e2"",
-                    ""path"": ""<Keyboard>/l"",
+                    ""path"": ""<Keyboard>/shift"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Power"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1cdcf4cd-d367-424d-943e-68e81425e860"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -130,6 +194,28 @@ public partial class @PlayerInput2 : IInputActionCollection2, IDisposable
                     ""action"": ""Crouch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""81d5baeb-f520-48c6-841a-e5cb77dd9134"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9833a846-2939-4cfe-bd98-7c4bcd4f6d64"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Power"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -140,8 +226,9 @@ public partial class @PlayerInput2 : IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
-        m_Player_Power = m_Player.FindAction("Power", throwIfNotFound: true);
+        m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
         m_Player_Crouch = m_Player.FindAction("Crouch", throwIfNotFound: true);
+        m_Player_Power = m_Player.FindAction("Power", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -203,16 +290,18 @@ public partial class @PlayerInput2 : IInputActionCollection2, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Jump;
-    private readonly InputAction m_Player_Power;
+    private readonly InputAction m_Player_Dash;
     private readonly InputAction m_Player_Crouch;
+    private readonly InputAction m_Player_Power;
     public struct PlayerActions
     {
         private @PlayerInput2 m_Wrapper;
         public PlayerActions(@PlayerInput2 wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
-        public InputAction @Power => m_Wrapper.m_Player_Power;
+        public InputAction @Dash => m_Wrapper.m_Player_Dash;
         public InputAction @Crouch => m_Wrapper.m_Player_Crouch;
+        public InputAction @Power => m_Wrapper.m_Player_Power;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -228,12 +317,15 @@ public partial class @PlayerInput2 : IInputActionCollection2, IDisposable
                 @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Power.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
-                @Power.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
-                @Power.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
+                @Dash.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
+                @Dash.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
+                @Dash.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
                 @Crouch.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouch;
                 @Crouch.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouch;
                 @Crouch.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCrouch;
+                @Power.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
+                @Power.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
+                @Power.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPower;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -244,12 +336,15 @@ public partial class @PlayerInput2 : IInputActionCollection2, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
-                @Power.started += instance.OnPower;
-                @Power.performed += instance.OnPower;
-                @Power.canceled += instance.OnPower;
+                @Dash.started += instance.OnDash;
+                @Dash.performed += instance.OnDash;
+                @Dash.canceled += instance.OnDash;
                 @Crouch.started += instance.OnCrouch;
                 @Crouch.performed += instance.OnCrouch;
                 @Crouch.canceled += instance.OnCrouch;
+                @Power.started += instance.OnPower;
+                @Power.performed += instance.OnPower;
+                @Power.canceled += instance.OnPower;
             }
         }
     }
@@ -258,7 +353,8 @@ public partial class @PlayerInput2 : IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
-        void OnPower(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
+        void OnPower(InputAction.CallbackContext context);
     }
 }

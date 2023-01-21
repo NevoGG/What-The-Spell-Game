@@ -49,14 +49,43 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         fallenPlayers = new List<Player>();
-        numberOfPlayers = WriteNumPlayers.numberOfPlayers;
+        //numberOfPlayers = WriteNumPlayers.numberOfPlayers;
+        numberOfPlayers = ChoosePlayerManager.numberOfPlayers;
         gameEnded = false;
         playersAlive = numberOfPlayers;
-        addPlayersToList();
+        //addPlayersToList();
+        AddPlayersToListNew();
         countDownFinish = false;
         SetGameManagerInPlayers();
         firstGameEnded = false;
         PlayerCheckGame = numberOfPlayers == 1;
+    }
+
+    private void AddPlayersToListNew()
+    {
+        playerList = new List<Player>();
+        List<bool> playerBoolList = ChoosePlayerManager.playersArr;
+
+        if (playerBoolList[0])
+        {
+            playerList.Add(Player1);
+        }
+        if (playerBoolList[1])
+        {
+            playerList.Add(Player2);
+        }
+        if (playerBoolList[2])
+        {
+            playerList.Add(Player3);
+        }
+        if (playerBoolList[3])
+        {
+            playerList.Add(Player4);
+        }
+        foreach (Player player in playerList)
+        {
+            player.gameObject.SetActive(true);
+        }
     }
 
     public void CountDownFinish()
@@ -76,37 +105,37 @@ public class GameManager : MonoBehaviour
     /**
      * Checks amount of players as init and adds to a list the wanted amount, also activates there gameobjects
      */
-    private void addPlayersToList()
-    {
-        playerList = new List<Player>();
-        
-        switch (numberOfPlayers)
-        {
-            case 4:
-                playerList.Add(Player4);
-                playerList.Add(Player3);
-                playerList.Add(Player2);
-                playerList.Add(Player1);
-                break;
-            case 3:
-                playerList.Add(Player3);
-                playerList.Add(Player2);
-                playerList.Add(Player1);
-                break;
-            case 2:
-                playerList.Add(Player2);
-                playerList.Add(Player1);
-                break;
-            case 1:
-                playerList.Add(Player1);
-                break;
-        }
-
-        foreach (Player player in playerList)
-        {
-            player.gameObject.SetActive(true);
-        }
-    }
+    // private void addPlayersToList()
+    // {
+    //     playerList = new List<Player>();
+    //     
+    //     switch (numberOfPlayers)
+    //     {
+    //         case 4:
+    //             playerList.Add(Player4);
+    //             playerList.Add(Player3);
+    //             playerList.Add(Player2);
+    //             playerList.Add(Player1);
+    //             break;
+    //         case 3:
+    //             playerList.Add(Player3);
+    //             playerList.Add(Player2);
+    //             playerList.Add(Player1);
+    //             break;
+    //         case 2:
+    //             playerList.Add(Player2);
+    //             playerList.Add(Player1);
+    //             break;
+    //         case 1:
+    //             playerList.Add(Player1);
+    //             break;
+    //     }
+    //
+    //     foreach (Player player in playerList)
+    //     {
+    //         player.gameObject.SetActive(true);
+    //     }
+    // }
     
     
     
@@ -160,12 +189,12 @@ public class GameManager : MonoBehaviour
         }
         rankList.Sort(delegate(Player player1, Player player2)
         {
-            if (player1.xp > player2.xp) return 1;
-            if (player1.xp < player2.xp) return -1;
+            if (player1.xp > player2.xp) return -1;
+            if (player1.xp < player2.xp) return 1;
             if (player1.xp == player2.xp)
             {
-                if (player1.growSpells > player2.growSpells) return 1;
-                if (player1.growSpells < player2.growSpells) return -1;
+                if (player1.growSpells > player2.growSpells) return -1;
+                if (player1.growSpells < player2.growSpells) return 1;
             }
             return 0;
         });

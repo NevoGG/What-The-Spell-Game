@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="Arrow location on bottom fixed- still no flip">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue_death (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue_death (1).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Blue OOS.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Blue OOS.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BlueExplotion.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BlueExplotion.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Death_blue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Death_blue.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/Arrow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/Arrow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OpeningScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OpeningScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Neta" />
+      </map>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Animal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Animal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Arrow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Arrow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Arrow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChoosePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OutOfScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Plugins/PlayerInput/PlayerInputManager.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
+  <component name="ProjectId" id="2KJeppi4MYaXAAzJJUqgGmKAdIn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\t-nevogat\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\t-nevogat\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\t-nevogat\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds\What The Spell.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\GameJam\WhatTheSpellNew\Build\13.1" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\GameJam\WhatTheSpellNew -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\GameJam\WhatTheSpellNew" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\GameJam\WhatTheSpellNew -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\GameJam\WhatTheSpellNew" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="added mass">
+      <created>1673692179395</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673692179395</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Dash works for all four players, fixed falling through floor bug">
+      <created>1673697229001</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673697229001</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="" />
+      <created>1673697304862</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673697304862</updated>
+      <workItem from="1673697307509" duration="18310000" />
+      <workItem from="1673984144370" duration="289000" />
+      <workItem from="1673995660301" duration="204000" />
+      <workItem from="1674036805058" duration="2314000" />
+      <workItem from="1674052078052" duration="2736000" />
+      <workItem from="1674057487059" duration="3495000" />
+      <workItem from="1674067068370" duration="307000" />
+      <workItem from="1674069137428" duration="348000" />
+      <workItem from="1674134058245" duration="2626000" />
+      <workItem from="1674138144860" duration="20000" />
+      <workItem from="1674162681484" duration="4279000" />
+    </task>
+    <task id="LOCAL-00003" summary="git makes me do it!">
+      <created>1673697448284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673697448284</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added appearing spells instead of witches">
+      <created>1673720893672</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673720893672</updated>
+    </task>
+    <task id="LOCAL-00005" summary="spells updated">
+      <created>1673726264525</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673726264525</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Muerta Unicornio">
+      <created>1673995591233</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673995591233</updated>
+    </task>
+    <task id="LOCAL-00007" summary="confetti fixed">
+      <created>1674036831335</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674036831335</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Dash feedback added">
+      <created>1674052114614</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674052114614</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Dash parameters fixed">
+      <created>1674053904702</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674053904702</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added top bg">
+      <created>1674054304426</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674054304426</updated>
+    </task>
+    <task id="LOCAL-00011" summary="bounce factor added">
+      <created>1674054790789</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674054790789</updated>
+    </task>
+    <task id="LOCAL-00012" summary="settings">
+      <created>1674055012580</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674055012580</updated>
+    </task>
+    <task id="LOCAL-00013" summary="bunch">
+      <created>1674065615452</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674065615452</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Input controllers">
+      <created>1674069256474</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674069256474</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Preparation for spell &quot;warm up&quot; time added. bigfoot + unicorn stats improved">
+      <created>1674137839296</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674137839296</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Arrow almost done- still only works for blue rabbit and not for down">
+      <created>1674215172746</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674215172746</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Arrow files">
+      <created>1674215193698</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674215193698</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Arrow shrinks as player goes up">
+      <created>1674217109904</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1674217109904</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Arrow location on bottom fixed- still no flip">
+      <created>1674217940648</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674217940648</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="added mass" />
+    <MESSAGE value="Dash works for all four players, fixed falling through floor bug" />
+    <MESSAGE value="git makes me do it!" />
+    <MESSAGE value="added appearing spells instead of witches" />
+    <MESSAGE value="spells updated" />
+    <MESSAGE value="Muerta Unicornio" />
+    <MESSAGE value="confetti fixed" />
+    <MESSAGE value="Dash feedback added" />
+    <MESSAGE value="Dash parameters fixed" />
+    <MESSAGE value="Added top bg" />
+    <MESSAGE value="bounce factor added" />
+    <MESSAGE value="settings" />
+    <MESSAGE value="bunch" />
+    <MESSAGE value="Input controllers" />
+    <MESSAGE value="random shit" />
+    <MESSAGE value="Preparation for spell &quot;warm up&quot; time added. bigfoot + unicorn stats improved" />
+    <MESSAGE value="Arrow almost done- still only works for blue rabbit and not for down" />
+    <MESSAGE value="Arrow files" />
+    <MESSAGE value="Arrow shrinks as player goes up" />
+    <MESSAGE value="Arrow location on bottom fixed- still no flip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrow location on bottom fixed- still no flip" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Animal.cs</url>
+          <line>78</line>
+          <properties documentPath="C:\GameJam\WhatTheSpellNew\Assets\Scripts\Animal.cs" initialLine="79" containingFunctionPresentation="method 'OnTriggerStay2D'">
+            <startOffsets>
+              <option value="2103" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2136" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

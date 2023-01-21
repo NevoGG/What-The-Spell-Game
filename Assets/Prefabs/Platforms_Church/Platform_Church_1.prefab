@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5583095022380978466}
   - component: {fileID: 6725951490945376992}
   - component: {fileID: 2609839967580903265}
+  - component: {fileID: 3163789067588922110}
   m_Layer: 0
   m_Name: platform
   m_TagString: OneWayPlatform
@@ -176,6 +177,22 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &3163789067588922110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351672619699784375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf1c3746fb9bd7459303795b4d10877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growSpell: {fileID: 5521266975769529211, guid: 5cfcdb3ec9894c747b7355f6d7ef32a5, type: 3}
+  shrinkSpell: {fileID: 4522132101675834954, guid: e3ae8e8385f0d8c489c16689473f9015, type: 3}
+  _timePerSpell: 10
+  conjureRate: {x: 0, y: 1}
 --- !u!1 &8366343632760974829
 GameObject:
   m_ObjectHideFlags: 0
