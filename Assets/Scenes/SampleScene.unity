@@ -722,6 +722,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4461604468211227220, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
+      propertyPath: cloudSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461604468211227220, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
+      propertyPath: rigthBounderCloud
+      value: -46.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4465536684875311650, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -922,6 +930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackGround
       objectReference: {fileID: 0}
+    - target: {fileID: 8660372782669249316, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
     - target: {fileID: 8664854889423803290, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -957,6 +969,10 @@ PrefabInstance:
     - target: {fileID: 9074209447105268383, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
       propertyPath: m_RootOrder
       value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 9102912176459052652, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 9105668385259380180, guid: a85a8c9f4725bf24ab16b311bf89c4d4, type: 3}
       propertyPath: m_RootOrder
