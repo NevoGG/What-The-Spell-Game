@@ -8,6 +8,8 @@ public class Arrow : MonoBehaviour
     private Camera _camera;
     private Animator _animator;
 
+    [SerializeField] private AudioSource outOfScreen;
+    [SerializeField] private AudioSource loosingClaps;
     [SerializeField] private GameObject _boom;
     private Animator _boomAnimator;
     private float upY;
@@ -102,10 +104,13 @@ public class Arrow : MonoBehaviour
     private void OutOfRange()
     {
         //todo: Fede Kapara
+        outOfScreen.Play();
     }
+    
     
     private void PlayerDead()
     {
         //todo: Fede Kapara
+        loosingClaps.Play();
     }
 }

@@ -182,6 +182,14 @@ PrefabInstance:
       propertyPath: toFollow
       value: 
       objectReference: {fileID: 2016240387}
+    - target: {fileID: 7710866097625915523, guid: d23c7e69a4cd45a46be833c4f0a853d3, type: 3}
+      propertyPath: outOfScreen
+      value: 
+      objectReference: {fileID: 1172381148}
+    - target: {fileID: 7710866097625915523, guid: d23c7e69a4cd45a46be833c4f0a853d3, type: 3}
+      propertyPath: loosingClaps
+      value: 
+      objectReference: {fileID: 1172381147}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d23c7e69a4cd45a46be833c4f0a853d3, type: 3}
 --- !u!114 &56338658 stripped
@@ -1230,9 +1238,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
+      propertyPath: dash
+      value: 
+      objectReference: {fileID: 1172381150}
+    - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
+      propertyPath: jump
+      value: 
+      objectReference: {fileID: 1172381149}
+    - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
       propertyPath: arrow
       value: 
       objectReference: {fileID: 707751516}
+    - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
+      propertyPath: changeAnimalGrow
+      value: 
+      objectReference: {fileID: 1172381151}
+    - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
+      propertyPath: changeAnimalShrink
+      value: 
+      objectReference: {fileID: 1172381152}
     - target: {fileID: 6768886472016835551, guid: ba32a59f94676624491758f747661459, type: 3}
       propertyPath: animals.Array.data[0]
       value: 
@@ -1674,6 +1698,14 @@ PrefabInstance:
       propertyPath: toFollow
       value: 
       objectReference: {fileID: 1518987561}
+    - target: {fileID: 7710866097625915523, guid: 0408bc8434b43a94eabacc4ca922f070, type: 3}
+      propertyPath: outOfScreen
+      value: 
+      objectReference: {fileID: 1172381148}
+    - target: {fileID: 7710866097625915523, guid: 0408bc8434b43a94eabacc4ca922f070, type: 3}
+      propertyPath: loosingClaps
+      value: 
+      objectReference: {fileID: 1172381147}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0408bc8434b43a94eabacc4ca922f070, type: 3}
 --- !u!114 &707751516 stripped
@@ -1762,6 +1794,14 @@ PrefabInstance:
       propertyPath: toFollow
       value: 
       objectReference: {fileID: 1480431523}
+    - target: {fileID: 7710866097625915523, guid: 3d96fc26cd6fbc543aed99d5cbcf328c, type: 3}
+      propertyPath: outOfScreen
+      value: 
+      objectReference: {fileID: 1172381148}
+    - target: {fileID: 7710866097625915523, guid: 3d96fc26cd6fbc543aed99d5cbcf328c, type: 3}
+      propertyPath: loosingClaps
+      value: 
+      objectReference: {fileID: 1172381147}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d96fc26cd6fbc543aed99d5cbcf328c, type: 3}
 --- !u!114 &798363837 stripped
@@ -1880,6 +1920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SFX
       objectReference: {fileID: 0}
+    - target: {fileID: 3538046993790468212, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3213ba6bde9673f4ca38aeb1e642feab, type: 3}
     - target: {fileID: 8314149799920957757, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1926,6 +1970,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+--- !u!82 &1172381147 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4102974490742220831, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+  m_PrefabInstance: {fileID: 1172381146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1172381148 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1043227045177849094, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+  m_PrefabInstance: {fileID: 1172381146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1172381149 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2764214849890219312, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+  m_PrefabInstance: {fileID: 1172381146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1172381150 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8390479795262955135, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+  m_PrefabInstance: {fileID: 1172381146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1172381151 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3538046993790468212, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+  m_PrefabInstance: {fileID: 1172381146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1172381152 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3558035599038789043, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+  m_PrefabInstance: {fileID: 1172381146}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1194209716 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3130106552981440003, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
@@ -2271,6 +2345,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+      propertyPath: dash
+      value: 
+      objectReference: {fileID: 1172381150}
+    - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+      propertyPath: jump
+      value: 
+      objectReference: {fileID: 1172381149}
+    - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
       propertyPath: arrow
       value: 
       objectReference: {fileID: 798363837}
@@ -2278,6 +2360,14 @@ PrefabInstance:
       propertyPath: curAnimal
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+      propertyPath: changeAnimalGrow
+      value: 
+      objectReference: {fileID: 1172381151}
+    - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
+      propertyPath: changeAnimalShrink
+      value: 
+      objectReference: {fileID: 1172381152}
     - target: {fileID: 6768886472016835551, guid: 05d8431804a67e44ca8aedc74599411b, type: 3}
       propertyPath: animals.Array.data[0]
       value: 
@@ -3033,9 +3123,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: dash
+      value: 
+      objectReference: {fileID: 1172381150}
+    - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: jump
+      value: 
+      objectReference: {fileID: 1172381149}
+    - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: arrow
       value: 
       objectReference: {fileID: 1934091553}
+    - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: changeAnimalGrow
+      value: 
+      objectReference: {fileID: 1172381151}
+    - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
+      propertyPath: changeAnimalShrink
+      value: 
+      objectReference: {fileID: 1172381152}
     - target: {fileID: 6768886472016835551, guid: e25f0fcf7de9bfd419ac2759463dd2dc, type: 3}
       propertyPath: animals.Array.data[0]
       value: 
@@ -3191,6 +3297,14 @@ PrefabInstance:
       propertyPath: toFollow
       value: 
       objectReference: {fileID: 1957151253}
+    - target: {fileID: 7710866097625915523, guid: e7403a4eaf070b345ac9ef5abce8a62e, type: 3}
+      propertyPath: outOfScreen
+      value: 
+      objectReference: {fileID: 1172381148}
+    - target: {fileID: 7710866097625915523, guid: e7403a4eaf070b345ac9ef5abce8a62e, type: 3}
+      propertyPath: loosingClaps
+      value: 
+      objectReference: {fileID: 1172381147}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7403a4eaf070b345ac9ef5abce8a62e, type: 3}
 --- !u!114 &1934091553 stripped
@@ -3454,9 +3568,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6768886472016835551, guid: 87e1647c7cf466244b5d83ff4d851e46, type: 3}
+      propertyPath: dash
+      value: 
+      objectReference: {fileID: 1172381150}
+    - target: {fileID: 6768886472016835551, guid: 87e1647c7cf466244b5d83ff4d851e46, type: 3}
+      propertyPath: jump
+      value: 
+      objectReference: {fileID: 1172381149}
+    - target: {fileID: 6768886472016835551, guid: 87e1647c7cf466244b5d83ff4d851e46, type: 3}
       propertyPath: arrow
       value: 
       objectReference: {fileID: 56338658}
+    - target: {fileID: 6768886472016835551, guid: 87e1647c7cf466244b5d83ff4d851e46, type: 3}
+      propertyPath: changeAnimalGrow
+      value: 
+      objectReference: {fileID: 1172381151}
+    - target: {fileID: 6768886472016835551, guid: 87e1647c7cf466244b5d83ff4d851e46, type: 3}
+      propertyPath: changeAnimalShrink
+      value: 
+      objectReference: {fileID: 1172381152}
     - target: {fileID: 6768886472016835551, guid: 87e1647c7cf466244b5d83ff4d851e46, type: 3}
       propertyPath: animals.Array.data[0]
       value: 
