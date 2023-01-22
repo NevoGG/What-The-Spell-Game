@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="Arrow location on bottom fixed- still no flip">
+    <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue (1) 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue_death (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Arrow_blue_death (1).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Blue OOS.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Blue OOS.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BlueExplotion.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/BlueExplotion.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Death_blue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/OutOfScreen/Blue/Death_blue.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/Arrow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/Arrow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OpeningScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OpeningScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move4.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +29,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Animal.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Animal.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Arrow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Arrow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Scripts/Arrow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChoosePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OutOfScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Plugins/PlayerInput/PlayerInputManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -142,6 +138,7 @@
       <workItem from="1674134058245" duration="2626000" />
       <workItem from="1674138144860" duration="20000" />
       <workItem from="1674162681484" duration="4279000" />
+      <workItem from="1674409762195" duration="2292000" />
     </task>
     <task id="LOCAL-00003" summary="git makes me do it!">
       <created>1673697448284</created>
@@ -262,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674217940648</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Explotions &amp; arrow pop work, still an exception and a difference between actual death collider and arrow death indicator line">
+      <created>1674319798989</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1674319798989</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,25 +308,7 @@
     <MESSAGE value="Arrow files" />
     <MESSAGE value="Arrow shrinks as player goes up" />
     <MESSAGE value="Arrow location on bottom fixed- still no flip" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrow location on bottom fixed- still no flip" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Animal.cs</url>
-          <line>78</line>
-          <properties documentPath="C:\GameJam\WhatTheSpellNew\Assets\Scripts\Animal.cs" initialLine="79" containingFunctionPresentation="method 'OnTriggerStay2D'">
-            <startOffsets>
-              <option value="2103" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2136" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Explotions &amp; arrow pop work, still an exception and a difference between actual death collider and arrow death indicator line" />
+    <option name="LAST_COMMIT_MESSAGE" value="Explotions &amp; arrow pop work, still an exception and a difference between actual death collider and arrow death indicator line" />
   </component>
 </project>

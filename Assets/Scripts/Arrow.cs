@@ -53,9 +53,12 @@ public class Arrow : MonoBehaviour
                  transform.localPosition = new Vector3(toFollow.transform.position.x, upY, screenPoint.z);
                  _animator.SetBool(IsOutOfScreen, true);
                  transform.localScale = initScale * (1 / (screenPoint.y * 1.5f));
+                 OutOfRange();
                  if (screenPoint.y > 1 + fallThreshold)
                  {
                      _animator.SetTrigger(DeadUp);
+                     // toFollow.GetComponent<Animal>().HasLost();
+                     PlayerDead();
                  }  
              }
              
@@ -65,14 +68,15 @@ public class Arrow : MonoBehaviour
                  transform.localPosition = new Vector3(toFollow.transform.position.x, -upY, screenPoint.z);
                  _animator.SetBool(IsOutOfScreen, true);
                  transform.localScale = initScale * (1 / (1 + (screenPoint.y * -1) * 1.5f));
+                 OutOfRange();
                  if (screenPoint.y < 0 - fallThreshold)
                  {
                      // Flip();
-                     _boom.transform.localScale *= 2;
-                     _boom.transform.localPosition = new Vector3(toFollow.transform.position.x, 4f, screenPoint.z);
+                     _boom.transform.localPosition = new Vector3(0f, -3f, screenPoint.z);
                      _animator.SetTrigger(DeadDown);
                      _boomAnimator.SetTrigger(DeadDown);
-                     // transform.localScale = initScale * _mushroomScale; //-CameraMovment.cameraWidth / 2
+                     PlayerDead();
+                    // toFollow.GetComponent<Animal>().HasLost();
                  }
              }
         }
@@ -93,5 +97,15 @@ public class Arrow : MonoBehaviour
         isFlipped = !isFlipped;
         Vector3 ang = transform.localEulerAngles;
         transform.localEulerAngles = new Vector3(ang.x, ang.y, ang.z + 180);
+    }
+
+    private void OutOfRange()
+    {
+        //todo: Fede Kapara
+    }
+    
+    private void PlayerDead()
+    {
+        //todo: Fede Kapara
     }
 }

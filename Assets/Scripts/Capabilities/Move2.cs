@@ -8,7 +8,7 @@ using UnityEngine.InputSystem.Interactions;
 
 public class Move2 : Move
 {
-    private PlayerInput2 controls; 
+    private PlayerInput2 controls;
 
 
     public override void SetMaxAirJumps(int h) { _maxAirJumps = h;}
@@ -17,6 +17,7 @@ public class Move2 : Move
 
     private void Awake()
     {
+        player = GetComponent<Player>();
         _body = GetComponent<Rigidbody2D>();
         _ground = GetComponent<Ground>();
         animator = GetComponent<Animator>();
