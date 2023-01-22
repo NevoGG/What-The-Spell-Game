@@ -136,7 +136,10 @@ public class Animal : MonoBehaviour
         _body.velocity = new Vector2(pushDir * _pushFactor, _yPushVelocity); //todo: push factor by animal
     }
 
-    
+    public void HasLost()
+    {
+        player.HasLost();
+    }
 }
 
 //todo: scaling to center and keep ground level the same.

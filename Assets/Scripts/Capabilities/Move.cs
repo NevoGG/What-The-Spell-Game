@@ -66,22 +66,13 @@ public abstract class Move : MonoBehaviour
     protected GameObject oneWayPlatform = null;
     
     protected int _maxAirJumps = 0;
+
+    protected Player player;
     public abstract void SetMaxAirJumps(int k);
     
     protected static readonly int IsJumping = Animator.StringToHash("IsJumping");
     protected static readonly int Speed = Animator.StringToHash("Speed");
-
-    // private void OnMove(InputValue inp)
-    // {
-    //     if (inp.isPressed)
-    //     {
-    //         
-    //     }
-    //     else
-    //     {
-    //         
-    //     }
-    // }
+    
     protected void UpdateParams()
     {
     //Movement Fields:
@@ -117,8 +108,7 @@ public abstract class Move : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
-        
-        
+        player.Dash();
         float originalDrag = _body.drag;
         float originalGravity = _body.gravityScale;
         string originalTag = tag;
@@ -149,6 +139,7 @@ public abstract class Move : MonoBehaviour
         CreateDust();
         if (_onGround || _jumpPhase < _maxAirJumps)
         {
+            player.Jump();
             _jumpPhase += 1;
                 
             _jumpSpeed = Mathf.Sqrt(-2f * Physics2D.gravity.y * _jumpHeight);

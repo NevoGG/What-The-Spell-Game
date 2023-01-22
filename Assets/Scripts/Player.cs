@@ -74,6 +74,7 @@ public class Player : MonoBehaviour
 		switch (spell)
 	    {
 		    case SpellEnum.Shrink:
+			    Shrink();
 		     curXpFromLastLevel -= 1;
 		     if (xp > 0)
 		     {
@@ -84,6 +85,7 @@ public class Player : MonoBehaviour
 		     if (curXpFromLastLevel < 0) Demote();
 		     break;
 	     case SpellEnum.Grow:
+		     Grow();
 		     xp += 1;
 		     // curAnimal.GetComponent<Animal>().growParticles.Play();
 		     growSpells += 1;
@@ -164,6 +166,27 @@ public class Player : MonoBehaviour
     {
 	    curAnimal.transform.localScale *= size;
     }
+
+    private void Grow()
+    {
+	    //todo: Fede 
+    }
+
+    private void Shrink()
+    {
+	    //todo: Fede 
+    }
+
+    public void Dash()
+    {
+	    //todo: Fede 
+    }
+
+    public void Jump()
+    {
+	    //todo: Fede 
+    }
+    
 } //Upgrade the animal of the player
 
 
