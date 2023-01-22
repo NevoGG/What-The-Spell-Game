@@ -27,11 +27,18 @@ public class Animal : MonoBehaviour
 //small change here
     
     //Setters:
-    public void SetPlayer(Player p) { player = p;}
+    public void SetPlayer(Player p)
+    {
+        player = p;
+        GetComponent<Move>().SetPlayer(p);
+    }
     //Getters:
     public AnimalPower GetAnimalPow() {return _power;}
     public int GetXpNeeded() {return _xpNeeded;}
 
+    public Player GetPlayer()
+    { return player;}
+    
     void Start()
     {
         _move = GetComponent<Move>();

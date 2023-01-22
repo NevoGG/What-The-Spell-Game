@@ -17,7 +17,7 @@ public class Move2 : Move
 
     private void Awake()
     {
-        player = GetComponent<Player>();
+        // player = GetComponent<Animal>().GetPlayer();
         _body = GetComponent<Rigidbody2D>();
         _ground = GetComponent<Ground>();
         animator = GetComponent<Animator>();

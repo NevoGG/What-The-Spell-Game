@@ -68,6 +68,12 @@ public abstract class Move : MonoBehaviour
     protected int _maxAirJumps = 0;
 
     protected Player player;
+
+    public void SetPlayer(Player p)
+    {
+        player = p;
+    }
+
     public abstract void SetMaxAirJumps(int k);
     
     protected static readonly int IsJumping = Animator.StringToHash("IsJumping");
