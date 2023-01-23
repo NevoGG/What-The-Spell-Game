@@ -51,6 +51,12 @@ public class ChoosePlayerManager : MonoBehaviour
     [SerializeField] private Sprite redKeys;
     [SerializeField] private Sprite greenKeys;
     
+    [SerializeField] private AudioSource playerConnect1;
+    [SerializeField] private AudioSource playerConnect2;
+    [SerializeField] private AudioSource playerConnect3;
+    [SerializeField] private AudioSource playerConnect4;
+    [SerializeField] private AudioSource buttonPress;
+    
     // Start is called before the first frame update
     void Awake()
     {
@@ -149,10 +155,12 @@ public class ChoosePlayerManager : MonoBehaviour
         
         if (Input.GetKey(KeyCode.Escape))
         {
+            buttonPress.Play();
             ResetPlayers();
         }
         if (Input.GetKey(KeyCode.Return) && numberOfPlayers != 0)
         {
+            buttonPress.Play();
             enterRenderer.sprite = enterClicked;
             SceneManager.LoadScene("SampleScene");
         }
@@ -185,24 +193,28 @@ public class ChoosePlayerManager : MonoBehaviour
 
     public void ActivatePlayer1(InputAction.CallbackContext context)
     {
+        playerConnect1.Play();
         blueKeysRenderer.sprite = blueKeys;
         playersArr[0] = true;
     }
     
     public void ActivatePlayer2(InputAction.CallbackContext context)
     {
+        playerConnect2.Play();
         greenKeysRenderer.sprite = greenKeys;
         playersArr[1] = true;
     }
     
     public void ActivatePlayer3(InputAction.CallbackContext context)
     {
+        playerConnect3.Play();
         redKeysRenderer.sprite = redKeys;
         playersArr[2] = true;
     }
     
     public void ActivatePlayer4(InputAction.CallbackContext context)
     {
+        playerConnect4.Play();
         yellowKeysRenderer.sprite = yellowKeys;
         playersArr[3] = true;
     }

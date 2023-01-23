@@ -519,6 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GM: {fileID: 612236750}
+  oneTwoThreeGo: {fileID: 641191657}
 --- !u!95 &309796518
 Animator:
   serializedVersion: 4
@@ -1395,6 +1396,7 @@ MonoBehaviour:
   endScreen: {fileID: 592168559}
   numberOfPlayers: 0
   playersAlive: 0
+  oneTwoThreeGo: {fileID: 641191657}
 --- !u!4 &612236751
 Transform:
   m_ObjectHideFlags: 0
@@ -1506,6 +1508,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &641191654 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3014637810655303843, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+  m_PrefabInstance: {fileID: 1172381146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &641191655 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 71516904584538234, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+  m_PrefabInstance: {fileID: 1172381146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &641191656 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 291596632413437348, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+  m_PrefabInstance: {fileID: 1172381146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &641191657 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7179844045417439209, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+  m_PrefabInstance: {fileID: 1172381146}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &662330955
 GameObject:
   m_ObjectHideFlags: 0
@@ -3768,7 +3790,7 @@ PrefabInstance:
       objectReference: {fileID: 3130106553011633793}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: topSpeed
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: waitTime
@@ -3780,7 +3802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: initialSpeed
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: bottomBounder
@@ -3788,7 +3810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1766727468573358940, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: movementSpeed
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3130106552031712420, guid: a3e0c21ceb19c1a4ba65056e4c1c3f3a, type: 3}
       propertyPath: facingRotation
@@ -4108,6 +4130,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
+      propertyPath: win
+      value: 
+      objectReference: {fileID: 641191655}
+    - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
+      propertyPath: win2
+      value: 
+      objectReference: {fileID: 641191654}
+    - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
       propertyPath: redWin
       value: 
       objectReference: {fileID: 21300000, guid: 511f6a43b451ea64a91f26137f86d375, type: 3}
@@ -4139,6 +4169,10 @@ PrefabInstance:
       propertyPath: GreenBubble
       value: 
       objectReference: {fileID: 21300000, guid: a45bbae47231d974dbfc324c5cb57918, type: 3}
+    - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
+      propertyPath: buttonPress
+      value: 
+      objectReference: {fileID: 641191656}
     - target: {fileID: 7616985570815511225, guid: 295ebf5b333ac9f49b057a691527a7c6, type: 3}
       propertyPath: textSpeed.x
       value: 5
