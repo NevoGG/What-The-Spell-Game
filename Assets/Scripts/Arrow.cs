@@ -68,8 +68,7 @@ public class Arrow : MonoBehaviour
                  if (screenPoint.y < 0 - fallThreshold)
                  {
                      // Flip();
-                     _boom.transform.localScale *= 2;
-                     _boom.transform.localPosition = new Vector3(toFollow.transform.position.x, 4f, screenPoint.z);
+                     _boom.transform.localPosition = new Vector3(0f, -3f, screenPoint.z);
                      _animator.SetTrigger(DeadDown);
                      _boomAnimator.SetTrigger(DeadDown);
                      // transform.localScale = initScale * _mushroomScale; //-CameraMovment.cameraWidth / 2

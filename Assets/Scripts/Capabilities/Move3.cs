@@ -8,7 +8,7 @@ using UnityEngine.InputSystem.Interactions;
 
 public class Move3 : Move
 {
-    private PlayerInput3 controls; 
+    private PlayerInput3 controls;
 
 
     public override void SetMaxAirJumps(int h) { _maxAirJumps = h;}
