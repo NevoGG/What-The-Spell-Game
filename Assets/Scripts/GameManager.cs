@@ -154,7 +154,10 @@ public class GameManager : MonoBehaviour
     
     private void endGame()
     {
-        GetComponent<AudioSource>().Stop();
+        if (GetComponent<AudioSource>().isPlaying)
+        {
+            GetComponent<AudioSource>().Pause();
+        }
         List<Player> rankList = new List<Player>();
         if (playersAlive == -1)
         {

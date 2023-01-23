@@ -25,13 +25,13 @@ public class WriteNumPlayers : MonoBehaviour
         {
             
             buttonPress.Play();
-            ActivateChoosePlayerScene();
+            ActivatetutorialScene();
         }
     }
 
-    private void ActivateChoosePlayerScene()
+    private void ActivatetutorialScene()
     {
-        SceneManager.LoadScene("ChoosePlayer");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void Player1()

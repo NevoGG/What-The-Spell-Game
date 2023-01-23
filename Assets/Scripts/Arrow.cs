@@ -104,13 +104,13 @@ public class Arrow : MonoBehaviour
     private void OutOfRange()
     {
         //todo: Fede Kapara
-        outOfScreen.Play();
+        // outOfScreen.Play();
     }
     
     
     private void PlayerDead()
     {
         //todo: Fede Kapara
-        loosingClaps.Play();
+        // loosingClaps.Play();
     }
 }

@@ -193,13 +193,16 @@ public class ChoosePlayerManager : MonoBehaviour
 
     public void ActivatePlayer1(InputAction.CallbackContext context)
     {
+        if (playersArr[0]) return;
         playerConnect1.Play();
         blueKeysRenderer.sprite = blueKeys;
         playersArr[0] = true;
+
     }
     
     public void ActivatePlayer2(InputAction.CallbackContext context)
     {
+        if (playersArr[1]) return;
         playerConnect2.Play();
         greenKeysRenderer.sprite = greenKeys;
         playersArr[1] = true;
@@ -207,6 +210,7 @@ public class ChoosePlayerManager : MonoBehaviour
     
     public void ActivatePlayer3(InputAction.CallbackContext context)
     {
+        if (playersArr[2]) return;
         playerConnect3.Play();
         redKeysRenderer.sprite = redKeys;
         playersArr[2] = true;
@@ -214,6 +218,7 @@ public class ChoosePlayerManager : MonoBehaviour
     
     public void ActivatePlayer4(InputAction.CallbackContext context)
     {
+        if (playersArr[3]) return;
         playerConnect4.Play();
         yellowKeysRenderer.sprite = yellowKeys;
         playersArr[3] = true;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlatformTimer : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private float waitTime = 3f;
+    [SerializeField] private float waitTime = 4f;
     private bool active;
 
     void Start()
@@ -23,7 +23,7 @@ public class PlatformTimer : MonoBehaviour
             {
                 active = false;
                 transform.parent.gameObject.SetActive(false); 
-                //this.gameObject.SetActive(false);
+                
             }
         }
     }

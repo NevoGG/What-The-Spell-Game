@@ -102,7 +102,7 @@ public class endScreen : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Escape))
         {
-            // buttonPress.Play();
+            buttonPress.Play();
             MainMenu();
         }
         textWinner.transform.position -= textSpeed * Time.deltaTime;
