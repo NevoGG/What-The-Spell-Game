@@ -34,7 +34,7 @@ public class endScreen : MonoBehaviour
     void Start()
     {
         // fede: decide on which sound
-        win.Play();
+        // win.Play();
         win2.Play();
         mainCam.transform.position = new Vector3(transform.position.x, transform.position.y,
             mainCam.transform.position.z);
@@ -97,6 +97,7 @@ public class endScreen : MonoBehaviour
         if (Input.GetKey(KeyCode.Return))
         {
             buttonPress.Play();
+            Debug.Log("presed");
             PlayAgain();
         }
         if (Input.GetKey(KeyCode.Escape))
