@@ -43,11 +43,12 @@ public class GameManager : MonoBehaviour
     private List<Player> fallenPlayers;
     private bool firstGameEnded;
     private bool PlayerCheckGame; // if we chose 1 player at beginning to check game
-    
+    [SerializeField] private AudioSource oneTwoThreeGo;
     
     // Start is called before the first frame update
     void Start()
     {
+        oneTwoThreeGo.Play();
         fallenPlayers = new List<Player>();
         //numberOfPlayers = WriteNumPlayers.numberOfPlayers;
         numberOfPlayers = ChoosePlayerManager.numberOfPlayers;

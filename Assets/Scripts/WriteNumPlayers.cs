@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class WriteNumPlayers : MonoBehaviour
 {
     public static int numberOfPlayers = 1;
-    
+    [SerializeField] private AudioSource buttonPress;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +18,13 @@ public class WriteNumPlayers : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Escape))
         {
+            buttonPress.Play();
             Application.Quit();
         }
         if (Input.GetKey(KeyCode.Return))
         {
+            
+            buttonPress.Play();
             ActivateChoosePlayerScene();
         }
     }

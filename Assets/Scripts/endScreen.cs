@@ -27,11 +27,15 @@ public class endScreen : MonoBehaviour
     [SerializeField] private Sprite redWin;
     [SerializeField] private Sprite greenWin;
     
-    
-
+    [SerializeField] private AudioSource win;
+    [SerializeField] private AudioSource win2;
+    [SerializeField] private AudioSource buttonPress;
     // Start is called before the first frame update
     void Start()
     {
+        // fede: decide on which sound
+        win.Play();
+        win2.Play();
         mainCam.transform.position = new Vector3(transform.position.x, transform.position.y,
             mainCam.transform.position.z);
         buttonMainMenu.SetActive(true);
@@ -92,10 +96,12 @@ public class endScreen : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Return))
         {
+            buttonPress.Play();
             PlayAgain();
         }
         if (Input.GetKey(KeyCode.Escape))
         {
+            // buttonPress.Play();
             MainMenu();
         }
         textWinner.transform.position -= textSpeed * Time.deltaTime;
