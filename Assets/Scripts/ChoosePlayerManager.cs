@@ -169,7 +169,7 @@ public class ChoosePlayerManager : MonoBehaviour
         {
             buttonPress.Play();
             enterRenderer.sprite = enterClicked;
-            menuMusic.Stop();adde
+            menuMusic.Stop();
             SceneManager.LoadScene("SampleScene");
         }
         countPlayers();
