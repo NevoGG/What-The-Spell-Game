@@ -47,7 +47,7 @@ public class Cloud : MonoBehaviour
             if (transform.position.x <rightBounder)
             {
                 transform.position = new Vector3( transform.position.x + cloudSpeed * Time.deltaTime,transform.position.y, 0);
-                Debug.Log("left!");
+                
             }
             else
             {

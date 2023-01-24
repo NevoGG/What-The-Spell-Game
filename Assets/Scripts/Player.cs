@@ -8,6 +8,10 @@ public enum ScoreEnum {XP, GrowSpells, ShrinkSpells, BiggestAnimal, TimeAsBigges
 
 public class Player : MonoBehaviour
 {
+	[SerializeField] private AudioSource changeAnimalGrow;
+	[SerializeField] private AudioSource changeAnimalShrink;
+	[SerializeField] private AudioSource dash;
+	[SerializeField] private AudioSource jump;
 	[SerializeField] private List<GameObject> animals;
 	[SerializeField] private Arrow arrow;
 	public bool hasChanged = false;
@@ -170,21 +174,25 @@ public class Player : MonoBehaviour
     private void Grow()
     {
 	    //todo: Fede 
+	    changeAnimalGrow.Play();
     }
 
     private void Shrink()
     {
 	    //todo: Fede 
+	    changeAnimalShrink.Play();
     }
 
     public void Dash()
     {
 	    //todo: Fede 
+	    dash.Play();
     }
 
     public void Jump()
     {
 	    //todo: Fede 
+	    jump.Play();
     }
     
 } //Upgrade the animal of the player
