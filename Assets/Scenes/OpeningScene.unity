@@ -479,6 +479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SFX
       objectReference: {fileID: 0}
+    - target: {fileID: 3299751235762145604, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+      propertyPath: m_TagString
+      value: SFX
+      objectReference: {fileID: 0}
     - target: {fileID: 4102974490742220831, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -545,16 +549,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
---- !u!82 &837700078 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 291596632413437348, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 837700077}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &837700079 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7929874422707473444, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 837700077}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &848642523
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,8 +646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b2aaae59138bda4e8da912554419daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonPress: {fileID: 0}
-  music: {fileID: 0}
 --- !u!1 &1275756847
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,8 +876,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b2aaae59138bda4e8da912554419daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonPress: {fileID: 837700078}
-  music: {fileID: 837700079}
 --- !u!4 &1340619597
 Transform:
   m_ObjectHideFlags: 0
