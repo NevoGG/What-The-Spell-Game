@@ -43,12 +43,14 @@ public class GameManager : MonoBehaviour
     private List<Player> fallenPlayers;
     private bool firstGameEnded;
     private bool PlayerCheckGame; // if we chose 1 player at beginning to check game
-    [SerializeField] private AudioSource oneTwoThreeGo;
-    
+    // [SerializeField] private AudioSource oneTwoThreeGo;
+    private GameObject sFX;
     // Start is called before the first frame update
     void Start()
     {
-        oneTwoThreeGo.Play();
+        sFX = GameObject.FindGameObjectWithTag("SFX");
+        sFX.GetComponent<SFXManager>().playOneTwoThreeGo();
+        // oneTwoThreeGo.Play();
         fallenPlayers = new List<Player>();
         //numberOfPlayers = WriteNumPlayers.numberOfPlayers;
         numberOfPlayers = ChoosePlayerManager.numberOfPlayers;
@@ -92,8 +94,11 @@ public class GameManager : MonoBehaviour
     public void CountDownFinish()
     {
         countDownFinish = true;
-        GetComponent<AudioSource>().Play();
+        // GetComponent<AudioSource>().Play();
+        // sFX.GetComponent<SFXManager>().playMenuMusic();
+        sFX.GetComponent<SFXManager>().playSonicMusic();
     }
+    
 
     private void SetGameManagerInPlayers()
     {
@@ -154,10 +159,11 @@ public class GameManager : MonoBehaviour
     
     private void endGame()
     {
-        if (GetComponent<AudioSource>().isPlaying)
-        {
-            GetComponent<AudioSource>().Pause();
-        }
+        // if (GetComponent<AudioSource>().isPlaying)
+        // {
+        //     GetComponent<AudioSource>().Pause();
+        // }
+        sFX.GetComponent<SFXManager>().stopSonicMusic();
         List<Player> rankList = new List<Player>();
         if (playersAlive == -1)
         {

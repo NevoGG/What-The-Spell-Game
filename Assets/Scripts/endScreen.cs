@@ -27,15 +27,20 @@ public class endScreen : MonoBehaviour
     [SerializeField] private Sprite redWin;
     [SerializeField] private Sprite greenWin;
     
-    [SerializeField] private AudioSource win;
-    [SerializeField] private AudioSource win2;
-    [SerializeField] private AudioSource buttonPress;
+    // [SerializeField] private AudioSource win;
+    // [SerializeField] private AudioSource win2;
+    // [SerializeField] private AudioSource buttonPress;
+    private GameObject sFX;
     // Start is called before the first frame update
     void Start()
     {
         // fede: decide on which sound
         // win.Play();
-        win2.Play();
+        // win2.Play();
+        sFX = GameObject.FindGameObjectWithTag("SFX");
+        // sFX.GetComponent<SFXManager>().stopMenuMusic();
+        sFX.GetComponent<SFXManager>().playMenuMusic();
+        sFX.GetComponent<SFXManager>().playWin();
         mainCam.transform.position = new Vector3(transform.position.x, transform.position.y,
             mainCam.transform.position.z);
         buttonMainMenu.SetActive(true);
@@ -96,13 +101,16 @@ public class endScreen : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Return))
         {
-            buttonPress.Play();
+            // buttonPress.Play();
+            sFX.GetComponent<SFXManager>().playButtonPress();
+            sFX.GetComponent<SFXManager>().pauseMenuMusic();
             Debug.Log("presed");
             PlayAgain();
         }
         if (Input.GetKey(KeyCode.Escape))
         {
-            buttonPress.Play();
+            // buttonPress.Play();
+            sFX.GetComponent<SFXManager>().playButtonPress();
             MainMenu();
         }
         textWinner.transform.position -= textSpeed * Time.deltaTime;

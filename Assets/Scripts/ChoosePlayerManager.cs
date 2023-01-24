@@ -52,21 +52,24 @@ public class ChoosePlayerManager : MonoBehaviour
     [SerializeField] private Sprite redKeys;
     [SerializeField] private Sprite greenKeys;
     
-    [SerializeField] private AudioSource playerConnect1;
-    [SerializeField] private AudioSource playerConnect2;
-    [SerializeField] private AudioSource playerConnect3;
-    [SerializeField] private AudioSource playerConnect4;
-    [SerializeField] private AudioSource buttonPress;
-    [SerializeField] private AudioSource menuMusic;
+    // [SerializeField] private AudioSource playerConnect1;
+    // [SerializeField] private AudioSource playerConnect2;
+    // [SerializeField] private AudioSource playerConnect3;
+    // [SerializeField] private AudioSource playerConnect4;
+    // [SerializeField] private AudioSource buttonPress;
+    // [SerializeField] private AudioSource menuMusic;
+    
+    private GameObject sFX;
     
     // Start is called before the first frame update
-    private void Start()
-    {
-        menuMusic.Play();
-    }
+    // private void Start()
+    // {
+    //     menuMusic.Play();
+    // }
 
     void Awake()
     {
+        sFX = GameObject.FindGameObjectWithTag("SFX");
         controls1 = new PlayerInput1();
         controls2 = new PlayerInput2();
         controls3 = new PlayerInput3();
@@ -162,14 +165,16 @@ public class ChoosePlayerManager : MonoBehaviour
         
         if (Input.GetKey(KeyCode.Escape))
         {
-            buttonPress.Play();
+            sFX.GetComponent<SFXManager>().playButtonPress();
+            // buttonPress.Play();
             ResetPlayers();
         }
         if (Input.GetKey(KeyCode.Return) && numberOfPlayers != 0)
         {
-            buttonPress.Play();
+            sFX.GetComponent<SFXManager>().playButtonPress();
+            // buttonPress.Play();
             enterRenderer.sprite = enterClicked;
-            menuMusic.Stop();
+            sFX.GetComponent<SFXManager>().pauseMenuMusic();
             SceneManager.LoadScene("SampleScene");
         }
         countPlayers();
@@ -202,7 +207,7 @@ public class ChoosePlayerManager : MonoBehaviour
     public void ActivatePlayer1(InputAction.CallbackContext context)
     {
         if (playersArr[0]) return;
-        playerConnect1.Play();
+        sFX.GetComponent<SFXManager>().playPlayerConnect1();
         blueKeysRenderer.sprite = blueKeys;
         playersArr[0] = true;
 
@@ -211,7 +216,7 @@ public class ChoosePlayerManager : MonoBehaviour
     public void ActivatePlayer2(InputAction.CallbackContext context)
     {
         if (playersArr[1]) return;
-        playerConnect2.Play();
+        sFX.GetComponent<SFXManager>().playPlayerConnect2();
         greenKeysRenderer.sprite = greenKeys;
         playersArr[1] = true;
     }
@@ -219,7 +224,7 @@ public class ChoosePlayerManager : MonoBehaviour
     public void ActivatePlayer3(InputAction.CallbackContext context)
     {
         if (playersArr[2]) return;
-        playerConnect3.Play();
+        sFX.GetComponent<SFXManager>().playPlayerConnect3();
         redKeysRenderer.sprite = redKeys;
         playersArr[2] = true;
     }
@@ -227,7 +232,7 @@ public class ChoosePlayerManager : MonoBehaviour
     public void ActivatePlayer4(InputAction.CallbackContext context)
     {
         if (playersArr[3]) return;
-        playerConnect4.Play();
+        sFX.GetComponent<SFXManager>().playPlayerConnect4();
         yellowKeysRenderer.sprite = yellowKeys;
         playersArr[3] = true;
     }

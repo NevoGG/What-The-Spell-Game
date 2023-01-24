@@ -637,12 +637,6 @@ MonoBehaviour:
   yellowKeys: {fileID: 21300000, guid: 23e766842b7c58c4b9bf9e7652a5da63, type: 3}
   redKeys: {fileID: 21300000, guid: 8b3e960136d19b445b2984d1f876039f, type: 3}
   greenKeys: {fileID: 21300000, guid: 82c8e6d996c494846ac5f076dabe8b35, type: 3}
-  playerConnect1: {fileID: 1872278809}
-  playerConnect2: {fileID: 1872278808}
-  playerConnect3: {fileID: 1872278808}
-  playerConnect4: {fileID: 1872278807}
-  buttonPress: {fileID: 1872278806}
-  menuMusic: {fileID: 1872278810}
 --- !u!1 &1513435873
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SFX
       objectReference: {fileID: 0}
+    - target: {fileID: 3299751235762145604, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8314149799920957757, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -776,31 +774,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
---- !u!82 &1872278806 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 291596632413437348, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 1872278805}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1872278807 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8582320406919941882, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 1872278805}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1872278808 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5445637796007733989, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 1872278805}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1872278809 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1730114801386013973, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 1872278805}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1872278810 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7929874422707473444, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 1872278805}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2004235681
 GameObject:
   m_ObjectHideFlags: 0

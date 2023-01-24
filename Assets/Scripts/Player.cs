@@ -8,10 +8,10 @@ public enum ScoreEnum {XP, GrowSpells, ShrinkSpells, BiggestAnimal, TimeAsBigges
 
 public class Player : MonoBehaviour
 {
-	[SerializeField] private AudioSource changeAnimalGrow;
-	[SerializeField] private AudioSource changeAnimalShrink;
-	[SerializeField] private AudioSource dash;
-	[SerializeField] private AudioSource jump;
+	// [SerializeField] private AudioSource changeAnimalGrow;
+	// [SerializeField] private AudioSource changeAnimalShrink;
+	// [SerializeField] private AudioSource dash;
+	// [SerializeField] private AudioSource jump;
 	[SerializeField] private List<GameObject> animals;
 	[SerializeField] private Arrow arrow;
 	public bool hasChanged = false;
@@ -31,7 +31,8 @@ public class Player : MonoBehaviour
 	public int growSpells = 0;
 	public int shrinkSpells = 0;
 	public int biggestAnimal = 0;
-
+	private GameObject sFX;
+	
 	void awake()
 	{
 	}
@@ -39,6 +40,7 @@ public class Player : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+		sFX = GameObject.FindGameObjectWithTag("SFX");
 		foreach(GameObject obj in animals)
 		{
 			Animal anim = obj.GetComponent<Animal>();
@@ -174,25 +176,29 @@ public class Player : MonoBehaviour
     private void Grow()
     {
 	    //todo: Fede 
-	    changeAnimalGrow.Play();
+	    sFX.GetComponent<SFXManager>().playChangeAnimalGrow();
+	    // changeAnimalGrow.Play();
     }
 
     private void Shrink()
     {
 	    //todo: Fede 
-	    changeAnimalShrink.Play();
+	    sFX.GetComponent<SFXManager>().playChangeAnimalShrink();
+	    // changeAnimalShrink.Play();
     }
 
     public void Dash()
     {
 	    //todo: Fede 
-	    dash.Play();
+	    sFX.GetComponent<SFXManager>().playDash();
+	    // dash.Play();
     }
 
     public void Jump()
     {
 	    //todo: Fede 
-	    jump.Play();
+	    sFX.GetComponent<SFXManager>().playJump();
+	    // jump.Play();
     }
     
 } //Upgrade the animal of the player

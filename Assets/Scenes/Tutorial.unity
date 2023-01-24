@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27235618a6d42144c80819f4eb108b5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonPress: {fileID: 1393301807}
+  waitTime: 19
 --- !u!4 &230535672
 Transform:
   m_ObjectHideFlags: 0
@@ -1010,6 +1010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SFX
       objectReference: {fileID: 0}
+    - target: {fileID: 3299751235762145604, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4102974490742220831, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -1072,11 +1076,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
---- !u!82 &1393301807 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 291596632413437348, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 1393301806}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1559256688
 GameObject:
   m_ObjectHideFlags: 0

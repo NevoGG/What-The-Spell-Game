@@ -2027,6 +2027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SFX
       objectReference: {fileID: 0}
+    - target: {fileID: 3299751235762145604, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3538046993790468212, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
       propertyPath: m_audioClip
       value: 

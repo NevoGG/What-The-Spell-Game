@@ -6,12 +6,17 @@ using UnityEngine.SceneManagement;
 public class WriteNumPlayers : MonoBehaviour
 {
     public static int numberOfPlayers = 1;
-    [SerializeField] private AudioSource buttonPress;
-    [SerializeField] private AudioSource menuMusic;
+    // [SerializeField] private AudioSource buttonPress;
+    // [SerializeField] private AudioSource music;
+    private GameObject sFX;
+     public static AudioSource menuMusic;
     // Start is called before the first frame update
     void Start()
     {
-        menuMusic.Play();
+        sFX = GameObject.FindGameObjectWithTag("SFX");
+        sFX.GetComponent<SFXManager>().playMenuMusic();
+        // menuMusic = music;
+        // menuMusic.Play();
     }
 
     // Update is called once per frame
@@ -19,14 +24,15 @@ public class WriteNumPlayers : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Escape))
         {
-            buttonPress.Play();
+            sFX.GetComponent<SFXManager>().playButtonPress();
+            // buttonPress.Play();
             Application.Quit();
         }
         if (Input.GetKey(KeyCode.Return))
         {
-            
+            sFX.GetComponent<SFXManager>().playButtonPress();
             // buttonPress.Play();
-            menuMusic.Stop();
+            // menuMusic.Stop();
             ActivatetutorialScene();
         }
     }

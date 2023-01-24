@@ -11,6 +11,7 @@ TagManager:
   - OneWayPlatform
   - Dashing
   - IgnorePlayer
+  - SFX
   layers:
   - Default
   - TransparentFX

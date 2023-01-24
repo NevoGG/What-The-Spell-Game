@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonPress: {fileID: 0}
-  menuMusic: {fileID: 0}
+  music: {fileID: 0}
 --- !u!1 &1275756847
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,7 +885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonPress: {fileID: 837700078}
-  menuMusic: {fileID: 837700079}
+  music: {fileID: 837700079}
 --- !u!4 &1340619597
 Transform:
   m_ObjectHideFlags: 0
