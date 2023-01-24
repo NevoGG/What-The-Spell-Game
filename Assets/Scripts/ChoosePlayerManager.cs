@@ -56,6 +56,7 @@ public class ChoosePlayerManager : MonoBehaviour
     [SerializeField] private AudioSource playerConnect3;
     [SerializeField] private AudioSource playerConnect4;
     [SerializeField] private AudioSource buttonPress;
+    [SerializeField] private AudioSource menuMusic;
     
     // Start is called before the first frame update
     void Awake()
