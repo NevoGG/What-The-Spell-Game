@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -59,6 +60,11 @@ public class ChoosePlayerManager : MonoBehaviour
     [SerializeField] private AudioSource menuMusic;
     
     // Start is called before the first frame update
+    private void Start()
+    {
+        menuMusic.Play();
+    }
+
     void Awake()
     {
         controls1 = new PlayerInput1();
@@ -163,6 +169,7 @@ public class ChoosePlayerManager : MonoBehaviour
         {
             buttonPress.Play();
             enterRenderer.sprite = enterClicked;
+            menuMusic.Stop();adde
             SceneManager.LoadScene("SampleScene");
         }
         countPlayers();

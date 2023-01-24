@@ -642,7 +642,7 @@ MonoBehaviour:
   playerConnect3: {fileID: 1872278808}
   playerConnect4: {fileID: 1872278807}
   buttonPress: {fileID: 1872278806}
-  menuMusic: {fileID: 0}
+  menuMusic: {fileID: 1872278810}
 --- !u!1 &1513435873
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +794,11 @@ AudioSource:
 --- !u!82 &1872278809 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1730114801386013973, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+  m_PrefabInstance: {fileID: 1872278805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1872278810 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7929874422707473444, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
   m_PrefabInstance: {fileID: 1872278805}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2004235681
