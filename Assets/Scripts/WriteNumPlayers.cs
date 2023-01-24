@@ -7,10 +7,11 @@ public class WriteNumPlayers : MonoBehaviour
 {
     public static int numberOfPlayers = 1;
     [SerializeField] private AudioSource buttonPress;
+    [SerializeField] private AudioSource menuMusic;
     // Start is called before the first frame update
     void Start()
     {
-        
+        menuMusic.Play();
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class WriteNumPlayers : MonoBehaviour
         {
             
             // buttonPress.Play();
+            menuMusic.Stop();
             ActivatetutorialScene();
         }
     }
