@@ -1481,7 +1481,6 @@ MonoBehaviour:
   endScreen: {fileID: 592168559}
   numberOfPlayers: 0
   playersAlive: 0
-  oneTwoThreeGo: {fileID: 641191657}
 --- !u!4 &612236751
 Transform:
   m_ObjectHideFlags: 0
@@ -1681,7 +1680,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 75f979d43a72851449a1d1cabc89d27c, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: f4dd1073474ba1e4d92b03d4ecb6d31f, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 82685108c2b0b3f4e88de4ee966229fc, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -1728,7 +1727,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fd271cd6c8cb8be4f9f591b4edb63a09, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f4dd1073474ba1e4d92b03d4ecb6d31f, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3526,7 +3525,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: cb2248b23ab8efc4fa865dcbae796068, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: cf28b9bbe563c4446b87fcf65dfe282a, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 31b99ceea82c15c4eaad4a599b4de0a0, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -3573,7 +3572,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 04325b8ea43e2664a9e98fd4a2bc9671, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cf28b9bbe563c4446b87fcf65dfe282a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
