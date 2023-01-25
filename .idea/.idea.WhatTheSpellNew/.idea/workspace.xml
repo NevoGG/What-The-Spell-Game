@@ -3,28 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="63e7738b-1722-413e-a3e1-edbae9bc7435" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WhatTheSpellNew/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Bigfoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Bigfoot.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Bunny.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Dragon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Dragon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Fox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Fox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Hypogriff.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Hypogriff.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Narwhal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Narwhal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/PlayerBlue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/PlayerBlue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Unicorn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/PlayerBlue/Unicorn.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ChoosePlayer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ChoosePlayer.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OpeningScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OpeningScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move3.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Capabilities/Move4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChoosePlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChoosePlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WriteNumPlayers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WriteNumPlayers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/endScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/endScreen.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
@@ -44,6 +27,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Players/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Prefabs/Players/PlayerBlue/Bigfoot.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/GameJam/WhatTheSpellNew/Assets/Prefabs/Players/PlayerBlue/Bigfoot.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Arrow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChoosePlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/MoveScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -302,7 +286,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Nevo" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -331,7 +327,8 @@
     <MESSAGE value="Arrow shrinks as player goes up" />
     <MESSAGE value="Arrow location on bottom fixed- still no flip" />
     <MESSAGE value="Explotions &amp; arrow pop work, still an exception and a difference between actual death collider and arrow death indicator line" />
-    <option name="LAST_COMMIT_MESSAGE" value="Explotions &amp; arrow pop work, still an exception and a difference between actual death collider and arrow death indicator line" />
+    <MESSAGE value="Controllers working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Controllers working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -8,7 +8,7 @@ using UnityEngine.InputSystem.Interactions;
 
 public class Move3 : Move
 {
-    private PlayerInput3 controls;
+    private PlayerInput1 controls;
 
 
     public override void SetMaxAirJumps(int h) { _maxAirJumps = h;}
@@ -26,7 +26,7 @@ public class Move3 : Move
         animator.SetBool("IsDownPressed", _isDownPressed);
         animator.SetFloat("YVelocity", _body.velocity.y);
         //controls setup
-        controls = new PlayerInput3();
+        controls = new PlayerInput1();
         
         _body.drag = _groundLinearDrag;
         transform.localScale = transform.localScale * _size;
@@ -45,7 +45,6 @@ public class Move3 : Move
     private void Update()
     {
         if (isDashing) return;
-        UpdateParams();
         _desiredVelocity = new Vector2(_direction.x, 0f) * Mathf.Max(_maxSpeed - _ground.Friction * Time.deltaTime, 0f);
         
         //Animator control parameters:
@@ -109,4 +108,5 @@ public class Move3 : Move
         }
         _body.velocity = _velocity;
     }
+    
 }

@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
 
 
-public class Move1 : Move
+public class Move2 : Move
 {
     private PlayerInput1 controls;
 
