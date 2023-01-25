@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class endScreen : MonoBehaviour
@@ -15,7 +17,7 @@ public class endScreen : MonoBehaviour
     private GameObject textWinner;
     private Vector3 initTextPos;
     [SerializeField] private float leftBounderText;
-    
+
     [SerializeField] private SpriteRenderer spriteRendererBubble;
     [SerializeField] private SpriteRenderer spriteRendererText;
     [SerializeField] private Sprite BlueBubble;
@@ -30,9 +32,15 @@ public class endScreen : MonoBehaviour
     [SerializeField] private AudioSource win;
     [SerializeField] private AudioSource win2;
     [SerializeField] private AudioSource buttonPress;
+    private InputManager _inputManager;
+    private PlayerControls _controls;
+
+    public bool isActive = false;
     // Start is called before the first frame update
+
     void Start()
     {
+        _inputManager = GameObject.Find("InputManager(Clone)").GetComponent<InputManager>();
         // fede: decide on which sound
         // win.Play();
         win2.Play();
@@ -42,6 +50,12 @@ public class endScreen : MonoBehaviour
         buttonPlayAgain.SetActive(true);
         textWinner = transform.GetChild(1).gameObject;
         initTextPos = textWinner.transform.position;
+        
+        _controls = new PlayerControls();
+        _controls.UI.Enter.Enable();
+        _controls.UI.Enter.performed += EnterFunc;
+        _controls.UI.Escape.Enable();
+        _controls.UI.Escape.performed += EscFunc;
     }
 
     public void EndGame(List<Player> rankList)
@@ -114,6 +128,7 @@ public class endScreen : MonoBehaviour
 
     public void MainMenu()
     {
+        isActive = false;
         SceneManager.LoadScene("OpeningScene");
     }
     
@@ -122,5 +137,27 @@ public class endScreen : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
     
+    private void EnterFunc(InputAction.CallbackContext context)
+    {
+        if (isActive)
+        {
+            // buttonPress.Play();
+            PlayAgain();
+        }
+    }
+    
+    private void EscFunc(InputAction.CallbackContext context)
+    {
+        if (isActive)
+        {
+            for (int i = 0; i < _inputManager.playerInputs.Count; i++)
+            {
+                Destroy(_inputManager.playerInputs[i].GameObject());
+            }
+            _inputManager.playerInputs.Clear();
+            print("ended through endscreen");
+            MainMenu();
+        }
+    }
     
 }

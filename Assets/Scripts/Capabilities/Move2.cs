@@ -46,7 +46,6 @@ public class Move2 : Move
     {
         if (isDashing) return;
         UpdateParams();
-        _direction.x = move.ReadValue<float>();
         _desiredVelocity = new Vector2(_direction.x, 0f) * Mathf.Max(_maxSpeed - _ground.Friction * Time.deltaTime, 0f);
         
         //Animator control parameters:
@@ -109,37 +108,5 @@ public class Move2 : Move
             _body.gravityScale = _defaultGravityScale;
         }
         _body.velocity = _velocity;
-    }
-
-    private void OnEnable()
-    {
-        
-        move = controls.Player.Move;
-        move.Enable();
-        jump = controls.Player.Jump;
-        jump.Enable();
-        crouch = controls.Player.Crouch;
-        crouch.Enable();
-        jump.performed += Jump;
-        jump.canceled += JumpCanceled;
-        crouch = controls.Player.Crouch;
-        crouch.performed += context =>
-        {
-            if (context.interaction is HoldInteraction) Crouch(context);;
-            if (context.interaction is MultiTapInteraction) PassThroughPlatform(context);
-        };
-        crouch.canceled += CrouchCanceled;
-        dash =controls.Player.Dash;
-        dash.Enable();
-        dash.performed += DashFunc;
-        // power.performed += Power; todo: when adding power
-    }
-
-    private void OnDisable()
-    {
-        move.Disable();
-        jump.Disable();
-        dash.Disable();
-        crouch.Disable();
     }
 }

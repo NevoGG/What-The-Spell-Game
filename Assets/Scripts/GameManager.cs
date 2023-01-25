@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public enum Platform {}
 public enum PlayerEnum { Player1, Player2, Player3, Player4, None}
@@ -12,6 +14,7 @@ public enum AnimalPower { DoubleJump, AnimalPow2, AnimalPow3, AnimalPow4 }
 
 public class GameManager : MonoBehaviour
 {
+    
 
     //tags:
     public const string PLATFORM_TAG = "Platform";
@@ -44,10 +47,15 @@ public class GameManager : MonoBehaviour
     private bool firstGameEnded;
     private bool PlayerCheckGame; // if we chose 1 player at beginning to check game
     [SerializeField] private AudioSource oneTwoThreeGo;
-    
+    private int playerIdx = 0;
+    private InputManager _inputManager;
+    private PlayerControls _controls;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        _inputManager = GameObject.Find("InputManager(Clone)").GetComponent<InputManager>();
         oneTwoThreeGo.Play();
         fallenPlayers = new List<Player>();
         //numberOfPlayers = WriteNumPlayers.numberOfPlayers;
@@ -60,28 +68,61 @@ public class GameManager : MonoBehaviour
         SetGameManagerInPlayers();
         firstGameEnded = false;
         PlayerCheckGame = numberOfPlayers == 1;
+        endScreen.GetComponent<endScreen>().isActive = true;
+
+    }
+
+    private void Awake()
+    {
+        _controls = new PlayerControls();
+    }
+
+    private void OnEnable()
+    {
+        _controls.UI.Enter.Enable();
+        _controls.UI.Enter.performed += EnterFunc;
+        _controls.UI.Escape.Enable();
+        _controls.UI.Escape.performed += EscFunc;;
+    }
+    
+    private void OnDisable()
+    {
+        _controls.UI.Enter.Disable();
+        _controls.UI.Escape.Disable();
     }
 
     private void AddPlayersToListNew()
     {
-        playerList = new List<Player>();
-        List<bool> playerBoolList = ChoosePlayerManager.playersArr;
 
-        if (playerBoolList[0])
+        List<PlayerInput> playerInputs = _inputManager.playerInputs;
+        int numPlayersToAdd = playerInputs.Count;
+        print(numPlayersToAdd);
+        playerList = new List<Player>();
+        // List<bool> playerBoolList = ChoosePlayerManager.playersArr;
+        
+        if (numPlayersToAdd >= 1)
         {
             playerList.Add(Player1);
+            Player1.MoveScript = _inputManager.playerInputs[0].GetComponent<MoveScript>();
+            Player1.MoveScript.isPlayScene = true;
         }
-        if (playerBoolList[1])
+        if (numPlayersToAdd >= 2)
         {
             playerList.Add(Player2);
+            Player2.MoveScript = _inputManager.playerInputs[1].GetComponent<MoveScript>();
+            Player2.MoveScript.isPlayScene = true;
         }
-        if (playerBoolList[2])
+        if (numPlayersToAdd >= 3)
         {
             playerList.Add(Player3);
+            Player3.MoveScript = _inputManager.playerInputs[2].GetComponent<MoveScript>();
+            Player3.MoveScript.isPlayScene = true;
         }
-        if (playerBoolList[3])
+        if (numPlayersToAdd >= 4)
         {
             playerList.Add(Player4);
+            Player4.MoveScript = _inputManager.playerInputs[3].GetComponent<MoveScript>();
+            Player4.MoveScript.isPlayScene = true;
         }
         foreach (Player player in playerList)
         {
@@ -216,5 +257,24 @@ public class GameManager : MonoBehaviour
         playersAlive --;
     }
 
+    public void OnPlayerJoined(PlayerInput playerInput)
+    {
+        playerList[playerIdx].MoveScript = playerInput.GetComponent<MoveScript>();
+        playerIdx++;
+    }
+    
+    private void EnterFunc(InputAction.CallbackContext context)
+    {
+    }
+    
+    private void EscFunc(InputAction.CallbackContext context)
+    {
+    }
+
+    public void BackToMainMenu(GameObject endScene)
+    {
+        Destroy(endScene);
+        SceneManager.LoadScene("OpeningScene");
+    }
 
 }

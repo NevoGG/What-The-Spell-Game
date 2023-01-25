@@ -162,12 +162,12 @@ public abstract class Move : MonoBehaviour
         }
     }
     
-    protected void Jump(InputAction.CallbackContext context)
+    public void Jump(bool val)
     {
-        _desiredJump = true;
+        _desiredJump = val;
     }
 
-    protected void DashFunc(InputAction.CallbackContext context)
+    public void DashFunc(bool val)
     {
         if (canDash)
         {
@@ -175,26 +175,16 @@ public abstract class Move : MonoBehaviour
         }
     }
     
-    protected void Crouch(InputAction.CallbackContext context)
+    public void Crouch(bool val)
     {
-        _isDownPressed = true;
+        _isDownPressed = val;
     }
     
-    protected void CrouchCanceled(InputAction.CallbackContext context)
+    public void OnMove(float value)
     {
-        _isDownPressed = false;
-    }
-    
-    protected void JumpCanceled(InputAction.CallbackContext context)
-    {
-        _desiredJump = false;
+        _direction.x = value;
     }
 
-    protected void PassThroughPlatform(InputAction.CallbackContext context)
-    {
-        _ground.PassCurPlatform(); //todo: put in move instead of move1
-    }
-    
 }
 
     

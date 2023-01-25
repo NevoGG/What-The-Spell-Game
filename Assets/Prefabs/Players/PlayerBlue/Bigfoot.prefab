@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgMovementSpeed: 3
+  _bounceFactor: 50
 --- !u!114 &4607930117966743920
 MonoBehaviour:
   m_ObjectHideFlags: 0
