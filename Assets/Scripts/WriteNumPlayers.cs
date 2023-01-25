@@ -1,22 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class WriteNumPlayers : MonoBehaviour
 {
+    private PlayerControls _controls;
     public static int numberOfPlayers = 1;
-    // [SerializeField] private AudioSource buttonPress;
-    // [SerializeField] private AudioSource music;
-    private GameObject sFX;
-     public static AudioSource menuMusic;
+    [SerializeField] private AudioSource buttonPress;
+    [SerializeField] private GameObject InputManager;
+    private InputManager _inputManager;
     // Start is called before the first frame update
-    void Start()
+ 
+    void Awake()
     {
-        sFX = GameObject.FindGameObjectWithTag("SFX");
-        sFX.GetComponent<SFXManager>().playMenuMusic();
-        // menuMusic = music;
-        // menuMusic.Play();
+        GameObject inputManagerPrefab = GameObject.Find("InputManager(Clone)");
+        if(inputManagerPrefab == null) _inputManager =  Instantiate(InputManager, new Vector3(0, 0, 0), Quaternion.identity).GetComponent<InputManager>();
+        else _inputManager = inputManagerPrefab.GetComponent<InputManager>();
+        _controls = new PlayerControls();
+    }
+    
+    private void OnEnable()
+    {
+        _controls.UI.Enter.Enable();
+        _controls.UI.Enter.performed += EnterFunc;
+        _controls.UI.Escape.Enable();
+        _controls.UI.Escape.performed += EscFunc;;
+    }
+    
+    private void OnDisable()
+    {
+        _controls.UI.Enter.Disable();
+        _controls.UI.Escape.Disable();
     }
 
     // Update is called once per frame
@@ -24,15 +41,13 @@ public class WriteNumPlayers : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Escape))
         {
-            sFX.GetComponent<SFXManager>().playButtonPress();
-            // buttonPress.Play();
+            buttonPress.Play();
             Application.Quit();
         }
         if (Input.GetKey(KeyCode.Return))
         {
-            sFX.GetComponent<SFXManager>().playButtonPress();
+            
             // buttonPress.Play();
-            // menuMusic.Stop();
             ActivatetutorialScene();
         }
     }
@@ -64,5 +79,21 @@ public class WriteNumPlayers : MonoBehaviour
     {
         numberOfPlayers = 4;
         SceneManager.LoadScene("SampleScene");
+    }
+    
+    private void EnterFunc(InputAction.CallbackContext context)
+    {
+        for (int i = 0; i < _inputManager.playerInputs.Count; i++)
+        {
+            Destroy(_inputManager.playerInputs[i].GameObject());
+        }
+        _inputManager.playerInputs.Clear();
+        ActivatetutorialScene();
+    }
+    
+    private void EscFunc(InputAction.CallbackContext context)
+    {
+        // buttonPress.Play();
+        Application.Quit();
     }
 }

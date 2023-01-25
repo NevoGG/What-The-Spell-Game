@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
 	private int _curAnimalXPNeeded;
 	public GameObject curAnimal;
 	private int curAnimalIdx = 0;
+	public MoveScript MoveScript { get; set; }
 
 	private AnimalPower _animalPower;
 	[SerializeField] public GameManager _gameManager;
@@ -135,6 +136,7 @@ public class Player : MonoBehaviour
 	    transform.position = curAnimal.transform.position;
 	    curAnimal.SetActive(false);
 		curAnimal = animals[curAnimalIdx];
+		MoveScript.CurMove = curAnimal.GetComponent<Move>();
 		curAnimal.transform.position = transform.position;
 		curAnimal.SetActive(true);
 		arrow.SetFollowing(curAnimal);

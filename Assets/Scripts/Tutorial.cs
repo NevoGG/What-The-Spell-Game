@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class Tutorial : MonoBehaviour
@@ -11,13 +12,19 @@ public class Tutorial : MonoBehaviour
     // [SerializeField] private AudioSource menuMusic;
     private GameObject sFX;
     private bool active;
+    private PlayerControls _controls;
     void Start()
     {
         sFX = GameObject.FindGameObjectWithTag("SFX");
         // menuMusic.Play();
         active = true;
+        _controls = new PlayerControls();
+        _controls.UI.Enter.Enable();
+        _controls.UI.Enter.performed += EnterFunc;
+        _controls.UI.Escape.Enable();
+        _controls.UI.Escape.performed += EscFunc;
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -43,5 +50,15 @@ public class Tutorial : MonoBehaviour
     private void ActivateChoosePlayerScene()
     {
         SceneManager.LoadScene("ChoosePlayer");
+    }
+    
+    private void EnterFunc(InputAction.CallbackContext context)
+    {
+        // buttonPress.Play();
+        ActivateChoosePlayerScene();
+    }
+    
+    private void EscFunc(InputAction.CallbackContext context)
+    {
     }
 }

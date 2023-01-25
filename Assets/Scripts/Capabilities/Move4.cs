@@ -8,7 +8,7 @@ using UnityEngine.InputSystem.Interactions;
 
 public class Move4 : Move
 {
-    private PlayerInput4 controls;
+    private PlayerInput1 controls;
 
 
     public override void SetMaxAirJumps(int h) { _maxAirJumps = h;}
@@ -26,7 +26,7 @@ public class Move4 : Move
         animator.SetBool("IsDownPressed", _isDownPressed);
         animator.SetFloat("YVelocity", _body.velocity.y);
         //controls setup
-        controls = new PlayerInput4();
+        controls = new PlayerInput1();
         
         _body.drag = _groundLinearDrag;
         transform.localScale = transform.localScale * _size;
@@ -45,8 +45,6 @@ public class Move4 : Move
     private void Update()
     {
         if (isDashing) return;
-        UpdateParams();
-        _direction.x = move.ReadValue<float>();
         _desiredVelocity = new Vector2(_direction.x, 0f) * Mathf.Max(_maxSpeed - _ground.Friction * Time.deltaTime, 0f);
         
         //Animator control parameters:
@@ -110,36 +108,5 @@ public class Move4 : Move
         }
         _body.velocity = _velocity;
     }
-
-    private void OnEnable()
-    {
-        
-        move = controls.Player.Move;
-        move.Enable();
-        jump = controls.Player.Jump;
-        jump.Enable();
-        crouch = controls.Player.Crouch;
-        crouch.Enable();
-        jump.performed += Jump;
-        jump.canceled += JumpCanceled;
-        crouch = controls.Player.Crouch;
-        crouch.performed += context =>
-        {
-            if (context.interaction is HoldInteraction) Crouch(context);;
-            if (context.interaction is MultiTapInteraction) PassThroughPlatform(context);
-        };
-        crouch.canceled += CrouchCanceled;
-        dash =controls.Player.Dash;
-        dash.Enable();
-        dash.performed += DashFunc;
-        // power.performed += Power; todo: when adding power
-    }
-
-    private void OnDisable()
-    {
-        move.Disable();
-        jump.Disable();
-        dash.Disable();
-        crouch.Disable();
-    }
+    
 }
