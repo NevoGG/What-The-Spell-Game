@@ -69,6 +69,10 @@ public class Player : MonoBehaviour
 	
 	}
 
+	public Arrow GetArrow()
+	{
+		return arrow;}
+
 	public void MoveToPosition(Vector3 pos)
 	{
 		animals[curAnimalIdx].transform.position = pos;
@@ -163,9 +167,13 @@ public class Player : MonoBehaviour
 	    _gameManager.PlayerLost(this);
     }
 
-    public void TurnToBlob()
+    public void PlayerEndGame()
     {
-	    return;//todo: later.
+	    if (curAnimalIdx == 6) //meaning its a narwhal
+	    {
+		    curAnimal.transform.localScale /= 2;
+	    }
+		    return;//todo: later.
     }
 
     public void OperateEndGame(float size)

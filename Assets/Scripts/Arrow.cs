@@ -7,7 +7,7 @@ public class Arrow : MonoBehaviour
     [SerializeField] private GameObject toFollow;
     private Camera _camera;
     private Animator _animator;
-
+    [SerializeField] bool isActive = false; 
     [SerializeField] private AudioSource outOfScreen;
     [SerializeField] private AudioSource loosingClaps;
     [SerializeField] private GameObject _boom;
@@ -28,6 +28,8 @@ public class Arrow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        
         //flip boom: 
         Vector3 ang = _boom.transform.localEulerAngles;
         _boom.transform.localEulerAngles = new Vector3(ang.x, ang.y, ang.z + 180);
@@ -44,6 +46,7 @@ public class Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isActive) return;
         Vector3 screenPoint = _camera.WorldToViewportPoint(toFollow.transform.position);
         bool onScreen = screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
         if (!onScreen)
@@ -56,12 +59,6 @@ public class Arrow : MonoBehaviour
                  _animator.SetBool(IsOutOfScreen, true);
                  transform.localScale = initScale * (1 / (screenPoint.y * 1.5f));
                  OutOfRange();
-                 if (screenPoint.y > 1 + fallThreshold)
-                 {
-                     _animator.SetTrigger(DeadUp);
-                     // toFollow.GetComponent<Animal>().HasLost();
-                     PlayerDead();
-                 }  
              }
              
              if (screenPoint.y < 0)
@@ -71,15 +68,6 @@ public class Arrow : MonoBehaviour
                  _animator.SetBool(IsOutOfScreen, true);
                  transform.localScale = initScale * (1 / (1 + (screenPoint.y * -1) * 1.5f));
                  OutOfRange();
-                 if (screenPoint.y < 0 - fallThreshold)
-                 {
-                     // Flip();
-                     _boom.transform.localPosition = new Vector3(0f, -3f, screenPoint.z);
-                     _animator.SetTrigger(DeadDown);
-                     _boomAnimator.SetTrigger(DeadDown);
-                     PlayerDead();
-                    // toFollow.GetComponent<Animal>().HasLost();
-                 }
              }
         }
         else
@@ -89,6 +77,8 @@ public class Arrow : MonoBehaviour
         }
     }
 
+    public void SetArrowActive(bool active)
+    { isActive = active;}
     public void SetFollowing(GameObject g)
     {
         toFollow = g;
@@ -107,10 +97,20 @@ public class Arrow : MonoBehaviour
         // outOfScreen.Play();
     }
     
-    
-    private void PlayerDead()
+
+    public void ArrowDestroy()
     {
-        //todo: Fede Kapara
-        // loosingClaps.Play();
+        Vector3 screenPoint = _camera.WorldToViewportPoint(toFollow.transform.position);
+        if (screenPoint.y > 1)
+        {
+            _animator.SetTrigger(DeadUp);
+        } 
+        if (screenPoint.y < 0)
+        {
+            // Flip();
+            _boom.transform.localPosition = new Vector3(0f, -3f, screenPoint.z);
+            _animator.SetTrigger(DeadDown);
+            _boomAnimator.SetTrigger(DeadDown);
+        }
     }
 }

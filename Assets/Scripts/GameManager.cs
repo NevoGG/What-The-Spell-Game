@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
     {
         sFX = GameObject.FindGameObjectWithTag("SFX");
         sFX.GetComponent<SFXManager>().playOneTwoThreeGo();
+        sFX.GetComponent<SFXManager>().pauseMenuMusic();
         // oneTwoThreeGo.Play();
         fallenPlayers = new List<Player>();
         //numberOfPlayers = WriteNumPlayers.numberOfPlayers;
@@ -72,18 +73,22 @@ public class GameManager : MonoBehaviour
         if (playerBoolList[0])
         {
             playerList.Add(Player1);
+            Player1.GetArrow().SetArrowActive(true);
         }
         if (playerBoolList[1])
         {
             playerList.Add(Player2);
+            Player2.GetArrow().SetArrowActive(true);
         }
         if (playerBoolList[2])
         {
             playerList.Add(Player3);
+            Player3.GetArrow().SetArrowActive(true);
         }
         if (playerBoolList[3])
         {
             playerList.Add(Player4);
+            Player4.GetArrow().SetArrowActive(true);
         }
         foreach (Player player in playerList)
         {
@@ -108,43 +113,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    /**
-     * Checks amount of players as init and adds to a list the wanted amount, also activates there gameobjects
-     */
-    // private void addPlayersToList()
-    // {
-    //     playerList = new List<Player>();
-    //     
-    //     switch (numberOfPlayers)
-    //     {
-    //         case 4:
-    //             playerList.Add(Player4);
-    //             playerList.Add(Player3);
-    //             playerList.Add(Player2);
-    //             playerList.Add(Player1);
-    //             break;
-    //         case 3:
-    //             playerList.Add(Player3);
-    //             playerList.Add(Player2);
-    //             playerList.Add(Player1);
-    //             break;
-    //         case 2:
-    //             playerList.Add(Player2);
-    //             playerList.Add(Player1);
-    //             break;
-    //         case 1:
-    //             playerList.Add(Player1);
-    //             break;
-    //     }
-    //
-    //     foreach (Player player in playerList)
-    //     {
-    //         player.gameObject.SetActive(true);
-    //     }
-    // }
-    
-    
-    
+
+
     // Update is called once per frame
     void Update()
     {
@@ -167,7 +137,7 @@ public class GameManager : MonoBehaviour
         List<Player> rankList = new List<Player>();
         if (playersAlive == -1)
         {
-            Tie();
+            //tie: nothing at the moment
         }
         else
         {
@@ -177,11 +147,6 @@ public class GameManager : MonoBehaviour
         Witch1.gameObject.SetActive(false);
         Witch2.gameObject.SetActive(false);
         endScreen.GetComponent<endScreen>().EndGame(rankList);
-    }
-
-    private void Tie()
-    {
-        // print("Its a tie");
     }
 
 
@@ -217,10 +182,9 @@ public class GameManager : MonoBehaviour
 
     public void PlayerLost(Player player)
     {
+        player.GetArrow().ArrowDestroy();
         fallenPlayers.Insert(0, player);
         player.gameObject.SetActive(false);
         playersAlive --;
     }
-
-
 }

@@ -21,7 +21,7 @@ public class Animal : MonoBehaviour
     private Move _move;
     private Ground _ground;
     private Rigidbody2D _body;
-    private Player player;
+    public Player player;
     private BoxCollider2D _boxCollider;
 
 //small change here
@@ -67,15 +67,13 @@ public class Animal : MonoBehaviour
                 spell = SpellEnum.Grow;
                 collision.gameObject.SetActive(false);
                 break;
-            case "Player":
-                if (tag == "Dashing")
+            case GameManager.PLAYER_TAG:
+                if (CompareTag("Dashing"))
                 {
                     growParticles.Play();
                     PushPlayer(collision);
-                }
-
+                } 
                 break;
-            //Scalable. todo: more spells?
             default: return;
         }
         player.SpellCasted(spell);
@@ -105,18 +103,18 @@ public class Animal : MonoBehaviour
         SpellEnum spell = SpellEnum.None;
         switch (collision.gameObject.tag)
         {
-            case GameManager.SHRINKSPELL:
-                spell = SpellEnum.Shrink;
-                // shrinkParticles.Play();
-                collision.gameObject.SetActive(false); //todo: spell set inactive
-                break;
-            case  GameManager.GROWSPELL:
-                spell = SpellEnum.Grow;
-                // growParticles.Play();
-                collision.gameObject.SetActive(false);
-                break;
+            // case GameManager.SHRINKSPELL:
+            //     spell = SpellEnum.Shrink;
+            //     // shrinkParticles.Play();
+            //     collision.gameObject.SetActive(false); //todo: spell set inactive
+            //     break;
+            // case  GameManager.GROWSPELL:
+            //     spell = SpellEnum.Grow;
+            //     // growParticles.Play();
+            //     collision.gameObject.SetActive(false);
+            //     break;
             case GameManager.FALL_BOUNDER_TAG:
-                player.HasLost();
+                HasLost();
                 break;
             default: return;
         }
