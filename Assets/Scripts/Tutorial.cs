@@ -7,12 +7,16 @@ using UnityEngine.SceneManagement;
 public class Tutorial : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private AudioSource buttonPress;
+    // [SerializeField] private AudioSource buttonPress;
     [SerializeField] private float waitTime = 19f;
+    // [SerializeField] private AudioSource menuMusic;
+    private GameObject sFX;
     private bool active;
     private PlayerControls _controls;
     void Start()
     {
+        sFX = GameObject.FindGameObjectWithTag("SFX");
+        // menuMusic.Play();
         active = true;
         _controls = new PlayerControls();
         _controls.UI.Enter.Enable();
@@ -28,7 +32,9 @@ public class Tutorial : MonoBehaviour
         if (Input.GetKey(KeyCode.Return))
         {
             
-            buttonPress.Play();
+            sFX.GetComponent<SFXManager>().playButtonPress();
+            // buttonPress.Play();
+            // menuMusic.Stop();
             ActivateChoosePlayerScene();
         }
         if (active)

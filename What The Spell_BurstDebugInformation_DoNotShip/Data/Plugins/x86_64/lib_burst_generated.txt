@@ -176,7 +176,9 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.Services.Core.Threading.dll
 --root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.2D.Tilemap.Extras.dll
 --root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.Services.Core.Networking.dll
+--root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.Recorder.dll
 --root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.InternalAPIEngineBridge.001.dll
+--root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.Recorder.Base.dll
 --root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.Services.Core.Configuration.dll
 --assembly-folder=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/
@@ -362,7 +364,9 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.Services.Core.Threading.dll
 --root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.2D.Tilemap.Extras.dll
 --root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.Services.Core.Networking.dll
+--root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.Recorder.dll
 --root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.InternalAPIEngineBridge.001.dll
+--root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.Recorder.Base.dll
 --root-assembly=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\Unity.Services.Core.Configuration.dll
 --assembly-folder=C:\Users\fedeb\Desktop\school\What-The-Spell-Game\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/

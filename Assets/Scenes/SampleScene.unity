@@ -1584,7 +1584,6 @@ MonoBehaviour:
   endScreen: {fileID: 592168559}
   numberOfPlayers: 0
   playersAlive: 0
-  oneTwoThreeGo: {fileID: 641191657}
 --- !u!4 &612236751
 Transform:
   m_ObjectHideFlags: 0
@@ -1612,7 +1611,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e7531b4d4fbaad54a875fd446c39ab6d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.654
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1828,8 +1827,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 75f979d43a72851449a1d1cabc89d27c, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 82685108c2b0b3f4e88de4ee966229fc, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: f4dd1073474ba1e4d92b03d4ecb6d31f, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 7ccec7517e7903b4d90e5af679d96361, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1875,7 +1874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fd271cd6c8cb8be4f9f591b4edb63a09, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f4dd1073474ba1e4d92b03d4ecb6d31f, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2183,6 +2182,10 @@ PrefabInstance:
     - target: {fileID: 3299751235762145604, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
       propertyPath: m_Name
       value: SFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299751235762145604, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3538046993790468212, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
       propertyPath: m_audioClip
@@ -3711,8 +3714,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: cb2248b23ab8efc4fa865dcbae796068, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 31b99ceea82c15c4eaad4a599b4de0a0, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: cf28b9bbe563c4446b87fcf65dfe282a, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 8ecf8acaf12a5724ca652aa083a6853c, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -3758,7 +3761,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 04325b8ea43e2664a9e98fd4a2bc9671, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cf28b9bbe563c4446b87fcf65dfe282a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ec75746bd92a28c4eac6130099a86691, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f4252d6a756677b4cad942cbf67205f1, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -411,7 +411,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 979382955d1c22546ba4d477319ad144, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13da87a298f625e41892a7e7d4bbb0d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -571,7 +571,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d02b12ec7928e3b4db0b262433b3bf03, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ceec30165d5808043b2114cc6047738e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -634,24 +634,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enterRenderer: {fileID: 2125786266}
-  enterClicked: {fileID: 21300000, guid: d9a7048339e86714d9a51d6d5defa008, type: 3}
+  enterClicked: {fileID: 21300000, guid: 7a8aa3f7e0790364f8ee2b1ba28dbff7, type: 3}
   redKeysRenderer: {fileID: 1513435875}
   blueKeysRenderer: {fileID: 472434682}
   greenKeysRenderer: {fileID: 1245974756}
   yellowKeysRenderer: {fileID: 1168188410}
-  greyBlueKeys: {fileID: 21300000, guid: ec75746bd92a28c4eac6130099a86691, type: 3}
-  greyYellowKeys: {fileID: 21300000, guid: 979382955d1c22546ba4d477319ad144, type: 3}
-  greyRedKeys: {fileID: 21300000, guid: 1e2fe4d6fcb0f874ba78f277b0fb65e7, type: 3}
-  greyGreenKeys: {fileID: 21300000, guid: d02b12ec7928e3b4db0b262433b3bf03, type: 3}
-  blueKeys: {fileID: 21300000, guid: 36f4397986c63d84393598be7d445d4f, type: 3}
-  yellowKeys: {fileID: 21300000, guid: 23e766842b7c58c4b9bf9e7652a5da63, type: 3}
-  redKeys: {fileID: 21300000, guid: 8b3e960136d19b445b2984d1f876039f, type: 3}
-  greenKeys: {fileID: 21300000, guid: 82c8e6d996c494846ac5f076dabe8b35, type: 3}
-  playerConnect1: {fileID: 1872278809}
-  playerConnect2: {fileID: 1872278808}
-  playerConnect3: {fileID: 1872278808}
-  playerConnect4: {fileID: 1872278807}
-  buttonPress: {fileID: 1872278806}
+  greyBlueKeys: {fileID: 21300000, guid: ceec30165d5808043b2114cc6047738e, type: 3}
+  greyYellowKeys: {fileID: 21300000, guid: 2a60615a7fc517f49bd29c5e84ac32dd, type: 3}
+  greyRedKeys: {fileID: 21300000, guid: f4252d6a756677b4cad942cbf67205f1, type: 3}
+  greyGreenKeys: {fileID: 21300000, guid: 13da87a298f625e41892a7e7d4bbb0d6, type: 3}
+  blueKeys: {fileID: 21300000, guid: a072d48188f512a4689e951542172e12, type: 3}
+  yellowKeys: {fileID: 21300000, guid: 7b53b36fc47e28444986184d9cd7479d, type: 3}
+  redKeys: {fileID: 21300000, guid: 6e73bd464136eb340b421f10622b95c2, type: 3}
+  greenKeys: {fileID: 21300000, guid: 136e9a5f3b82e6242a7b0dc0de0cfb50, type: 3}
 --- !u!1 &1513435873
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1e2fe4d6fcb0f874ba78f277b0fb65e7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13da87a298f625e41892a7e7d4bbb0d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -738,6 +733,10 @@ PrefabInstance:
     - target: {fileID: 3299751235762145604, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
       propertyPath: m_Name
       value: SFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299751235762145604, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8314149799920957757, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
       propertyPath: m_RootOrder
@@ -785,26 +784,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
---- !u!82 &1872278806 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 291596632413437348, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 1872278805}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1872278807 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8582320406919941882, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 1872278805}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1872278808 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5445637796007733989, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 1872278805}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1872278809 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1730114801386013973, guid: 8cf305dcee0d68c4bb9584491fb45db8, type: 3}
-  m_PrefabInstance: {fileID: 1872278805}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2004235681
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,7 +842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 61fc7c3af828d91408660ea60644f8f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35f8af7b1d03fc5438e84895f4b66569, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1046,7 +1025,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7ee8f72ceb4d5b4b838cbc18ee57c9c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a8aa3f7e0790364f8ee2b1ba28dbff7, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
